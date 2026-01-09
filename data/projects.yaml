@@ -1,0 +1,16 @@
+projects:
+  - name: cerrfix
+    domain: linux tooling
+    stack: [python, shell]
+    description: >
+      Rule-based error analysis and fix suggestion tool
+      for Linux systems.
+    repo: https://github.com/CISSSCO/cerrfix
+
+  - name: gitpush
+    domain: developer tooling
+    stack: [shell, git]
+    description: >
+      Minimal CLI helper to automate repetitive git workflows.
+    repo: https://github.com/CISSSCO/gitpush
+
