@@ -2,15 +2,18 @@ projects:
   - name: cerrfix
     domain: linux tooling
     stack: [python, shell]
-    description: >
-      Rule-based error analysis and fix suggestion tool
-      for Linux systems.
+    description: Rule-based error analysis and fix suggestion tool
     repo: https://github.com/CISSSCO/cerrfix
 
   - name: gitpush
     domain: developer tooling
     stack: [shell, git]
-    description: >
-      Minimal CLI helper to automate repetitive git workflows.
+    description: Minimal helper for repetitive git workflows
     repo: https://github.com/CISSSCO/gitpush
+
+  - name: dotfiles
+    domain: environment
+    stack: [shell]
+    description: Reproducible Linux shell and development configuration
+    repo: https://github.com/CISSSCO/dotfiles
 
