@@ -1,1 +1,152 @@
-#+title: README
+#+TITLE: CISSSCO.github.io
+#+AUTHOR: Cisco Ramon
+#+OPTIONS: toc:nil num:nil
+
+* Overview
+
+This repository contains my personal portfolio website, built and hosted
+using GitHub Pages.
+
+The site is intentionally minimal and terminal-driven.
+Rather than presenting information through traditional navigation or UI
+components, all interaction happens through a command-line style interface.
+
+The goal is not to simulate a terminal, but to *use terminal metaphors*
+to express how I think about systems, tools, and workflows.
+
+* Design Philosophy
+
+This project follows a few core principles:
+
+- *CLI-first interaction*
+  The terminal is the primary interface. Users explicitly request information
+  by typing commands.
+
+- *No frameworks*
+  The site is built using plain HTML, CSS, and minimal JavaScript.
+  This keeps the code readable, debuggable, and long-term maintainable.
+
+- *Progressive enhancement*
+  The site works without JavaScript for layout and styling.
+  JavaScript only adds interaction, not structure.
+
+- *Explicit behavior*
+  There is no automatic navigation, routing, or hidden logic.
+  Commands map directly to content.
+
+- *Restraint over flash*
+  Visual design is subtle and terminal-inspired.
+  No animations, gimmicks, or unnecessary effects.
+
+* Interaction Model
+
+The site behaves like a simple REPL:
+
+- The terminal input is always visible
+- Content is rendered *above* the terminal
+- Commands print output instead of navigating pages
+- The =clear= command resets the output buffer
+- A short hint is shown on load and after clearing
+
+This mirrors how real command-line tools behave.
+
+* Commands
+
+The following commands are supported by the terminal interface.
+Commands are intentionally minimal and explicit.
+
+** help
+
+Displays a list of available commands with short descriptions.
+
+This is the primary discovery mechanism for users.
+No content is shown automatically without user interaction.
+
+** about
+
+Displays a system-style overview of who I am, inspired by tools such as
+=neofetch=, but focused on professional identity rather than system metrics.
+
+The output includes:
+
+- Role and technical focus
+- Preferred operating system
+- Primary programming languages
+- Links to external profiles (GitHub, LinkedIn)
+
+This command represents the *identity entry point* of the site.
+
+** projects
+
+Displays an overview of selected projects with brief descriptions and
+links to their respective source repositories.
+
+Projects are presented as terminal-friendly output rather than cards
+or visual sections, emphasizing clarity over presentation.
+
+** philosophy
+
+Describes how I approach software development, learning, and open source.
+
+This includes:
+
+- Preference for Linux and system-level understanding
+- Open-source values and community contribution
+- Teaching and mentoring mindset
+- Interest in literate programming and customization
+
+This command explains *how I think*, not just *what I build*.
+
+** uses
+
+Lists the tools, environments, and workflows I commonly use.
+
+This includes:
+
+- Linux-based environments
+- Preference for window managers over desktop environments
+- Programming languages and scripting tools
+- Editors and documentation workflows
+
+The intent is to provide context about my daily working environment.
+
+** clear
+
+Clears all rendered output from the page.
+
+After clearing, a short hint is displayed prompting the user to type
+=help= to get started again.
+
+This mirrors the behavior of clearing a terminal screen.
+
+* Command Architecture
+
+Commands are implemented as string keys mapped to content blocks.
+
+- No generic argument parser is used
+- Commands are matched explicitly
+- Output rendering is separated from command handling logic
+
+This design keeps the system simple and easy to extend while avoiding
+unnecessary abstractions.
+
+* Content Organization
+
+All rendered content lives in a single registry:
+
+- =js/content.js= contains declarative HTML fragments
+- The terminal engine does not know about page structure
+- Styling is handled entirely through CSS classes
+
+This separation allows content to evolve independently of interaction logic.
+
+* Styling Approach
+
+The visual style is inspired by terminal environments:
+
+- Dark background
+- Semantic colors (titles, keys, values, links)
+- No card layouts or shadows
+- Typography-first design
+
+Colors are used to convey meaning, not decoration.
