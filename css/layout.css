@@ -37,3 +37,37 @@ footer {
   color: var(--muted);
 }
 
+/* Minimal terminal */
+
+.terminal {
+  margin-top: 3rem;
+  padding: 1rem;
+  border: 1px solid var(--accent-soft);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.terminal-output {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+#terminal-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#terminal-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--fg);
+  font-family: inherit;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.cmd {
+  color: var(--accent);
+}

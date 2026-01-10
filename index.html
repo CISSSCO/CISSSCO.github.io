@@ -19,6 +19,22 @@
         command-line tooling, HPC workflows, and performance-aware software.
       </p>
     </header>
+    <section class="terminal">
+      <div class="terminal-output" id="terminal-output">
+        <div>$ type <span class="cmd">help</span> and press enter</div>
+      </div>
+
+      <form id="terminal-form" autocomplete="off">
+        <label for="terminal-input" class="prompt">$</label>
+        <input
+          id="terminal-input"
+          type="text"
+          spellcheck="false"
+          autofocus
+          aria-label="Terminal input"
+        />
+      </form>
+    </section>
 
     <section>
       <h2>Domains</h2>
@@ -46,6 +62,7 @@
     </footer>
 
   </main>
+  <script src="js/terminal.js"></script>
 </body>
 </html>
 
