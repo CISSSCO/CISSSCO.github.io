@@ -75,4 +75,5 @@
 
   // Initial state
   firstScreen();
+  printHint();
 })();
