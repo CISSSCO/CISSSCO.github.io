@@ -32,6 +32,10 @@
     printHint();
   }
 
+  function firstScreen() {
+    printHTML(window.CONTENT["about"]);
+  }
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -70,5 +74,5 @@
   });
 
   // Initial state
-  printHint();
+  firstScreen();
 })();
