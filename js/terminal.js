@@ -1,4 +1,5 @@
-// Minimal terminal interaction — intentional and explicit
+// Minimal terminal interaction with command history
+// Intentional, explicit, no framework
 
 (function () {
   const input = document.getElementById("terminal-input");
@@ -6,6 +7,9 @@
   const form = document.getElementById("terminal-form");
 
   if (!input || !output || !form) return;
+
+  const history = [];
+  let historyIndex = -1;
 
   const commands = {
     help: () => {
@@ -47,6 +51,9 @@
 
     print(`$ ${value}`);
 
+    history.push(value);
+    historyIndex = history.length;
+
     if (commands[value]) {
       commands[value]();
     } else {
@@ -55,4 +62,38 @@
 
     input.value = "";
   });
+
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowUp") {
+      if (history.length === 0) return;
+
+      e.preventDefault();
+
+      historyIndex = Math.max(0, historyIndex - 1);
+      input.value = history[historyIndex];
+      moveCursorToEnd(input);
+    }
+
+    if (e.key === "ArrowDown") {
+      if (history.length === 0) return;
+
+      e.preventDefault();
+
+      historyIndex = Math.min(history.length, historyIndex + 1);
+
+      if (historyIndex === history.length) {
+        input.value = "";
+      } else {
+        input.value = history[historyIndex];
+      }
+
+      moveCursorToEnd(input);
+    }
+  });
+
+  function moveCursorToEnd(el) {
+    requestAnimationFrame(() => {
+      el.selectionStart = el.selectionEnd = el.value.length;
+    });
+  }
 })();
