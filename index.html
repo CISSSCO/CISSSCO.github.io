@@ -10,59 +10,28 @@
   <link rel="stylesheet" href="css/layout.css" />
 </head>
 <body>
-  <main class="container">
+  <main class="terminal-layout">
 
-    <header class="hero">
-      <h1><span class="prompt">$</span> whoami</h1>
-      <p class="lead">
-        Cisco Ramon — systems-oriented engineer focused on Linux,
-        command-line tooling, HPC workflows, and performance-aware software.
-      </p>
-    </header>
-    <section class="terminal">
-      <div class="terminal-output" id="terminal-output">
-        <div>$ type <span class="cmd">help</span> and press enter</div>
-      </div>
-
-      <form id="terminal-form" autocomplete="off">
-        <label for="terminal-input" class="prompt">$</label>
-        <input
-          id="terminal-input"
-          type="text"
-          spellcheck="false"
-          autofocus
-          aria-label="Terminal input"
-        />
-      </form>
+    <section id="content-area" class="content-area">
+      <!-- rendered content appears here -->
     </section>
 
-    <section>
-      <h2>Domains</h2>
-      <ul>
-        <li>Linux systems & internals</li>
-        <li>Command-line driven workflows</li>
-        <li>HPC and compute-heavy environments</li>
-        <li>Simple, composable tooling</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Navigate</h2>
-      <ul class="nav">
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="philosophy.html">Engineering Philosophy</a></li>
-        <li><a href="uses.html">Environment & Tools</a></li>
-      </ul>
-    </section>
-
-    <footer>
-      <p>
-        GitHub: <a href="https://github.com/CISSSCO">github.com/CISSSCO</a>
-      </p>
-    </footer>
+    <form id="terminal-form" class="terminal-bar" autocomplete="off">
+      <label class="prompt">$</label>
+      <input
+        id="terminal-input"
+        type="text"
+        spellcheck="false"
+        autofocus
+        aria-label="terminal input"
+      />
+    </form>
 
   </main>
+
+  <script src="js/content.js"></script>
   <script src="js/terminal.js"></script>
 </body>
+
 </html>
 

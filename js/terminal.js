@@ -1,63 +1,53 @@
-// Minimal terminal interaction with command history
-// Intentional, explicit, no framework
-
 (function () {
   const input = document.getElementById("terminal-input");
-  const output = document.getElementById("terminal-output");
   const form = document.getElementById("terminal-form");
+  const content = document.getElementById("content-area");
 
-  if (!input || !output || !form) return;
+  if (!input || !form || !content) return;
 
   const history = [];
   let historyIndex = -1;
 
-  const commands = {
-    help: () => {
-      print("available commands:");
-      print("  projects    → view projects");
-      print("  philosophy  → engineering philosophy");
-      print("  uses        → tools & environment");
-      print("  clear       → clear terminal");
-    },
-
-    projects: () => navigate("projects.html"),
-    philosophy: () => navigate("philosophy.html"),
-    uses: () => navigate("uses.html"),
-
-    clear: () => {
-      output.innerHTML = "";
-    },
-  };
-
-  function print(text) {
+  function printLine(text) {
     const line = document.createElement("div");
     line.textContent = text;
-    output.appendChild(line);
-    output.scrollTop = output.scrollHeight;
+    content.appendChild(line);
+    line.scrollIntoView({ behavior: "smooth", block: "end" });
   }
 
-  function navigate(url) {
-    print(`opening ${url}...`);
-    setTimeout(() => {
-      window.location.href = url;
-    }, 300);
+  function printHTML(html) {
+    const block = document.createElement("div");
+    block.className = "block";
+    block.innerHTML = html;
+    content.appendChild(block);
+    block.scrollIntoView({ behavior: "smooth", block: "end" });
+  }
+
+  function printHint() {
+    printLine("type 'help' to get started");
+  }
+
+  function clearScreen() {
+    content.innerHTML = "";
+    printHint();
   }
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const value = input.value.trim();
-    if (!value) return;
+    const cmd = input.value.trim();
+    if (!cmd) return;
 
-    print(`$ ${value}`);
-
-    history.push(value);
+    printLine(`$ ${cmd}`);
+    history.push(cmd);
     historyIndex = history.length;
 
-    if (commands[value]) {
-      commands[value]();
+    if (cmd === "clear") {
+      clearScreen();
+    } else if (window.CONTENT[cmd]) {
+      printHTML(window.CONTENT[cmd]);
     } else {
-      print(`command not found: ${value}`);
+      printLine(`command not found: ${cmd}`);
     }
 
     input.value = "";
@@ -65,35 +55,20 @@
 
   input.addEventListener("keydown", (e) => {
     if (e.key === "ArrowUp") {
-      if (history.length === 0) return;
-
+      if (!history.length) return;
       e.preventDefault();
-
       historyIndex = Math.max(0, historyIndex - 1);
       input.value = history[historyIndex];
-      moveCursorToEnd(input);
     }
 
     if (e.key === "ArrowDown") {
-      if (history.length === 0) return;
-
+      if (!history.length) return;
       e.preventDefault();
-
       historyIndex = Math.min(history.length, historyIndex + 1);
-
-      if (historyIndex === history.length) {
-        input.value = "";
-      } else {
-        input.value = history[historyIndex];
-      }
-
-      moveCursorToEnd(input);
+      input.value = history[historyIndex] || "";
     }
   });
 
-  function moveCursorToEnd(el) {
-    requestAnimationFrame(() => {
-      el.selectionStart = el.selectionEnd = el.value.length;
-    });
-  }
+  // Initial state
+  printHint();
 })();

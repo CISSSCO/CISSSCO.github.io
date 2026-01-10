@@ -1,61 +1,30 @@
-/* Layout and spacing */
+/* Terminal-driven layout */
 
-.container {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
+.terminal-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
 }
 
-.hero h1 {
-  margin-bottom: 0.75rem;
+/* Content grows upward */
+.content-area {
+  flex: 1;
+  padding: 2rem 1.5rem 1rem;
+  overflow-y: auto;
 }
 
-section {
-  margin-top: 3rem;
-}
-
-section h2 {
-  margin-bottom: 0.75rem;
-}
-
-article {
-  margin-top: 1.5rem;
-}
-
-.nav {
-  list-style: none;
-  padding-left: 0;
-}
-
-.nav li {
-  margin-bottom: 0.75rem;
-}
-
-footer {
-  margin-top: 5rem;
-  font-size: 0.9rem;
-  color: var(--muted);
-}
-
-/* Minimal terminal */
-
-.terminal {
-  margin-top: 3rem;
-  padding: 1rem;
-  border: 1px solid var(--accent-soft);
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.02);
-}
-
-.terminal-output {
-  font-size: 0.95rem;
-  margin-bottom: 0.75rem;
-}
-
-#terminal-form {
+/* Terminal bar pinned visually at bottom */
+.terminal-bar {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
+  padding: 0.75rem 1.5rem;
+  border-top: 1px solid var(--accent-soft);
+
+  background: rgba(13, 17, 23, 0.95);
+  backdrop-filter: blur(2px);
 }
 
 #terminal-input {
@@ -68,6 +37,6 @@ footer {
   width: 100%;
 }
 
-.cmd {
+.prompt {
   color: var(--accent);
 }

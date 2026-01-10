@@ -1,26 +1,52 @@
-/* Dark, terminal-inspired theme */
-
-:root {
-  --bg: #0d1117;
-  --fg: #c9d1d9;
-  --muted: #8b949e;
-  --accent: #58a6ff;
+.content-area > .block {
+  margin-bottom: 2rem;
 }
 
-body {
-  background-color: var(--bg);
+.content-area h2 {
+  margin-top: 0;
+}
+
+.content-area code {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.15rem 0.3rem;
+  border-radius: 3px;
+}
+
+.neofetch {
   color: var(--fg);
+  font-size: 0.9rem;
+  line-height: 1.3;
+  white-space: pre;
 }
 
-a {
+/* Terminal output styling */
+
+.block {
+  margin-bottom: 1.75rem;
+}
+
+.term-title {
   color: var(--accent);
+  font-weight: 600;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-.lead {
+.term-muted {
   color: var(--muted);
 }
 
+.term-key {
+  color: #7ee787; /* soft green */
+}
+
+.term-value {
+  color: var(--fg);
+}
+
+.term-link {
+  color: #79c0ff;
+  text-decoration: underline;
+}
+
+.term-link:hover {
+  opacity: 0.85;
+}
