@@ -4,7 +4,7 @@ window.CONTENT = {
   <span class="term-title">available commands</span>
 
   <ul>
-    <li><span class="term-key">about</span>        <span class="term-muted">— system overview</span></li>
+    <li><span class="term-key">about</span>        <span class="term-muted">— about me</span></li>
     <li><span class="term-key">projects</span>     <span class="term-muted">— things I build</span></li>
     <li><span class="term-key">philosophy</span>   <span class="term-muted">— how I think</span></li>
     <li><span class="term-key">uses</span>         <span class="term-muted">— tools & environment</span></li>
