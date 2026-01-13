@@ -1,20 +1,21 @@
-/* Terminal-driven layout */
+/* Root layout */
 
 .terminal-layout {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: var(--bg);
 }
 
-/* Content grows upward */
+/* Content area */
+
 .content-area {
   flex: 1;
   padding: 2rem 1.5rem 1rem;
   overflow-y: auto;
 }
 
-/* Terminal bar pinned visually at bottom */
+/* Terminal bar */
+
 .terminal-bar {
   display: flex;
   align-items: center;
@@ -24,7 +25,9 @@
   border-top: 1px solid var(--accent-soft);
 
   background: rgba(13, 17, 23, 0.95);
-  backdrop-filter: blur(2px);
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
 }
 
 #terminal-input {
@@ -39,4 +42,28 @@
 
 .prompt {
   color: var(--accent);
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .content-area {
+    padding: 1.25rem 1rem 0.75rem;
+  }
+
+  .terminal-bar {
+    padding: 0.6rem 1rem;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .content-area {
+    padding: 1rem 0.75rem 0.5rem;
+  }
+
+  #terminal-input {
+    font-size: 0.95rem;
+  }
 }

@@ -1,29 +1,17 @@
-.content-area > .block {
-  margin-bottom: 2rem;
+:root {
+  --bg: #0d1117;
+  --fg: #c9d1d9;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --accent-soft: rgba(88, 166, 255, 0.15);
 }
 
-.content-area h2 {
-  margin-top: 0;
-}
-
-.content-area code {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 0.15rem 0.3rem;
-  border-radius: 3px;
-}
-
-.neofetch {
+body {
+  background-color: var(--bg);
   color: var(--fg);
-  font-size: 0.9rem;
-  line-height: 1.3;
-  white-space: pre;
 }
 
-/* Terminal output styling */
-
-.block {
-  margin-bottom: 1.75rem;
-}
+/* Terminal semantics */
 
 .term-title {
   color: var(--accent);
@@ -35,7 +23,7 @@
 }
 
 .term-key {
-  color: #7ee787; /* soft green */
+  color: #7ee787;
 }
 
 .term-value {
@@ -47,6 +35,28 @@
   text-decoration: underline;
 }
 
-.term-link:hover {
-  opacity: 0.85;
+/* Blocks */
+
+.block {
+  margin-bottom: 2rem;
+}
+
+/* PRE / ASCII — critical fix */
+
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  pre {
+    font-size: 0.7rem;
+  }
 }

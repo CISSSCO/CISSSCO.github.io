@@ -12,7 +12,7 @@
     const line = document.createElement("div");
     line.textContent = text;
     content.appendChild(line);
-    line.scrollIntoView({ behavior: "smooth", block: "end" });
+    line.scrollIntoView({ block: "end" });
   }
 
   function printHTML(html) {
@@ -20,21 +20,20 @@
     block.className = "block";
     block.innerHTML = html;
     content.appendChild(block);
-    block.scrollIntoView({ behavior: "smooth", block: "end" });
+    block.scrollIntoView({ block: "end" });
   }
 
-  function printHint() {
+  function hint() {
     printLine("type 'help' to get started");
   }
 
   function clearScreen() {
     content.innerHTML = "";
-    printHint();
+    hint();
   }
-
   function firstScreen() {
     printHTML(window.CONTENT["about"]);
-    printHint();
+    hint();
   }
 
   form.addEventListener("submit", (e) => {
@@ -74,7 +73,6 @@
     }
   });
 
-  // Initial state
   firstScreen();
-  
+
 })();
