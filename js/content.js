@@ -75,6 +75,20 @@ window.CONTENT = {
       → source repository
     </a>
   </p>
+  <p>
+    <span class="term-key">PopularWebsiteThemes</span><br>
+    <span class="term-muted">Custom themes for Popular Websites like 10fastfingers</span><br>
+    <a class="term-link" href="https://github.com/CISSSCO/PopularWebsiteThemes" target="_blank">
+      → source repository
+    </a>
+  <p>
+  <p>
+    <span class="term-key">CISSSCO</span><br>
+    <span class="term-muted">Terminal Style Portfolio Website</span><br>
+    <a class="term-link" href="https://github.com/CISSSCO/CISSSCO.github.io" target="_blank">
+      → source repository
+    </a>
+  </p>
 </div>
 `,
 philosophy: `
