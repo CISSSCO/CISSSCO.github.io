@@ -8,11 +8,19 @@
   const history = [];
   let historyIndex = -1;
 
+  let PROJECTS_CACHE = null;
+
+  function scrollToBottom() {
+    requestAnimationFrame(() => {
+      window.scrollTo(0, document.body.scrollHeight);
+    });
+  }
+
   function printLine(text) {
     const line = document.createElement("div");
     line.textContent = text;
     content.appendChild(line);
-    line.scrollIntoView({ block: "end" });
+    scrollToBottom();
   }
 
   function printHTML(html) {
@@ -20,7 +28,7 @@
     block.className = "block";
     block.innerHTML = html;
     content.appendChild(block);
-    block.scrollIntoView({ block: "end" });
+    scrollToBottom();
   }
 
   function hint() {
@@ -31,27 +39,130 @@
     content.innerHTML = "";
     hint();
   }
+
   function firstScreen() {
     printHTML(window.CONTENT["about"]);
     hint();
   }
 
+  async function loadProjects() {
+    if (PROJECTS_CACHE) return PROJECTS_CACHE;
+
+    try {
+      const res = await fetch("src/data/projects.json");
+      const data = await res.json();
+      PROJECTS_CACHE = data.projects;
+      return PROJECTS_CACHE;
+    } catch {
+      printLine("failed to load projects data");
+      return [];
+    }
+  }
+
+  function renderProjects(projects) {
+    if (!projects.length) {
+      printLine("no projects found");
+      return;
+    }
+
+    const html = projects
+      .map((p) => {
+        const websiteLink = p.website
+          ? `<br><a class="term-link" href="${p.website}" target="_blank">→ live website</a>`
+          : "";
+
+        const stack = Array.isArray(p.stack) ? p.stack.join(", ") : "";
+
+        return `
+<p>
+  <span class="term-key">${p.name}</span><br>
+  <span class="term-muted">${p.description}</span><br>
+
+  <span class="term-key">domain:</span>
+  <span class="term-value">${p.domain}</span><br>
+
+  <span class="term-key">stack:</span>
+  <span class="term-value">${stack}</span><br>
+
+  <a class="term-link" href="${p.repo}" target="_blank">
+    → source repository
+  </a>
+  ${websiteLink}
+</p>
+`;
+      })
+      .join("");
+
+    printHTML(
+      `<div class="block"><h2 class="term-title">Projects</h2>${html}</div>`
+    );
+  }
+
+  const COMMAND_HANDLERS = {
+    clear() {
+      clearScreen();
+    },
+
+    help(args) {
+      if (args.length === 0) {
+        printHTML(window.CONTENT.help);
+        return;
+      }
+
+      const target = args[0];
+      if (window.CONTENT[target]) {
+        printHTML(window.CONTENT[target]);
+      } else {
+        printLine(`no help available for '${target}'`);
+      }
+    },
+
+    async projects(args) {
+      const projects = await loadProjects();
+
+      if (args.length === 0) {
+        renderProjects(projects);
+        return;
+      }
+
+      const term = args[0].toLowerCase();
+
+      const filtered = projects.filter(
+        (p) =>
+          p.name.toLowerCase().includes(term) ||
+          p.domain.toLowerCase().includes(term) ||
+          p.stack.some((s) => s.toLowerCase().includes(term))
+      );
+
+      if (!filtered.length) {
+        printLine(`no projects found matching '${term}'`);
+        return;
+      }
+
+      renderProjects(filtered);
+    },
+  };
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const cmd = input.value.trim();
-    if (!cmd) return;
+    const raw = input.value.trim();
+    if (!raw) return;
 
-    printLine(`$ ${cmd}`);
-    history.push(cmd);
+    printLine(`$ ${raw}`);
+    history.push(raw);
     historyIndex = history.length;
 
-    if (cmd === "clear") {
-      clearScreen();
-    } else if (window.CONTENT[cmd]) {
-      printHTML(window.CONTENT[cmd]);
+    const parts = raw.split(/\s+/);
+    const command = parts[0];
+    const args = parts.slice(1);
+
+    if (COMMAND_HANDLERS[command]) {
+      COMMAND_HANDLERS[command](args);
+    } else if (window.CONTENT[command]) {
+      printHTML(window.CONTENT[command]);
     } else {
-      printLine(`command not found: ${cmd}`);
+      printLine(`command not found: ${command}`);
     }
 
     input.value = "";
@@ -74,5 +185,4 @@
   });
 
   firstScreen();
-
 })();
