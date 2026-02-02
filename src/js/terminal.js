@@ -7,7 +7,6 @@
 
   const history = [];
   let historyIndex = -1;
-
   let PROJECTS_CACHE = null;
 
   function scrollToBottom() {
@@ -41,8 +40,25 @@
   }
 
   function firstScreen() {
-    printHTML(window.CONTENT["about"]);
+    printHTML(window.CONTENT.about);
     hint();
+  }
+
+  function genericHelp(command) {
+    return `
+<div class="block">
+  <h2 class="term-title">${command}</h2>
+
+  <p>
+    Display the <span class="term-key">${command}</span> section.
+  </p>
+
+  <p>
+    <span class="term-key">usage:</span><br>
+    <span class="term-value">${command}</span>
+  </p>
+</div>
+`;
   }
 
   async function loadProjects() {
@@ -67,7 +83,7 @@
 
     const html = projects
       .map((p) => {
-        const websiteLink = p.website
+        const website = p.website
           ? `<br><a class="term-link" href="${p.website}" target="_blank">→ live website</a>`
           : "";
 
@@ -87,15 +103,13 @@
   <a class="term-link" href="${p.repo}" target="_blank">
     → source repository
   </a>
-  ${websiteLink}
+  ${website}
 </p>
 `;
       })
       .join("");
 
-    printHTML(
-      `<div class="block"><h2 class="term-title">Projects</h2>${html}</div>`
-    );
+    printHTML(`<div class="block"><h2 class="term-title">Projects</h2>${html}</div>`);
   }
 
   const COMMAND_HANDLERS = {
@@ -104,17 +118,27 @@
     },
 
     help(args) {
+      // plain `help`
       if (args.length === 0) {
         printHTML(window.CONTENT.help);
         return;
       }
 
       const target = args[0];
-      if (window.CONTENT[target]) {
-        printHTML(window.CONTENT[target]);
-      } else {
-        printLine(`no help available for '${target}'`);
+
+      // extended help (from help.js)
+      if (window.HELP_TEXT && window.HELP_TEXT[target]) {
+        printHTML(window.HELP_TEXT[target]);
+        return;
       }
+
+      // content-based generic help
+      if (window.CONTENT[target]) {
+        printHTML(genericHelp(target));
+        return;
+      }
+
+      printLine(`no help available for '${target}'`);
     },
 
     async projects(args) {
@@ -153,9 +177,7 @@
     history.push(raw);
     historyIndex = history.length;
 
-    const parts = raw.split(/\s+/);
-    const command = parts[0];
-    const args = parts.slice(1);
+    const [command, ...args] = raw.split(/\s+/);
 
     if (COMMAND_HANDLERS[command]) {
       COMMAND_HANDLERS[command](args);
