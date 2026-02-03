@@ -4,13 +4,14 @@ window.CONTENT = {
   <span class="term-title">available commands</span>
 
   <ul>
+    <li><span class="term-key">help</span>         <span class="term-muted">— this menu</span></li>
+    <li><span class="term-key">man</span>         <span class="term-muted">— manual command</span></li>
     <li><span class="term-key">about</span>        <span class="term-muted">— about me</span></li>
     <li><span class="term-key">projects</span>     <span class="term-muted">— things I build</span></li>
     <li><span class="term-key">philosophy</span>   <span class="term-muted">— how I think</span></li>
     <li><span class="term-key">uses</span>         <span class="term-muted">— tools & environment</span></li>
     <li><span class="term-key">skills</span>       <span class="term-muted">— skills I acquire</span></li>
     <li><span class="term-key">clear</span>        <span class="term-muted">— clear screen</span></li>
-    <li><span class="term-key">help</span>         <span class="term-muted">— this menu</span></li>
   </ul>
 </div>
   `,

@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "name": "CISSSCO",
+    "version": "1.0",
+    "description": "Terminal-style portfolio and documentation interface"
+  },
+
+  "commands": {
+    "help": {
+      "summary": "Display help information",
+      "usage": [
+        "help",
+        "help <command>",
+        "help <command> --examples",
+        "help --all",
+        "help --json"
+      ],
+      "description": "Show help and documentation for commands and topics.",
+      "options": {
+        "--all": "Show complete help for all commands and topics",
+        "--json": "Output help information in JSON format",
+        "--examples": "Show examples for a specific command"
+      },
+      "examples": [
+        "help",
+        "help projects",
+        "help projects --examples",
+        "help --all"
+      ]
+    },
+
+    "man": {
+      "summary": "Display full manual pages",
+      "usage": [
+        "man <command>"
+      ],
+      "description": "Display a detailed manual page for a command.",
+      "examples": [
+        "man projects",
+        "man skills"
+      ]
+    },
+
+    "projects": {
+      "summary": "List personal projects",
+      "usage": [
+        "projects",
+        "projects <keyword>"
+      ],
+      "description": "List projects loaded from a static JSON file with optional filtering.",
+      "filters": [
+        "name",
+        "domain",
+        "stack"
+      ],
+      "examples": [
+        "projects",
+        "projects cerrfix",
+        "projects linux",
+        "projects shell"
+      ]
+    },
+
+    "skills": {
+      "summary": "List technical skills",
+      "usage": [
+        "skills",
+        "skills <keyword>"
+      ],
+      "description": "Display skills with proficiency, usage areas, and context.",
+      "filters": [
+        "skill name",
+        "areas"
+      ],
+      "examples": [
+        "skills",
+        "skills python",
+        "skills linux"
+      ]
+    },
+
+    "clear": {
+      "summary": "Clear the terminal screen",
+      "usage": [
+        "clear"
+      ],
+      "description": "Clear all output from the terminal.",
+      "examples": [
+        "clear"
+      ]
+    }
+  },
+
+  "topics": {
+    "about": {
+      "summary": "About the author",
+      "usage": ["about"]
+    },
+    "philosophy": {
+      "summary": "Guiding principles and mindset",
+      "usage": ["philosophy"]
+    },
+    "uses": {
+      "summary": "Tools, environment, and workflow",
+      "usage": ["uses"]
+    }
+  }
+}

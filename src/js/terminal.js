@@ -10,6 +10,9 @@
 
   let PROJECTS_CACHE = null;
   let SKILLS_CACHE = null;
+  let MAN_CACHE = null;
+
+  /* ================= Core helpers ================= */
 
   function scrollToBottom() {
     requestAnimationFrame(() => {
@@ -42,47 +45,38 @@
   }
 
   function firstScreen() {
-    printHTML(window.CONTENT.about);
+    if (window.CONTENT && window.CONTENT.about) {
+      printHTML(window.CONTENT.about);
+    }
     hint();
   }
 
-  function genericHelp(command) {
-    return `
-<div class="block">
-  <h2 class="term-title">${command}</h2>
-  <p>
-    <span class="term-key">usage:</span><br>
-    <span class="term-value">${command}</span>
-  </p>
-</div>
-`;
-  }
+  /* ================= Data loaders ================= */
 
   async function loadProjects() {
     if (PROJECTS_CACHE) return PROJECTS_CACHE;
-    try {
-      const res = await fetch("src/data/projects.json");
-      const data = await res.json();
-      PROJECTS_CACHE = data.projects;
-      return PROJECTS_CACHE;
-    } catch {
-      printLine("failed to load projects data");
-      return [];
-    }
+    const res = await fetch("src/data/projects.json");
+    const data = await res.json();
+    PROJECTS_CACHE = data.projects;
+    return PROJECTS_CACHE;
   }
 
   async function loadSkills() {
     if (SKILLS_CACHE) return SKILLS_CACHE;
-    try {
-      const res = await fetch("src/data/skills.json");
-      const data = await res.json();
-      SKILLS_CACHE = data.skills;
-      return SKILLS_CACHE;
-    } catch {
-      printLine("failed to load skills data");
-      return [];
-    }
+    const res = await fetch("src/data/skills.json");
+    const data = await res.json();
+    SKILLS_CACHE = data.skills;
+    return SKILLS_CACHE;
   }
+
+  async function loadMan() {
+    if (MAN_CACHE) return MAN_CACHE;
+    const res = await fetch("src/data/man.json");
+    MAN_CACHE = await res.json();
+    return MAN_CACHE;
+  }
+
+  /* ================= Renderers ================= */
 
   function renderProjects(projects) {
     if (!projects.length) {
@@ -99,8 +93,10 @@
 <p>
   <span class="term-key">${p.name}</span><br>
   <span class="term-muted">${p.description}</span><br>
-  <span class="term-key">domain:</span> <span class="term-value">${p.domain}</span><br>
-  <span class="term-key">stack:</span> <span class="term-value">${p.stack.join(", ")}</span><br>
+  <span class="term-key">domain:</span>
+  <span class="term-value">${p.domain}</span><br>
+  <span class="term-key">stack:</span>
+  <span class="term-value">${p.stack.join(", ")}</span><br>
   <a class="term-link" href="${p.repo}" target="_blank">→ source repository</a>
   ${website}
 </p>`;
@@ -119,13 +115,10 @@
 <p>
   <span class="term-key">${s.name}</span>
   <span class="term-muted">(level ${s.level}/10)</span><br>
-
   <span class="term-key">areas:</span>
   <span class="term-value">${s.areas.join(", ")}</span><br>
-
   <span class="term-key">used in:</span>
   <span class="term-value">${s.used_in.join(", ")}</span><br>
-
   <span class="term-muted">${s.notes}</span>
 </p>
 `).join("");
@@ -133,35 +126,53 @@
     printHTML(`<div class="block"><h2 class="term-title">Skills</h2>${html}</div>`);
   }
 
+  function renderManEntry(name, entry) {
+    let html = `
+<h2 class="term-title">${name}</h2>
+<p>${entry.summary}</p>
+
+<h3 class="term-key">USAGE</h3>
+<pre>${entry.usage.join("\n")}</pre>
+
+<h3 class="term-key">DESCRIPTION</h3>
+<p>${entry.description}</p>
+`;
+
+    if (entry.options) {
+      html += `
+<h3 class="term-key">OPTIONS</h3>
+<ul>
+${Object.entries(entry.options)
+  .map(([k, v]) => `<li><span class="term-key">${k}</span> — ${v}</li>`)
+  .join("")}
+</ul>`;
+    }
+
+    if (entry.filters) {
+      html += `
+<h3 class="term-key">FILTERS</h3>
+<ul>${entry.filters.map(f => `<li>${f}</li>`).join("")}</ul>`;
+    }
+
+    if (entry.examples) {
+      html += `
+<h3 class="term-key">EXAMPLES</h3>
+<pre>${entry.examples.join("\n")}</pre>`;
+    }
+
+    printHTML(`<div class="block">${html}</div>`);
+  }
+
+  /* ================= Commands ================= */
+
   const COMMAND_HANDLERS = {
     clear() {
       clearScreen();
     },
 
-    help(args) {
-      if (args.length === 0) {
-        printHTML(window.CONTENT.help);
-        return;
-      }
-
-      const target = args[0];
-
-      if (window.HELP_TEXT && window.HELP_TEXT[target]) {
-        printHTML(window.HELP_TEXT[target]);
-        return;
-      }
-
-      if (window.CONTENT[target]) {
-        printHTML(genericHelp(target));
-        return;
-      }
-
-      printLine(`no help available for '${target}'`);
-    },
-
     async projects(args) {
       const projects = await loadProjects();
-      if (args.length === 0) return renderProjects(projects);
+      if (!args.length) return renderProjects(projects);
 
       const term = args[0].toLowerCase();
       renderProjects(projects.filter(p =>
@@ -173,18 +184,49 @@
 
     async skills(args) {
       const skills = await loadSkills();
-      if (args.length === 0) return renderSkills(skills);
+      if (!args.length) return renderSkills(skills);
 
       const term = args[0].toLowerCase();
       renderSkills(skills.filter(s =>
         s.name.toLowerCase().includes(term) ||
         s.areas.some(a => a.toLowerCase().includes(term))
       ));
+    },
+
+    async man(args) {
+      if (!args.length) {
+        printLine("usage: man <command>");
+        return;
+      }
+
+      const man = await loadMan();
+      const name = args[0];
+
+      if (man.commands && man.commands[name]) {
+        renderManEntry(name, man.commands[name]);
+        return;
+      }
+
+      if (man.topics && man.topics[name]) {
+        printHTML(`
+<div class="block">
+  <h2 class="term-title">${name}</h2>
+  <p>${man.topics[name].summary}</p>
+  <pre>${man.topics[name].usage.join("\n")}</pre>
+</div>
+`);
+        return;
+      }
+
+      printLine(`no manual entry for '${name}'`);
     }
   };
 
+  /* ================= Input handling ================= */
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
+
     const raw = input.value.trim();
     if (!raw) return;
 
@@ -192,14 +234,14 @@
     history.push(raw);
     historyIndex = history.length;
 
-    const [command, ...args] = raw.split(/\s+/);
+    const [cmd, ...args] = raw.split(/\s+/);
 
-    if (COMMAND_HANDLERS[command]) {
-      COMMAND_HANDLERS[command](args);
-    } else if (window.CONTENT[command]) {
-      printHTML(window.CONTENT[command]);
+    if (COMMAND_HANDLERS[cmd]) {
+      COMMAND_HANDLERS[cmd](args);
+    } else if (window.CONTENT && window.CONTENT[cmd]) {
+      printHTML(window.CONTENT[cmd]);
     } else {
-      printLine(`command not found: ${command}`);
+      printLine(`command not found: ${cmd}`);
     }
 
     input.value = "";
@@ -217,6 +259,8 @@
       input.value = history[historyIndex] || "";
     }
   });
+
+  /* ================= Boot ================= */
 
   firstScreen();
 })();

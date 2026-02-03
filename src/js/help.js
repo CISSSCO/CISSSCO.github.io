@@ -1,61 +1,43 @@
-window.HELP_TEXT = {
-  projects: `
-<div class="block">
-  <h2 class="term-title">projects</h2>
+window.HELP_DOCS = {
+  projects: {
+    summary: "List personal projects with optional filtering",
+    usage: [
+      "projects",
+      "projects <keyword>"
+    ],
+    description: `
+List all personal projects or filter them by name, domain, or stack.
+Projects are loaded from a static JSON file and rendered dynamically.
+    `,
+    examples: [
+      "projects",
+      "projects cerrfix",
+      "projects shell",
+      "projects linux"
+    ]
+  },
 
-  <p>List personal projects. Supports filtering.</p>
+  skills: {
+    summary: "List technical skills with proficiency and usage context",
+    usage: [
+      "skills",
+      "skills <keyword>"
+    ],
+    description: `
+Display technical skills with proficiency level, usage areas,
+and projects where they were applied.
+    `,
+    examples: [
+      "skills",
+      "skills python",
+      "skills linux"
+    ]
+  },
 
-  <p>
-    <span class="term-key">usage:</span><br>
-    <span class="term-value">projects</span><br>
-    <span class="term-value">projects &lt;keyword&gt;</span>
-  </p>
-
-  <p>
-    <span class="term-key">examples:</span><br>
-    <span class="term-value">projects cerrfix</span><br>
-    <span class="term-value">projects shell</span>
-  </p>
-</div>
-  `,
-
-  skills: `
-<div class="block">
-  <h2 class="term-title">skills</h2>
-
-  <p>
-    List technical skills with proficiency levels and usage areas.
-  </p>
-
-  <p>
-    <span class="term-key">usage:</span><br>
-    <span class="term-value">skills</span><br>
-    <span class="term-value">skills &lt;keyword&gt;</span>
-  </p>
-
-  <p>
-    <span class="term-key">filters:</span><br>
-    Filter by skill name or area.
-  </p>
-
-  <p>
-    <span class="term-key">examples:</span><br>
-    <span class="term-value">skills python</span><br>
-    <span class="term-value">skills linux</span>
-  </p>
-</div>
-  `,
-
-  clear: `
-<div class="block">
-  <h2 class="term-title">clear</h2>
-
-  <p>Clear the terminal screen.</p>
-
-  <p>
-    <span class="term-key">usage:</span><br>
-    <span class="term-value">clear</span>
-  </p>
-</div>
-  `
+  clear: {
+    summary: "Clear the terminal screen",
+    usage: ["clear"],
+    description: "Clear all previous output and reset the view.",
+    examples: ["clear"]
+  }
 };
