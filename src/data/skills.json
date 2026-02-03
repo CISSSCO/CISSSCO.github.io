@@ -1,0 +1,46 @@
+{
+  "skills": [
+    {
+      "name": "C",
+      "level": 9,
+      "areas": ["systems programming", "performance", "linux"],
+      "used_in": ["cerrfix", "HPC experiments"],
+      "notes": "Primary language for low-level and performance-critical work"
+    },
+    {
+      "name": "C++",
+      "level": 8,
+      "areas": ["systems programming", "HPC", "performance"],
+      "used_in": ["parallel programming"],
+      "notes": "Used with modern C++ features for performance-aware design"
+    },
+    {
+      "name": "Python",
+      "level": 8,
+      "areas": ["automation", "tooling", "analysis"],
+      "used_in": ["cerrfix", "CLI tools"],
+      "notes": "Scripting, tooling, and glue language"
+    },
+    {
+      "name": "Shell",
+      "level": 9,
+      "areas": ["automation", "linux", "tooling"],
+      "used_in": ["dotfiles", "gitpush"],
+      "notes": "Daily driver for automation and workflows"
+    },
+    {
+      "name": "Linux",
+      "level": 9,
+      "areas": ["systems", "customization", "performance"],
+      "used_in": ["daily workflow", "training"],
+      "notes": "Primary OS; deep familiarity with internals and tooling"
+    },
+    {
+      "name": "Vim",
+      "level": 9,
+      "areas": ["editing", "productivity"],
+      "used_in": ["MYVIMRC"],
+      "notes": "Heavily customized editing environment"
+    }
+  ]
+}

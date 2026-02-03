@@ -7,7 +7,9 @@
 
   const history = [];
   let historyIndex = -1;
+
   let PROJECTS_CACHE = null;
+  let SKILLS_CACHE = null;
 
   function scrollToBottom() {
     requestAnimationFrame(() => {
@@ -48,11 +50,6 @@
     return `
 <div class="block">
   <h2 class="term-title">${command}</h2>
-
-  <p>
-    Display the <span class="term-key">${command}</span> section.
-  </p>
-
   <p>
     <span class="term-key">usage:</span><br>
     <span class="term-value">${command}</span>
@@ -63,7 +60,6 @@
 
   async function loadProjects() {
     if (PROJECTS_CACHE) return PROJECTS_CACHE;
-
     try {
       const res = await fetch("src/data/projects.json");
       const data = await res.json();
@@ -75,41 +71,66 @@
     }
   }
 
+  async function loadSkills() {
+    if (SKILLS_CACHE) return SKILLS_CACHE;
+    try {
+      const res = await fetch("src/data/skills.json");
+      const data = await res.json();
+      SKILLS_CACHE = data.skills;
+      return SKILLS_CACHE;
+    } catch {
+      printLine("failed to load skills data");
+      return [];
+    }
+  }
+
   function renderProjects(projects) {
     if (!projects.length) {
       printLine("no projects found");
       return;
     }
 
-    const html = projects
-      .map((p) => {
-        const website = p.website
-          ? `<br><a class="term-link" href="${p.website}" target="_blank">→ live website</a>`
-          : "";
+    const html = projects.map(p => {
+      const website = p.website
+        ? `<br><a class="term-link" href="${p.website}" target="_blank">→ live website</a>`
+        : "";
 
-        const stack = Array.isArray(p.stack) ? p.stack.join(", ") : "";
-
-        return `
+      return `
 <p>
   <span class="term-key">${p.name}</span><br>
   <span class="term-muted">${p.description}</span><br>
-
-  <span class="term-key">domain:</span>
-  <span class="term-value">${p.domain}</span><br>
-
-  <span class="term-key">stack:</span>
-  <span class="term-value">${stack}</span><br>
-
-  <a class="term-link" href="${p.repo}" target="_blank">
-    → source repository
-  </a>
+  <span class="term-key">domain:</span> <span class="term-value">${p.domain}</span><br>
+  <span class="term-key">stack:</span> <span class="term-value">${p.stack.join(", ")}</span><br>
+  <a class="term-link" href="${p.repo}" target="_blank">→ source repository</a>
   ${website}
-</p>
-`;
-      })
-      .join("");
+</p>`;
+    }).join("");
 
     printHTML(`<div class="block"><h2 class="term-title">Projects</h2>${html}</div>`);
+  }
+
+  function renderSkills(skills) {
+    if (!skills.length) {
+      printLine("no skills found");
+      return;
+    }
+
+    const html = skills.map(s => `
+<p>
+  <span class="term-key">${s.name}</span>
+  <span class="term-muted">(level ${s.level}/10)</span><br>
+
+  <span class="term-key">areas:</span>
+  <span class="term-value">${s.areas.join(", ")}</span><br>
+
+  <span class="term-key">used in:</span>
+  <span class="term-value">${s.used_in.join(", ")}</span><br>
+
+  <span class="term-muted">${s.notes}</span>
+</p>
+`).join("");
+
+    printHTML(`<div class="block"><h2 class="term-title">Skills</h2>${html}</div>`);
   }
 
   const COMMAND_HANDLERS = {
@@ -118,7 +139,6 @@
     },
 
     help(args) {
-      // plain `help`
       if (args.length === 0) {
         printHTML(window.CONTENT.help);
         return;
@@ -126,13 +146,11 @@
 
       const target = args[0];
 
-      // extended help (from help.js)
       if (window.HELP_TEXT && window.HELP_TEXT[target]) {
         printHTML(window.HELP_TEXT[target]);
         return;
       }
 
-      // content-based generic help
       if (window.CONTENT[target]) {
         printHTML(genericHelp(target));
         return;
@@ -143,33 +161,30 @@
 
     async projects(args) {
       const projects = await loadProjects();
-
-      if (args.length === 0) {
-        renderProjects(projects);
-        return;
-      }
+      if (args.length === 0) return renderProjects(projects);
 
       const term = args[0].toLowerCase();
-
-      const filtered = projects.filter(
-        (p) =>
-          p.name.toLowerCase().includes(term) ||
-          p.domain.toLowerCase().includes(term) ||
-          p.stack.some((s) => s.toLowerCase().includes(term))
-      );
-
-      if (!filtered.length) {
-        printLine(`no projects found matching '${term}'`);
-        return;
-      }
-
-      renderProjects(filtered);
+      renderProjects(projects.filter(p =>
+        p.name.toLowerCase().includes(term) ||
+        p.domain.toLowerCase().includes(term) ||
+        p.stack.some(s => s.toLowerCase().includes(term))
+      ));
     },
+
+    async skills(args) {
+      const skills = await loadSkills();
+      if (args.length === 0) return renderSkills(skills);
+
+      const term = args[0].toLowerCase();
+      renderSkills(skills.filter(s =>
+        s.name.toLowerCase().includes(term) ||
+        s.areas.some(a => a.toLowerCase().includes(term))
+      ));
+    }
   };
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-
     const raw = input.value.trim();
     if (!raw) return;
 
@@ -192,14 +207,11 @@
 
   input.addEventListener("keydown", (e) => {
     if (e.key === "ArrowUp") {
-      if (!history.length) return;
       e.preventDefault();
       historyIndex = Math.max(0, historyIndex - 1);
-      input.value = history[historyIndex];
+      input.value = history[historyIndex] || "";
     }
-
     if (e.key === "ArrowDown") {
-      if (!history.length) return;
       e.preventDefault();
       historyIndex = Math.min(history.length, historyIndex + 1);
       input.value = history[historyIndex] || "";

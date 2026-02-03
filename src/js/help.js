@@ -3,9 +3,7 @@ window.HELP_TEXT = {
 <div class="block">
   <h2 class="term-title">projects</h2>
 
-  <p>
-    List personal projects. Supports simple filtering.
-  </p>
+  <p>List personal projects. Supports filtering.</p>
 
   <p>
     <span class="term-key">usage:</span><br>
@@ -14,15 +12,36 @@ window.HELP_TEXT = {
   </p>
 
   <p>
+    <span class="term-key">examples:</span><br>
+    <span class="term-value">projects cerrfix</span><br>
+    <span class="term-value">projects shell</span>
+  </p>
+</div>
+  `,
+
+  skills: `
+<div class="block">
+  <h2 class="term-title">skills</h2>
+
+  <p>
+    List technical skills with proficiency levels and usage areas.
+  </p>
+
+  <p>
+    <span class="term-key">usage:</span><br>
+    <span class="term-value">skills</span><br>
+    <span class="term-value">skills &lt;keyword&gt;</span>
+  </p>
+
+  <p>
     <span class="term-key">filters:</span><br>
-    Filter by project name, domain, or stack.
+    Filter by skill name or area.
   </p>
 
   <p>
     <span class="term-key">examples:</span><br>
-    <span class="term-value">projects cerrfix</span><br>
-    <span class="term-value">projects shell</span><br>
-    <span class="term-value">projects linux</span>
+    <span class="term-value">skills python</span><br>
+    <span class="term-value">skills linux</span>
   </p>
 </div>
   `,
@@ -31,14 +50,12 @@ window.HELP_TEXT = {
 <div class="block">
   <h2 class="term-title">clear</h2>
 
-  <p>
-    Clear the terminal screen.
-  </p>
+  <p>Clear the terminal screen.</p>
 
   <p>
     <span class="term-key">usage:</span><br>
     <span class="term-value">clear</span>
   </p>
 </div>
-  `,
+  `
 };
