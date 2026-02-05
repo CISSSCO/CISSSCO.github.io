@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cisco Ramon (Abhishek Raj)</title>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Cisco Ramon (Abhishek Raj)</title>
 
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/theme.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-</head>
-<body>
-  <main class="terminal-layout">
+        <link rel="stylesheet" href="src/css/base.css" />
+        <link rel="stylesheet" href="src/css/theme.css" />
+        <link rel="stylesheet" href="src/css/layout.css" />
+    </head>
+    <body>
+        <main class="terminal-layout">
 
-    <section id="content-area" class="content-area">
-      <!-- rendered content appears here -->
-    </section>
+            <section id="content-area" class="content-area">
+                <!-- rendered content appears here -->
+            </section>
 
-    <form id="terminal-form" class="terminal-bar" autocomplete="off">
-      <label class="prompt">$</label>
-      <input
-        id="terminal-input"
-        type="text"
-        spellcheck="false"
-        autofocus
-        aria-label="terminal input"
-      />
-    </form>
+            <form id="terminal-form" class="terminal-bar" autocomplete="off">
+                <label class="prompt">$</label>
+                <input
+                id="terminal-input"
+                type="text"
+                spellcheck="false"
+                autofocus
+                aria-label="terminal input"
+                />
+            </form>
 
-  </main>
+        </main>
 
-  <script src="js/content.js"></script>
-  <script src="js/terminal.js"></script>
-</body>
+        <script src="src/js/content.js"></script>
+        <script src="src/js/commands.js"></script>
+        <script src="src/js/help.js"></script>
+        <script src="src/js/terminal.js"></script>
+    </body>
 
 </html>
 

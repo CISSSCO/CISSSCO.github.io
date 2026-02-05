@@ -1,0 +1,47 @@
+{
+  "projects": [
+    {
+      "name": "cerrfix",
+      "domain": "linux tooling",
+      "stack": ["python", "shell"],
+      "description": "Rule-based error analysis and fix suggestion tool",
+      "repo": "https://github.com/CISSSCO/cerrfix"
+    },
+    {
+      "name": "gitpush",
+      "domain": "developer tooling",
+      "stack": ["shell", "git"],
+      "description": "Minimal helper for repetitive git workflows",
+      "repo": "https://github.com/CISSSCO/gitpush"
+    },
+    {
+      "name": "dotfiles",
+      "domain": "environment",
+      "stack": ["shell"],
+      "description": "Reproducible Linux shell and development configuration",
+      "repo": "https://github.com/CISSSCO/dotfiles"
+    },
+    {
+      "name": "MYVIMRC",
+      "domain": "vim customization",
+      "stack": ["vimscript", "shell"],
+      "description": "Custom configuration for vim",
+      "repo": "https://github.com/CISSSCO/myvimrc_config"
+    },
+    {
+      "name": "CISSSCO",
+      "domain": "portfolio",
+      "stack": ["html", "css", "javascript"],
+      "description": "Terminal Style Portfolio Website",
+      "repo": "https://github.com/CISSSCO/CISSSCO.github.io",
+      "website": "https://cisssco.github.io"
+    },
+    {
+      "name": "PopularWebsiteThemes",
+      "domain": "web dev",
+      "stack": ["html", "css"],
+      "description": "Custom themes for popular websites like 10fastfingers",
+      "repo": "https://github.com/CISSSCO/PopularWebsiteThemes"
+    }
+  ]
+}
