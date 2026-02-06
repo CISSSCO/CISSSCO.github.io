@@ -34,6 +34,7 @@ window.CONTENT = {
 
     <span class="term-key">GitHub:</span>      <a class="term-link" href="https://github.com/CISSSCO" target="_blank">github.com/CISSSCO</a>
     <span class="term-key">LinkedIn:</span>    <a class="term-link" href="https://www.linkedin.com/in/abhi581b" target="_blank">linkedin.com/in/abhi581b</a>
+    <span class="term-key">Website:</span>     <a class="term-link" href="https://ciscoramon.pages.dev/" target="_blank">ciscoramon.pages.dev</a>
 
     <span class="term-muted">
     I build simple tools that solve real problems
