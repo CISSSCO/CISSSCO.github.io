@@ -15,6 +15,14 @@
       "repo": "https://github.com/CISSSCO/gitpush"
     },
     {
+      "name": "Portfolio",
+      "domain": "portfolio",
+      "stack": ["react", "threejs", "typescript", "web dev"],
+      "description": "Personal Website",
+      "repo": "https://github.com/CISSSCO/CiscoRamon",
+      "website": "https://ciscoramon.pages.dev"
+    },
+    {
       "name": "dotfiles",
       "domain": "environment",
       "stack": ["shell"],
