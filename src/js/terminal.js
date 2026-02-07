@@ -94,7 +94,7 @@ function renderProjects(projects) {
   }
 
   const html = projects.map(p => `
-<div class="block">
+<div class="item-card">
   <div class="item-title">${p.name}</div>
   <div class="item-meta">${p.domain}</div>
 
@@ -128,7 +128,7 @@ function renderSkills(skills) {
   }
 
   const html = skills.map(s => `
-<div class="block">
+<div class="item-card">
   <div class="item-title">${s.name}</div>
   <div class="item-meta">Level ${s.level}/10</div>
 
@@ -162,32 +162,34 @@ function renderExperience(experiences) {
   }
 
   const html = experiences.map(e => `
-<div class="experience-card">
-  <div class="experience-header">
-    <div class="experience-title">${e.title}</div>
-    <div class="experience-org">${e.organization}</div>
-    <div class="experience-meta">${e.period} · ${e.type}</div>
-  </div>
+<div class="experience-item">
+  <div class="experience-card">
+    <div class="experience-header">
+      <div class="experience-title">${e.title}</div>
+      <div class="experience-org">${e.organization}</div>
+      <div class="experience-meta">${e.period} · ${e.type}</div>
+    </div>
 
-  <p class="experience-summary">${e.summary}</p>
+    <p class="experience-summary">${e.summary}</p>
 
-  <div class="experience-section">
-    <span class="experience-label">Responsibilities</span>
-    <ul class="experience-list">
-      ${e.responsibilities.map(r => `<li>${r}</li>`).join("")}
-    </ul>
-  </div>
+    <div class="experience-section">
+      <span class="experience-label">Responsibilities</span>
+      <ul class="experience-list">
+        ${e.responsibilities.map(r => `<li>${r}</li>`).join("")}
+      </ul>
+    </div>
 
-  <div class="experience-section">
-    <span class="experience-label">Technologies</span>
-    <div class="experience-tech">
-      ${e.technologies.map(t => `<span class="tech-chip">${t}</span>`).join("")}
+    <div class="experience-section">
+      <span class="experience-label">Technologies</span>
+      <div class="experience-tech">
+        ${e.technologies.map(t => `<span class="tech-chip">${t}</span>`).join("")}
+      </div>
     </div>
   </div>
 </div>
 `).join("");
 
-printHTML(`
+  printHTML(`
 <div class="section-card">
   <div class="section-title">Experience</div>
   ${html}

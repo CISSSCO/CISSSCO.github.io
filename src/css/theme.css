@@ -171,6 +171,17 @@ body {
   margin-bottom: 0.4rem;
 }
 
+/* ================= Experience as Item Card ================= */
+
+.experience-item {
+  margin-bottom: 3rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid rgba(88, 166, 255, 0.45);
+}
+
+.experience-item:last-child {
+  margin-bottom: 0;
+}
 /* ================= PRE / ASCII ================= */
 
 pre {
@@ -189,4 +200,17 @@ pre {
   pre {
     font-size: 0.7rem;
   }
+}
+
+/* ================= Item Card (inside sections) ================= */
+
+.item-card {
+  margin-bottom: 2rem;
+  padding-left: 1.25rem;
+  border-left: 2px solid rgba(88, 166, 255, 0.35);
+}
+
+/* Slight spacing between item blocks */
+.item-card:last-child {
+  margin-bottom: 0;
 }
