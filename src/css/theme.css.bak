@@ -1,0 +1,133 @@
+:root {
+  --bg: #0d1117;
+  --fg: #c9d1d9;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --accent-soft: rgba(88, 166, 255, 0.15);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+/* Terminal semantics */
+
+.term-title {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.term-muted {
+  color: var(--muted);
+}
+
+.term-key {
+  color: #7ee787;
+}
+
+.term-value {
+  color: var(--fg);
+}
+
+.term-link {
+  color: #79c0ff;
+  text-decoration: underline;
+}
+
+/* Blocks */
+
+.block {
+  margin-bottom: 2rem;
+}
+
+/* PRE / ASCII — critical fix */
+
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  pre {
+    font-size: 0.7rem;
+  }
+}
+
+/* ================= Experience Section ================= */
+
+.experience-card {
+  margin-top: 2.5rem;
+  padding: 1.75rem;
+  border-left: 3px solid var(--accent);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+}
+
+.experience-header {
+  margin-bottom: 1rem;
+}
+
+.experience-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.experience-org {
+  font-size: 1rem;
+  color: var(--fg);
+  margin-top: 0.2rem;
+}
+
+.experience-meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+.experience-summary {
+  margin: 1rem 0 1.25rem;
+  color: var(--fg);
+}
+
+.experience-section {
+  margin-bottom: 1.25rem;
+}
+
+.experience-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--accent);
+}
+
+.experience-list {
+  padding-left: 1.2rem;
+}
+
+.experience-list li {
+  margin-bottom: 0.4rem;
+}
+
+.experience-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tech-chip {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  background: rgba(88, 166, 255, 0.15);
+  color: var(--fg);
+  border: 1px solid rgba(88, 166, 255, 0.3);
+}
