@@ -1,0 +1,56 @@
+{
+  "experience": [
+    {
+      "title": "HPC Application Engineer",
+      "organization": "Indian Institute of Technology (Banaras Hindu University), Varanasi",
+      "period": "Feb 2025 — Present",
+      "summary": "Working as an HPC Application Engineer at IIT (BHU), deputed by C-DAC, supporting large-scale scientific and computational research workloads.",
+      "responsibilities": [
+        "Currently deputed to IIT (BHU), managing HPC application workflows on the PARAM Shivay supercomputing cluster.",
+        "Responsible for system administration tasks including user management, job monitoring, workload scheduling, and identifying unauthorized or inefficient applications.",
+        "Provide customized software environments for researchers running simulations, DFT calculations, and AI/ML/DL workloads.",
+        "Collaborate closely with researchers to optimize performance, troubleshoot execution issues, and ensure reliable operation of scientific workloads.",
+        "Actively contribute to open-source software and customize Linux environments for improved performance and usability."
+      ],
+      "technologies": [
+        "C",
+        "C++",
+        "MPI",
+        "OpenMP",
+        "Linux",
+        "Slurm",
+        "HPC Systems"
+      ],
+      "location": "Varanasi, India",
+      "type": "Full-time"
+    },
+    {
+      "title": "Project Engineer",
+      "organization": "Centre for Development of Advanced Computing (C-DAC), India",
+      "period": "Apr 2024 — Present",
+      "summary": "Working as a Project Engineer at C-DAC, contributing to national-level HPC research, development, and training initiatives under the National Supercomputing Mission (NSM).",
+      "responsibilities": [
+        "Contributing to the National Supercomputing Mission (NSM) through research, development, and capacity-building in High-Performance Computing and Supercomputing.",
+        "Design, manage, and optimize HPC environments using parallel programming models such as MPI, OpenMP, Pthreads, and GPU programming frameworks including CUDA and OpenACC.",
+        "Work on R&D of HPC software tools with a focus on performance optimization, scalability, and efficient resource utilization.",
+        "Develop technical training content and educational materials to support HPC adoption across academic and research institutions.",
+        "Conduct workshops, training programs, and mentoring sessions for students, researchers, and professionals in HPC and parallel programming.",
+        "Support national initiatives aimed at strengthening India’s supercomputing ecosystem and next-generation computing capabilities."
+      ],
+      "technologies": [
+        "Linux",
+        "C",
+        "C++",
+        "MPI",
+        "OpenMP",
+        "Pthreads",
+        "CUDA",
+        "OpenACC",
+        "Python",
+        "HPC Toolchains"
+      ],
+      "location": "India",
+      "type": "Full-time"
+    }
+  ]
+}

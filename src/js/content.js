@@ -10,6 +10,7 @@ window.CONTENT = {
     <li><span class="term-key">projects</span>     <span class="term-muted">— things I build</span></li>
     <li><span class="term-key">philosophy</span>   <span class="term-muted">— how I think</span></li>
     <li><span class="term-key">uses</span>         <span class="term-muted">— tools & environment</span></li>
+    <li><span class="term-key">experience</span>       <span class="term-muted">— work experience</span></li>
     <li><span class="term-key">skills</span>       <span class="term-muted">— skills I acquire</span></li>
     <li><span class="term-key">clear</span>        <span class="term-muted">— clear screen</span></li>
   </ul>

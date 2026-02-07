@@ -11,7 +11,7 @@ body {
   color: var(--fg);
 }
 
-/* Terminal semantics */
+/* ================= Terminal semantics ================= */
 
 .term-title {
   color: var(--accent);
@@ -35,13 +35,143 @@ body {
   text-decoration: underline;
 }
 
-/* Blocks */
+/* ================= Section Card ================= */
+/* This separates Skills / Projects / Experience / etc */
 
-.block {
-  margin-bottom: 2rem;
+.section-card {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  border-left: 3px solid var(--accent);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
 }
 
-/* PRE / ASCII — critical fix */
+/* Section heading (Skills / Projects / Experience) */
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 1.75rem;
+}
+
+/* ================= Document-style content ================= */
+
+.block {
+  margin-bottom: 3rem;
+}
+
+/* Item heading (project / skill / role title) */
+.item-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+
+/* Meta line below title */
+.item-meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+
+/* Paragraph spacing */
+.block p {
+  margin-bottom: 1rem;
+}
+
+/* Subsection labels */
+.section-label {
+  font-weight: 600;
+  color: var(--accent);
+  margin: 1.4rem 0 0.6rem;
+}
+
+/* Lists */
+.block ul {
+  padding-left: 1.2rem;
+}
+
+.block li {
+  margin-bottom: 0.4rem;
+}
+
+/* ================= Tech chips (ONLY boxed elements) ================= */
+
+.tech-row,
+.experience-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tech-chip {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  background: rgba(88, 166, 255, 0.15);
+  color: var(--fg);
+  border: 1px solid rgba(88, 166, 255, 0.3);
+}
+
+/* =========================================================
+   EXPERIENCE (SPECIAL — DO NOT TOUCH PROJECTS/SKILLS)
+   ========================================================= */
+
+.experience-card {
+  margin-top: 2.5rem;
+}
+
+/* Header */
+.experience-header {
+  margin-bottom: 1.2rem;
+}
+
+.experience-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.experience-org {
+  font-size: 1rem;
+  color: var(--fg);
+  margin-top: 0.2rem;
+}
+
+.experience-meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+/* Summary paragraph */
+.experience-summary {
+  margin: 1rem 0 1.25rem;
+  color: var(--fg);
+}
+
+/* Experience sections */
+.experience-section {
+  margin-bottom: 1.4rem;
+}
+
+.experience-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.experience-list {
+  padding-left: 1.2rem;
+}
+
+.experience-list li {
+  margin-bottom: 0.4rem;
+}
+
+/* ================= PRE / ASCII ================= */
 
 pre {
   max-width: 100%;
