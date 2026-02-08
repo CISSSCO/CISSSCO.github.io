@@ -242,6 +242,37 @@ ${Object.entries(entry.options)
       clearScreen();
     },
 
+    exit() {
+      // Disable terminal input immediately
+      input.disabled = true;
+
+      // Clear terminal content
+      content.innerHTML = "";
+
+      // Create exit screen
+      const screen = document.createElement("div");
+      screen.className = "exit-screen";
+
+      screen.innerHTML = `
+        <div class="exit-box">
+          <div class="exit-title">Thank you for visiting</div>
+          <div class="exit-message">Have a great day 😊</div>
+          <div class="exit-sub">session closed</div>
+        </div>
+      `;
+
+      document.body.appendChild(screen);
+
+      // Best-effort close (will work only if allowed)
+      setTimeout(() => {
+        window.close();
+      }, 1200);
+    },
+
+    quit() {
+      this.exit();
+    },
+
     async projects(args) {
       const projects = await loadProjects();
       if (!args.length) return renderProjects(projects);
@@ -311,7 +342,7 @@ ${Object.entries(entry.options)
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const raw = input.value.trim();
+    const raw = input.value.trim().toLowerCase();
     if (!raw) return;
 
     printLine(`$ ${raw}`);
