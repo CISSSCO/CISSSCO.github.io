@@ -311,7 +311,7 @@ ${Object.entries(entry.options)
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const raw = input.value.trim();
+    const raw = input.value.trim().toLowerCase();
     if (!raw) return;
 
     printLine(`$ ${raw}`);
