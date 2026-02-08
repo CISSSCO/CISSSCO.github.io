@@ -214,3 +214,42 @@ pre {
 .item-card:last-child {
   margin-bottom: 0;
 }
+
+
+/* ================= Exit Screen ================= */
+
+.exit-screen {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.exit-box {
+  text-align: center;
+  padding: 2.5rem 3rem;
+  border-left: 3px solid var(--accent);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+}
+
+.exit-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.exit-message {
+  font-size: 1rem;
+  color: var(--fg);
+  margin-bottom: 0.5rem;
+}
+
+.exit-sub {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
