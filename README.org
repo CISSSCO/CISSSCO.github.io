@@ -110,16 +110,39 @@ This includes:
 
 The intent is to provide context about my daily working environment.
 
+** skills
+
+Displays technical skills, proficiency levels with ASCII progress bars,
+and primary usage areas. Supports filtering by keyword (e.g. =skills c++=).
+
+** experience
+
+Displays chronological work experience and research engineering roles at
+IIT (BHU) and C-DAC under the National Supercomputing Mission (NSM).
+
+** man
+
+Displays detailed manual documentation for commands and topics (e.g. =man projects=).
+
 ** clear
 
-Clears all rendered output from the page.
+Clears all rendered output from the terminal screen or press =Ctrl+L=.
 
-After clearing, a short hint is displayed prompting the user to type
-=help= to get started again.
+** Shell Utilities
 
-This mirrors the behavior of clearing a terminal screen.
+The terminal emulator also supports common Unix shell tools:
+- =ls [-l]=: List simulated filesystem entries
+- =cat <file>=: Display contents of virtual files
+- =tree=: Display visual ASCII directory tree
+- =whoami=: Print user identity
+- =uname -a=: Display operating system signature
+- =pwd=: Print current working directory
+- =date=: Show system date and time
+- =theme [name]=: Switch color palette (=default=, =matrix=, =dracula=, =nord=, =gruvbox=, =amber=)
+- =crt=: Toggle retro CRT cathode scanline effect
+- =history=: View session command history
+- =exit=: Terminate terminal session
 
-* Command Architecture
 
 Commands are implemented as string keys mapped to content blocks.
 

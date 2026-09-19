@@ -3,37 +3,64 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Cisco Ramon (Abhishek Raj)</title>
+        <title>cisco@cisssco: ~</title>
 
         <link rel="stylesheet" href="src/css/base.css" />
         <link rel="stylesheet" href="src/css/theme.css" />
         <link rel="stylesheet" href="src/css/layout.css" />
     </head>
     <body>
-        <main class="terminal-layout">
+        <div id="terminal-app" class="terminal-app">
+            <!-- Top Status / Window Bar -->
+            <header class="terminal-header" id="terminal-header">
+                <div class="header-left">
+                    <span class="window-dot dot-close" id="btn-close" title="Close session"></span>
+                    <span class="window-dot dot-min" id="btn-min" title="Clear terminal"></span>
+                    <span class="window-dot dot-max" id="btn-max" title="Toggle CRT scanlines"></span>
+                    <span class="tag-badge active">1:main*</span>
+                    <span class="tag-badge">2:hpc</span>
+                    <span class="tag-badge">3:dev</span>
+                </div>
+                <div class="header-center">
+                    <span class="term-title-text" id="term-title-text">cisco@cisssco: ~ (zsh)</span>
+                </div>
+                <div class="header-right">
+                    <span id="term-theme-badge" class="header-item">theme: default</span>
+                    <span id="term-clock" class="header-item">--:--:--</span>
+                </div>
+            </header>
 
-            <section id="content-area" class="content-area">
-                <!-- rendered content appears here -->
-            </section>
+            <!-- Terminal Screen / Scroll Buffer -->
+            <div id="terminal-screen" class="terminal-screen">
+                <div id="content-area" class="terminal-output">
+                    <!-- Dynamic terminal outputs and command history appear here -->
+                </div>
 
-            <form id="terminal-form" class="terminal-bar" autocomplete="off">
-                <label class="prompt">$</label>
-                <input
-                id="terminal-input"
-                type="text"
-                spellcheck="false"
-                autofocus
-                aria-label="terminal input"
-                />
-            </form>
-
-        </main>
+                <!-- Active Inline Prompt Line -->
+                <form id="terminal-form" class="terminal-prompt-line" autocomplete="off">
+                    <label class="prompt-label" for="terminal-input" id="prompt-label">
+                        <span class="prompt-user">cisco</span><span class="prompt-at">@</span><span class="prompt-host">cisssco</span>:<span class="prompt-path" id="prompt-path">~</span><span class="prompt-char">$</span>
+                    </label>
+                    <div class="prompt-input-container">
+                        <input
+                            id="terminal-input"
+                            type="text"
+                            spellcheck="false"
+                            autofocus
+                            aria-label="terminal input"
+                            autocomplete="off"
+                            autocorrect="off"
+                            autocapitalize="off"
+                        />
+                    </div>
+                </form>
+            </div>
+        </div>
 
         <script src="src/js/content.js"></script>
+        <script src="src/js/vfs.js"></script>
         <script src="src/js/commands.js"></script>
         <script src="src/js/help.js"></script>
         <script src="src/js/terminal.js"></script>
     </body>
-
 </html>
-

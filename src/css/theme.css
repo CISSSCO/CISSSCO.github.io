@@ -1,245 +1,406 @@
-:root {
+/* ================= Themes & Color Schemes ================= */
+
+:root,
+[data-theme="default"] {
   --bg: #0d1117;
+  --bg-dark: #070a0e;
+  --bg-bar: #161b22;
   --fg: #c9d1d9;
   --muted: #8b949e;
   --accent: #58a6ff;
   --accent-soft: rgba(88, 166, 255, 0.15);
+  --border: #30363d;
+  --green: #7ee787;
+  --cyan: #79c0ff;
+  --yellow: #e3b341;
+  --red: #ff7b72;
+  --magenta: #d2a8ff;
+  --blue: #58a6ff;
+  --white: #f0f6fc;
+  --selection-bg: rgba(88, 166, 255, 0.35);
+  --selection-fg: #ffffff;
 }
 
-body {
-  background-color: var(--bg);
-  color: var(--fg);
+[data-theme="matrix"] {
+  --bg: #080d08;
+  --bg-dark: #040704;
+  --bg-bar: #0f1a0f;
+  --fg: #00ff66;
+  --muted: #008833;
+  --accent: #00ff88;
+  --accent-soft: rgba(0, 255, 136, 0.15);
+  --border: #00441b;
+  --green: #00ff66;
+  --cyan: #55ffaa;
+  --yellow: #bbff00;
+  --red: #ff4444;
+  --magenta: #33ffcc;
+  --blue: #00dd77;
+  --white: #e0ffe8;
+  --selection-bg: rgba(0, 255, 102, 0.35);
+  --selection-fg: #000000;
 }
 
-/* ================= Terminal semantics ================= */
+[data-theme="dracula"] {
+  --bg: #282a36;
+  --bg-dark: #1e1f29;
+  --bg-bar: #21222c;
+  --fg: #f8f8f2;
+  --muted: #6272a4;
+  --accent: #bd93f9;
+  --accent-soft: rgba(189, 147, 249, 0.15);
+  --border: #44475a;
+  --green: #50fa7b;
+  --cyan: #8be9fd;
+  --yellow: #f1fa8c;
+  --red: #ff5555;
+  --magenta: #ff79c6;
+  --blue: #8be9fd;
+  --white: #ffffff;
+  --selection-bg: rgba(189, 147, 249, 0.35);
+  --selection-fg: #ffffff;
+}
+
+[data-theme="gruvbox"] {
+  --bg: #282828;
+  --bg-dark: #1d2021;
+  --bg-bar: #32302f;
+  --fg: #ebdbb2;
+  --muted: #928374;
+  --accent: #fe8019;
+  --accent-soft: rgba(254, 128, 25, 0.15);
+  --border: #504945;
+  --green: #b8bb26;
+  --cyan: #8ec07c;
+  --yellow: #fabd2f;
+  --red: #fb4934;
+  --magenta: #d3869b;
+  --blue: #83a598;
+  --white: #fbf1c7;
+  --selection-bg: rgba(254, 128, 25, 0.35);
+  --selection-fg: #ffffff;
+}
+
+[data-theme="nord"] {
+  --bg: #2e3440;
+  --bg-dark: #242933;
+  --bg-bar: #3b4252;
+  --fg: #d8dee9;
+  --muted: #7b88a1;
+  --accent: #88c0d0;
+  --accent-soft: rgba(136, 192, 208, 0.15);
+  --border: #434c5e;
+  --green: #a3be8c;
+  --cyan: #8fbcbb;
+  --yellow: #ebcb8b;
+  --red: #bf616a;
+  --magenta: #b48ead;
+  --blue: #81a1c1;
+  --white: #eceff4;
+  --selection-bg: rgba(136, 192, 208, 0.35);
+  --selection-fg: #ffffff;
+}
+
+[data-theme="amber"] {
+  --bg: #140f05;
+  --bg-dark: #080602;
+  --bg-bar: #1e160a;
+  --fg: #ffb000;
+  --muted: #9e6d00;
+  --accent: #ffcc00;
+  --accent-soft: rgba(255, 204, 0, 0.15);
+  --border: #422d05;
+  --green: #ffd040;
+  --cyan: #ffe066;
+  --yellow: #ffb000;
+  --red: #ff5533;
+  --magenta: #ffa033;
+  --blue: #e69900;
+  --white: #fff3cc;
+  --selection-bg: rgba(255, 176, 0, 0.35);
+  --selection-fg: #000000;
+}
+
+/* ================= Terminal ANSI & Semantic Colors ================= */
 
 .term-title {
   color: var(--accent);
   font-weight: 600;
 }
 
-.term-muted {
+.term-muted,
+.term-dim {
   color: var(--muted);
 }
 
 .term-key {
-  color: #7ee787;
+  color: var(--green);
 }
 
 .term-value {
   color: var(--fg);
 }
 
+.term-green {
+  color: var(--green);
+}
+
+.term-cyan {
+  color: var(--cyan);
+}
+
+.term-yellow {
+  color: var(--yellow);
+}
+
+.term-red {
+  color: var(--red);
+}
+
+.term-magenta {
+  color: var(--magenta);
+}
+
+.term-blue {
+  color: var(--blue);
+}
+
+.term-white {
+  color: var(--white);
+}
+
+.term-bold {
+  font-weight: 700;
+}
+
 .term-link {
-  color: #79c0ff;
+  color: var(--cyan);
   text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
-/* ================= Section Card ================= */
-/* This separates Skills / Projects / Experience / etc */
-
-.section-card {
-  margin-top: 2.5rem;
-  padding: 2rem;
-  border-left: 3px solid var(--accent);
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 6px;
-}
-
-/* Section heading (Skills / Projects / Experience) */
-.section-title {
-  font-size: 1.6rem;
-  font-weight: 600;
+.term-link:hover {
   color: var(--accent);
-  margin-bottom: 1.75rem;
 }
 
-/* ================= Document-style content ================= */
+/* ================= Terminal Prompt Components ================= */
 
-.block {
-  margin-bottom: 3rem;
-}
-
-/* Item heading (project / skill / role title) */
-.item-title {
-  font-size: 1.3rem;
+.prompt-user {
+  color: var(--green);
   font-weight: 600;
-  color: var(--accent);
-  margin-bottom: 0.4rem;
 }
 
-/* Meta line below title */
-.item-meta {
-  font-size: 0.9rem;
+.prompt-at {
   color: var(--muted);
-  margin-bottom: 1.2rem;
 }
 
-/* Paragraph spacing */
-.block p {
-  margin-bottom: 1rem;
-}
-
-/* Subsection labels */
-.section-label {
+.prompt-host {
+  color: var(--cyan);
   font-weight: 600;
-  color: var(--accent);
-  margin: 1.4rem 0 0.6rem;
 }
 
-/* Lists */
-.block ul {
-  padding-left: 1.2rem;
+.prompt-path {
+  color: var(--yellow);
 }
 
-.block li {
-  margin-bottom: 0.4rem;
+.prompt-char {
+  color: var(--fg);
+  font-weight: 600;
 }
 
-/* ================= Tech chips (ONLY boxed elements) ================= */
+.cmd-text {
+  color: var(--white);
+  font-weight: 500;
+}
 
-.tech-row,
-.experience-tech {
+/* ================= Terminal Blocks & Tree Layout ================= */
+
+.terminal-section {
+  margin-bottom: 1.5rem;
+}
+
+.terminal-cmd-entry {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   gap: 0.4rem;
-}
-
-.tech-chip {
-  font-size: 0.75rem;
-  padding: 0.25rem 0.55rem;
-  border-radius: 4px;
-  background: rgba(88, 166, 255, 0.15);
-  color: var(--fg);
-  border: 1px solid rgba(88, 166, 255, 0.3);
-}
-
-/* =========================================================
-   EXPERIENCE (SPECIAL — DO NOT TOUCH PROJECTS/SKILLS)
-   ========================================================= */
-
-.experience-card {
-  margin-top: 2.5rem;
-}
-
-/* Header */
-.experience-header {
-  margin-bottom: 1.2rem;
-}
-
-.experience-title {
-  font-size: 1.35rem;
-  font-weight: 600;
-  color: var(--accent);
-}
-
-.experience-org {
-  font-size: 1rem;
-  color: var(--fg);
-  margin-top: 0.2rem;
-}
-
-.experience-meta {
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin-top: 0.2rem;
-}
-
-/* Summary paragraph */
-.experience-summary {
-  margin: 1rem 0 1.25rem;
-  color: var(--fg);
-}
-
-/* Experience sections */
-.experience-section {
-  margin-bottom: 1.4rem;
-}
-
-.experience-label {
-  display: block;
-  font-weight: 600;
+  margin-top: 1.25rem;
   margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.terminal-output-block {
+  margin-bottom: 1.25rem;
+}
+
+.term-tree {
+  font-family: inherit;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.6;
+}
+
+.tree-branch {
+  color: var(--muted);
+  user-select: none;
+}
+
+.tree-node {
   color: var(--accent);
+  font-weight: 600;
 }
 
-.experience-list {
-  padding-left: 1.2rem;
+.tree-subnode {
+  color: var(--cyan);
 }
 
-.experience-list li {
-  margin-bottom: 0.4rem;
+.tree-desc {
+  color: var(--fg);
 }
 
-/* ================= Experience as Item Card ================= */
+/* ================= Terminal Tables & Tags ================= */
 
-.experience-item {
-  margin-bottom: 3rem;
-  padding-left: 1.5rem;
-  border-left: 2px solid rgba(88, 166, 255, 0.45);
+.term-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0 1rem;
 }
 
-.experience-item:last-child {
-  margin-bottom: 0;
+.term-table th {
+  text-align: left;
+  color: var(--accent);
+  font-weight: 600;
+  border-bottom: 1px dashed var(--border);
+  padding: 0.4rem 1rem 0.4rem 0;
 }
-/* ================= PRE / ASCII ================= */
+
+.term-table td {
+  padding: 0.35rem 1rem 0.35rem 0;
+  vertical-align: top;
+}
+
+.term-badge {
+  display: inline-block;
+  color: var(--cyan);
+  background: var(--accent-soft);
+  padding: 0 0.4rem;
+  margin-right: 0.3rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.88rem;
+  border: 1px solid var(--border);
+}
+
+/* Progress bar */
+.bar-fill {
+  color: var(--green);
+}
+
+.bar-empty {
+  color: var(--border);
+}
+
+/* ================= PRE / ASCII Banner ================= */
 
 pre {
+  margin: 0.5rem 0;
   max-width: 100%;
   overflow-x: auto;
   white-space: pre;
-  font-size: 0.9rem;
-  line-height: 1.3;
-  padding: 0.75rem;
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
-/* Small phones */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   pre {
-    font-size: 0.7rem;
+    font-size: 0.72rem;
   }
 }
 
-/* ================= Item Card (inside sections) ================= */
-
-.item-card {
-  margin-bottom: 2rem;
-  padding-left: 1.25rem;
-  border-left: 2px solid rgba(88, 166, 255, 0.35);
+@media (max-width: 420px) {
+  pre {
+    font-size: 0.6rem;
+  }
 }
 
-/* Slight spacing between item blocks */
-.item-card:last-child {
-  margin-bottom: 0;
+.ascii-banner {
+  color: var(--accent);
+  display: inline;
+  font-weight: 700;
+  text-shadow: 0 0 12px var(--accent-soft);
 }
 
+.term-cursor {
+  display: inline-block;
+  color: var(--accent);
+  font-weight: bold;
+  animation: term-blink 0.8s step-end infinite;
+  text-shadow: 0 0 8px var(--accent);
+  margin-left: 1px;
+}
+
+.about-body {
+  animation: term-fade-in 0.2s ease-in;
+}
+
+@keyframes term-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes term-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .term-cursor { animation: none; }
+  .about-body { animation: none; }
+}
+
+/* ================= CRT Scanline Effect (Togglable) ================= */
+
+.terminal-app.crt::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.28) 50%),
+              linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 1000;
+  background-size: 100% 3px, 4px 100%;
+  pointer-events: none;
+  opacity: 0.7;
+}
 
 /* ================= Exit Screen ================= */
 
 .exit-screen {
   position: fixed;
   inset: 0;
-  background: var(--bg);
+  background: var(--bg-dark);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 9999;
+  font-family: inherit;
 }
 
 .exit-box {
-  text-align: center;
-  padding: 2.5rem 3rem;
-  border-left: 3px solid var(--accent);
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 8px;
+  text-align: left;
+  padding: 2rem 2.5rem;
+  border: 1px solid var(--accent);
+  background: var(--bg);
+  box-shadow: 0 0 20px var(--accent-soft);
 }
 
 .exit-title {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: var(--accent);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--green);
   margin-bottom: 0.75rem;
 }
 
@@ -250,6 +411,6 @@ pre {
 }
 
 .exit-sub {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--muted);
 }

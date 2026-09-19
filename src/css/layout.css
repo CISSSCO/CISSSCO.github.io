@@ -1,71 +1,196 @@
-/* Root layout */
+/* ================= Terminal Layout ================= */
 
-.terminal-layout {
-  min-height: 100vh;
+.terminal-app {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
+  background-color: var(--bg);
+  position: relative;
+  overflow: hidden;
 }
 
-/* Content area */
-/* IMPORTANT: no internal scrolling */
+/* ================= Top Bar / Window Header ================= */
 
-.content-area {
-  flex: 1;
-  padding: 2rem 1.5rem 5rem; /* reserve space for fixed terminal */
-}
-
-/* Terminal bar */
-
-.terminal-bar {
+.terminal-header {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-
-  padding: 0.75rem 1.5rem;
-  border-top: 1px solid var(--accent-soft);
-
-  background: rgba(13, 17, 23, 0.95);
-  position: fixed;     /* ⬅️ fixed, not sticky */
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
+  justify-content: space-between;
+  padding: 0.45rem 1rem;
+  background: var(--bg-bar);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--muted);
+  user-select: none;
+  flex-shrink: 0;
+  gap: 1rem;
 }
 
-#terminal-input {
-  background: transparent;
-  border: none;
-  outline: none;
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.window-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.window-dot:hover {
+  opacity: 1;
+}
+
+.dot-close {
+  background-color: #ff5f56;
+}
+
+.dot-min {
+  background-color: #ffbd2e;
+}
+
+.dot-max {
+  background-color: #27c93f;
+}
+
+.tag-badge {
+  margin-left: 0.4rem;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.tag-badge.active {
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--accent);
+  font-weight: 600;
+  border-radius: 2px;
+}
+
+.header-center {
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.term-title-text {
   color: var(--fg);
-  font-family: inherit;
-  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.header-item {
+  color: var(--muted);
+}
+
+/* ================= Terminal Screen ================= */
+
+.terminal-screen {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1.25rem 1.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  cursor: text;
+}
+
+.terminal-output {
   width: 100%;
 }
 
-.prompt {
-  color: var(--accent);
+/* ================= Prompt Line ================= */
+
+.terminal-prompt-line {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+  width: 100%;
 }
 
-/* Tablet */
+.prompt-label {
+  white-space: nowrap;
+  user-select: none;
+  cursor: text;
+  font-size: 0.98rem;
+}
+
+.prompt-input-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+#terminal-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  caret-color: var(--accent);
+}
+
+/* ================= Mobile & Responsive ================= */
 
 @media (max-width: 768px) {
-  .content-area {
-    padding: 1.25rem 1rem 4.5rem;
+  .tag-badge {
+    display: none;
   }
 
-  .terminal-bar {
-    padding: 0.6rem 1rem;
+  .tag-badge.active {
+    display: inline-block;
+  }
+
+  .terminal-screen {
+    padding: 0.85rem 1rem 2rem;
+  }
+
+  .header-item#term-theme-badge {
+    display: none;
   }
 }
 
-/* Mobile */
-
 @media (max-width: 480px) {
-  .content-area {
-    padding: 1rem 0.75rem 4rem;
+  .terminal-header {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.78rem;
   }
 
+  .window-dot {
+    width: 9px;
+    height: 9px;
+  }
+
+  .terminal-screen {
+    padding: 0.65rem 0.75rem 1.5rem;
+  }
+
+  .prompt-label {
+    font-size: 0.9rem;
+  }
+
+  /* Prevent iOS zoom on input focus */
   #terminal-input {
-    font-size: 0.95rem;
+    font-size: 16px;
   }
 }
