@@ -1,0 +1,22 @@
+======================================================================
+TECHNICAL DOSSIER: Digital Sculpting
+======================================================================
+ID:                sculpting
+Domain / Category: 3D/Design
+Proficiency:       80% [████████████████░░░░]
+Status:            Advanced / Production-ready
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+I do digital sculpting as hobby in my free time using tools like blender and zbrush
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - Independent technical practice & systems customization
+
+RELATED SKILLS (3D/Design):
+  - Blender (80%)
+  - Unity (65%)

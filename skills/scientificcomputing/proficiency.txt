@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Scientific Computing
+CATEGORY:          HPC
+======================================================================
+
+Proficiency Level: 90%
+Rating Meter:      [██████████████████░░] (90 / 100)
+Mastery Status:    Expert / Core Competency
+Featured Skill:    Yes (Highlight Competency)
+
+PRACTICAL CONTEXT:
+My work involves deploying, maintaining, and optimizing scientific computing applications

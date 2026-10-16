@@ -1,0 +1,17 @@
+======================================================================
+PROJECT: CISSSCO.github.io
+======================================================================
+Tagline: Terminal style Personal portfolio
+Status:  Active Project
+
+DESCRIPTION:
+This repository contains my personal portfolio website in terminal style, built and hosted using GitHub Pages.
+
+STACK:
+  * JavaScript
+  * HTML
+  * CSS
+
+LINKS:
+  Repository: https://github.com/CISSSCO/CISSSCO.github.io
+  Live Demo:  https://cisssco.github.io

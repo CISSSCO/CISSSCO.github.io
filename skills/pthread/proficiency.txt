@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Pthread
+CATEGORY:          Parallel Computing
+======================================================================
+
+Proficiency Level: 70%
+Rating Meter:      [██████████████░░░░░░] (70 / 100)
+Mastery Status:    Proficient / Working Knowledge
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Shared-memory parallel programming

@@ -1,0 +1,24 @@
+======================================================================
+TECHNICAL DOSSIER: ThreeJS
+======================================================================
+ID:                threejs
+Domain / Category: Web Technology
+Proficiency:       50% [██████████░░░░░░░░░░]
+Status:            Familiar / Foundational
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Have Basic Understanding about Threejs fundamentals
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - Independent technical practice & systems customization
+
+RELATED SKILLS (Web Technology):
+  - HTML (90%)
+  - CSS (80%)
+  - JavaScript (65%)
+  - ReactJS (50%)

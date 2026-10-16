@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Slurm
+CATEGORY:          HPC Tools
+======================================================================
+
+Proficiency Level: 75%
+Rating Meter:      [███████████████░░░░░] (75 / 100)
+Mastery Status:    Advanced / Production-ready
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Job scheduling and workload management on clusters

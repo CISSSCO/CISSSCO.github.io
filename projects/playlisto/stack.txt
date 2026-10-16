@@ -1,0 +1,13 @@
+======================================================================
+TECH STACK: Playlisto
+======================================================================
+
+* Python
+* FastAPI
+* React
+* TypeScript
+* Google Drive API
+* HTTP Streaming
+* Kodi Add-on
+
+Count: 7 technologies

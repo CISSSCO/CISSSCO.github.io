@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: GNU Make
+CATEGORY:          Compilers and Build Tolls
+======================================================================
+
+Proficiency Level: 70%
+Rating Meter:      [██████████████░░░░░░] (70 / 100)
+Mastery Status:    Proficient / Working Knowledge
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+I use GNU Make to build and automate compilation of scientific software

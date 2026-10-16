@@ -1,0 +1,9 @@
+======================================================================
+ROLE:         Project Engineer
+ORGANIZATION: Centre for Development of Advanced Computing (C-DAC), India
+PERIOD:       Apr 2024 — Present
+DURATION:     2.5+ years
+======================================================================
+
+SUMMARY:
+Working as a Project Engineer at C-DAC, contributing to national-level HPC research, development, and training initiatives under the National Supercomputing Mission (NSM).

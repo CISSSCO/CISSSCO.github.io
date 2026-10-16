@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: ThreeJS
+CATEGORY:          Web Technology
+======================================================================
+
+Proficiency Level: 50%
+Rating Meter:      [██████████░░░░░░░░░░] (50 / 100)
+Mastery Status:    Familiar / Foundational
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Have Basic Understanding about Threejs fundamentals

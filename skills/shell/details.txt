@@ -1,0 +1,30 @@
+======================================================================
+TECHNICAL DOSSIER: Shell Scripting
+======================================================================
+ID:                shell
+Domain / Category: Systems
+Proficiency:       90% [██████████████████░░]
+Status:            Expert / Core Competency
+Featured:          Yes
+
+DESCRIPTION & CONTEXT:
+Workflow automation and system setup
+
+PORTFOLIO USAGE:
+Used in 5 of 9 projects (55.6%)
+  - HPCCFS: Build a production-like HPC cluster from scratch using open-source technologies
+  - CerrFix: Rule-based error analysis and fix suggestion tool for Linux systems
+  - GitPush: Minimal CLI helper to automate common git workflows
+  - Dotfiles: Reproducible Linux shell and development environment configuration
+  - My VimRC: Customized Vim configuration for personal use and efficient editing
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (Systems):
+  - Linux (95%)
+  - System Administration (85%)
+  - Software Deployment (90%)
+  - Application Porting (90%)
+  - Technical Documentation (95%)

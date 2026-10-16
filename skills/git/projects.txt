@@ -1,0 +1,51 @@
+======================================================================
+PROJECT UTILIZATION: Git
+======================================================================
+
+Portfolio Utilization: 9 of 9 projects (100.0%)
+
+Projects Utilizing Git:
+  * OrgSlide (orgslide)
+    - Tagline: Transform Emacs Org-mode and Markdown files into beautiful, interactive web presentations
+    - Stack:   Org-mode, Markdown, HTML5, CSS3, JavaScript, HTML5 FileReader API
+    - Repo:    https://github.com/CISSSCO/OrgSlide
+
+  * HPCCFS (hpccfs)
+    - Tagline: Build a production-like HPC cluster from scratch using open-source technologies
+    - Stack:   Rocky Linux, Slurm, OpenMPI, LDAP, NFS, Environment Modules, Spack, Munge, MariaDB, SlurmDBD, Bash, C, MPI
+    - Repo:    https://github.com/CISSSCO/HPCCFS
+
+  * Playlisto (playlisto)
+    - Tagline: Turn Google Drive into your personal music streaming server
+    - Stack:   Python, FastAPI, React, TypeScript, Google Drive API, HTTP Streaming, Kodi Add-on
+    - Repo:    https://github.com/CISSSCO/Playlisto
+
+  * CerrFix (cerrfix)
+    - Tagline: Rule-based error analysis and fix suggestion tool for Linux systems
+    - Stack:   Python, Bash Scripting, YAML
+    - Repo:    https://github.com/CISSSCO/cerrfix
+
+  * GitPush (gitpush)
+    - Tagline: Minimal CLI helper to automate common git workflows
+    - Stack:   Bash Scripting
+    - Repo:    https://github.com/CISSSCO/gitpush
+
+  * Dotfiles (dotfiles)
+    - Tagline: Reproducible Linux shell and development environment configuration
+    - Stack:   Bash Scripting, Vimscript, Python, Lisp, YAML
+    - Repo:    https://github.com/CISSSCO/dotfiles
+
+  * My VimRC (myvimrc)
+    - Tagline: Customized Vim configuration for personal use and efficient editing
+    - Stack:   Vimscript, Bash Scripting
+    - Repo:    https://github.com/CISSSCO/myvimrc_config
+
+  * CISSSCO.github.io (cisssco)
+    - Tagline: Terminal style Personal portfolio
+    - Stack:   JavaScript, HTML, CSS
+    - Repo:    https://github.com/CISSSCO/CISSSCO.github.io
+
+  * PopularWebsiteThemes (popularwebsitethemes)
+    - Tagline: Custom themes for popular websites like 10fastfingers
+    - Stack:   CSS, HTML
+    - Repo:    https://github.com/CISSSCO/PopularWebsiteThemes

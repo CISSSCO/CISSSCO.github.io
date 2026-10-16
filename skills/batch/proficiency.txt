@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Batch Scripting
+CATEGORY:          Programming
+======================================================================
+
+Proficiency Level: 70%
+Rating Meter:      [██████████████░░░░░░] (70 / 100)
+Mastery Status:    Proficient / Working Knowledge
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Write batch scripts to automate administrative and development tasks on Windows systems

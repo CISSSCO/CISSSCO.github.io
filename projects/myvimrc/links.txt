@@ -1,0 +1,6 @@
+======================================================================
+LINKS & REPOSITORIES: My VimRC
+======================================================================
+
+GitHub Repo: https://github.com/CISSSCO/myvimrc_config
+Live Web:    N/A

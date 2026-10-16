@@ -1,0 +1,28 @@
+======================================================================
+TECHNICAL DOSSIER: Technical Documentation
+======================================================================
+ID:                technicaldocumentation
+Domain / Category: Systems
+Proficiency:       95% [███████████████████░]
+Status:            Expert / Core Competency
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+I prepare installation guides, deployment manuals, and technical documentation
+
+PORTFOLIO USAGE:
+Used in 3 of 9 projects (33.3%)
+  - OrgSlide: Transform Emacs Org-mode and Markdown files into beautiful, interactive web presentations
+  - HPCCFS: Build a production-like HPC cluster from scratch using open-source technologies
+  - CISSSCO.github.io: Terminal style Personal portfolio
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (Systems):
+  - Shell Scripting (90%)
+  - Linux (95%)
+  - System Administration (85%)
+  - Software Deployment (90%)
+  - Application Porting (90%)

@@ -1,0 +1,16 @@
+======================================================================
+PROJECT: My VimRC
+======================================================================
+Tagline: Customized Vim configuration for personal use and efficient editing
+Status:  Active Project
+
+DESCRIPTION:
+A personalized Vim configuration file (.vimrc) that enhances the functionality of the Vim text editor with custom settings, key mappings, and plugins to improve productivity and streamline the editing experience.
+
+STACK:
+  * Vimscript
+  * Bash Scripting
+
+LINKS:
+  Repository: https://github.com/CISSSCO/myvimrc_config
+  Live Demo:  N/A

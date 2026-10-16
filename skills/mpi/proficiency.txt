@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: MPI
+CATEGORY:          Parallel Computing
+======================================================================
+
+Proficiency Level: 85%
+Rating Meter:      [█████████████████░░░] (85 / 100)
+Mastery Status:    Advanced / Production-ready
+Featured Skill:    Yes (Highlight Competency)
+
+PRACTICAL CONTEXT:
+Distributed-memory parallelism on multi-node clusters

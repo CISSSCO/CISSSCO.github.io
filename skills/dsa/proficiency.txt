@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Data Structure and Algorithms
+CATEGORY:          Programming
+======================================================================
+
+Proficiency Level: 70%
+Rating Meter:      [██████████████░░░░░░] (70 / 100)
+Mastery Status:    Proficient / Working Knowledge
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Understand the fundamentals of DSA and use it wherever possible in my work

@@ -1,0 +1,24 @@
+======================================================================
+TECHNICAL DOSSIER: LaTeX
+======================================================================
+ID:                latex
+Domain / Category: Literate Programming
+Proficiency:       80% [████████████████░░░░]
+Status:            Advanced / Production-ready
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Use LaTeX to prepare technical reports, research documents, presentations, and professional resumes
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (Literate Programming):
+  - Org Mode (95%)
+  - GNU Emacs (90%)
+  - Markdown (85%)

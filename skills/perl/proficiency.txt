@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Perl
+CATEGORY:          Programming
+======================================================================
+
+Proficiency Level: 60%
+Rating Meter:      [████████████░░░░░░░░] (60 / 100)
+Mastery Status:    Proficient / Working Knowledge
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Used Perl for scripting, automation, and maintaining scientific software workflows

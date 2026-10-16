@@ -1,0 +1,120 @@
+================================================================================
+ALL TECHNICAL SKILLS & PROFICIENCIES — Cisco Ramon (CISSSCO)
+================================================================================
+
+Total Skills: 52 technical competencies
+
+--------------------------------------------------------------------------------
+[CATEGORY: PROGRAMMING] (7 skills)
+--------------------------------------------------------------------------------
+C / C++                      Expert         [█████████░]  90%  | Performance-critical HPC and scientific applications
+Python                       Advanced       [████████░░]  75%  | Automation, scripting, tooling
+JAVA                         Proficient     [██████░░░░]  60%  | Intermediate Level Understanding of Java
+Data Structure and Algorithms Advanced       [███████░░░]  70%  | Understand the fundamentals of DSA and use it wherever possible in my work
+Fortran                      Advanced       [████████░░]  75%  | Have experience with fortran while working on scientific/parallel programming codes
+Perl                         Proficient     [██████░░░░]  60%  | Used Perl for scripting, automation, and maintaining scientific software workflows
+Batch Scripting              Advanced       [███████░░░]  70%  | Write batch scripts to automate administrative and development tasks on Windows systems
+
+--------------------------------------------------------------------------------
+[CATEGORY: HPC] (5 skills)
+--------------------------------------------------------------------------------
+Supercomputing               Expert         [█████████░]  90%  | Work experience on multiple PARAM Series of Supercomputers of INDIA
+Cluster Administration       Expert         [█████████░]  85%  | My daily work involves administering and maintaining Linux based HPC clusters
+Scientific Computing         Expert         [█████████░]  90%  | My work involves deploying, maintaining, and optimizing scientific computing applications
+Research Computing           Expert         [█████████░]  90%  | I develop and support computing environments for multidisciplinary research workloads
+Performance Analysis         Advanced       [████████░░]  75%  | I analyze and optimize the performance of scientific and parallel applications
+
+--------------------------------------------------------------------------------
+[CATEGORY: PARALLEL COMPUTING] (4 skills)
+--------------------------------------------------------------------------------
+MPI                          Expert         [█████████░]  85%  | Distributed-memory parallelism on multi-node clusters
+OpenMP                       Expert         [█████████░]  85%  | Shared-memory and hybrid parallel programming
+Pthread                      Advanced       [███████░░░]  70%  | Shared-memory parallel programming
+Distributed Computing        Advanced       [████████░░]  75%  | My daily work involve working on distributed computing environment like PARAM Series of Supercomputers
+
+--------------------------------------------------------------------------------
+[CATEGORY: GPU COMPUTING] (2 skills)
+--------------------------------------------------------------------------------
+CUDA                         Advanced       [███████░░░]  70%  | GPU acceleration for scientific and compute workloads
+OpenACC                      Proficient     [███████░░░]  65%  | Experience with OpenACC for Pragma based GPU programming
+
+--------------------------------------------------------------------------------
+[CATEGORY: HPC TOOLS] (4 skills)
+--------------------------------------------------------------------------------
+Slurm                        Advanced       [████████░░]  75%  | Job scheduling and workload management on clusters
+Spack                        Expert         [█████████░]  90%  | I use Spack extensively to build, install, and manage scientific software on HPC systems
+Conda                        Expert         [█████████░]  90%  | I use Conda to create and manage reproducible scientific and AI/ML environments
+JupyterHub                   Expert         [█████████░]  90%  | Designed and deployed JupyterHub platforms integrated with HPC resources and authentication
+
+--------------------------------------------------------------------------------
+[CATEGORY: SYSTEMS] (6 skills)
+--------------------------------------------------------------------------------
+Shell Scripting              Expert         [█████████░]  90%  | Workflow automation and system setup
+Linux                        Expert         [██████████]  95%  | Primary environment for HPC clusters, system administration, and development
+System Administration        Expert         [█████████░]  85%  | My daily work involves parts of system admin and monitoring for efficient cluster usage
+Software Deployment          Expert         [█████████░]  90%  | I deploy and maintain scientific software on Linux and HPC environments
+Application Porting          Expert         [█████████░]  90%  | I have experience porting scientific applications across Linux and HPC platforms
+Technical Documentation      Expert         [██████████]  95%  | I prepare installation guides, deployment manuals, and technical documentation
+
+--------------------------------------------------------------------------------
+[CATEGORY: AI] (1 skills)
+--------------------------------------------------------------------------------
+AI/ML                        Advanced       [███████░░░]  70%  | Have hands on experience in working with AI/ML environment and projects
+
+--------------------------------------------------------------------------------
+[CATEGORY: WEB TECHNOLOGY] (5 skills)
+--------------------------------------------------------------------------------
+HTML                         Expert         [█████████░]  90%  | I use HTML to write my documents and also to develop my Portfolios
+CSS                          Advanced       [████████░░]  80%  | Style Webpages and my ORG Documents
+JavaScript                   Proficient     [███████░░░]  65%  | Used JavaScript in my Portfolios and my projects
+ReactJS                      Intermediate   [█████░░░░░]  50%  | Used React to develop this Portfolio
+ThreeJS                      Intermediate   [█████░░░░░]  50%  | Have Basic Understanding about Threejs fundamentals
+
+--------------------------------------------------------------------------------
+[CATEGORY: CONTAINERS] (2 skills)
+--------------------------------------------------------------------------------
+Docker                       Advanced       [████████░░]  75%  | I use Docker to build and manage containerized development and scientific computing environments
+Apptainer                    Advanced       [███████░░░]  70%  | I use Apptainer to deploy portable and reproducible applications on HPC systems
+
+--------------------------------------------------------------------------------
+[CATEGORY: DEVOPS] (6 skills)
+--------------------------------------------------------------------------------
+Git                          Expert         [█████████░]  90%  | I use Git for version control and collaborative software development
+Ansible                      Proficient     [██████░░░░]  60%  | Use Ansible to automate Linux system configuration and software deployment
+Jenkins                      Proficient     [██████░░░░]  60%  | Have experience creating and maintaining CI/CD pipelines using Jenkins
+Kubernetes                   Proficient     [██████░░░░]  60%  | Have working knowledge of Kubernetes for container orchestration and application deployment
+Prometheus                   Proficient     [██████░░░░]  55%  | Used Prometheus for monitoring Linux systems and collecting infrastructure metrics
+Grafana                      Proficient     [██████░░░░]  55%  | Created dashboards for monitoring infrastructure and application performance
+
+--------------------------------------------------------------------------------
+[CATEGORY: COMPILERS AND BUILD TOLLS] (2 skills)
+--------------------------------------------------------------------------------
+CMake                        Advanced       [████████░░]  80%  | I use CMake to configure and build scientific and HPC software projects
+GNU Make                     Advanced       [███████░░░]  70%  | I use GNU Make to build and automate compilation of scientific software
+
+--------------------------------------------------------------------------------
+[CATEGORY: 3D/DESIGN] (3 skills)
+--------------------------------------------------------------------------------
+Digital Sculpting            Advanced       [████████░░]  80%  | I do digital sculpting as hobby in my free time using tools like blender and zbrush
+Blender                      Advanced       [████████░░]  80%  | Use this tools to create my own 3D assets for projects
+Unity                        Proficient     [███████░░░]  65%  | Used this to develop and port my applications to different plateform including web and windows devices
+
+--------------------------------------------------------------------------------
+[CATEGORY: CLOUD] (1 skills)
+--------------------------------------------------------------------------------
+Amazon Web Services          Intermediate   [█████░░░░░]  50%  | Basic understanding of AWS cloud services and cloud infrastructure concepts
+
+--------------------------------------------------------------------------------
+[CATEGORY: LITERATE PROGRAMMING] (4 skills)
+--------------------------------------------------------------------------------
+Org Mode                     Expert         [██████████]  95%  | Extensively use Org Mode for literate programming, technical documentation, project management, note-taking, presentations, and personal knowledge management
+GNU Emacs                    Expert         [█████████░]  90%  | Daily development environment customized for programming, documentation, knowledge management, and productivity
+Markdown                     Expert         [█████████░]  85%  | Write technical documentation, project documentation, README files, and knowledge base articles using Markdown
+LaTeX                        Advanced       [████████░░]  80%  | Use LaTeX to prepare technical reports, research documents, presentations, and professional resumes
+
+================================================================================
+Explore individual skills in the terminal:
+  $ skills <keyword>     (e.g. skills c++, skills python, skills slurm)
+  $ cd skills/<id>       (e.g. cd skills/mpi, cd skills/cuda)
+  $ cat proficiency.txt  $ cat projects.txt  $ cat experience.txt
+================================================================================

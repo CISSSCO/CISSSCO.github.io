@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: OpenMP
+CATEGORY:          Parallel Computing
+======================================================================
+
+Proficiency Level: 85%
+Rating Meter:      [█████████████████░░░] (85 / 100)
+Mastery Status:    Advanced / Production-ready
+Featured Skill:    Yes (Highlight Competency)
+
+PRACTICAL CONTEXT:
+Shared-memory and hybrid parallel programming

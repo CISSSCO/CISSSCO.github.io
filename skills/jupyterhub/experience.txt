@@ -1,0 +1,8 @@
+======================================================================
+PROFESSIONAL EXPERIENCE & ROLES: JupyterHub
+======================================================================
+
+Applied in 1 Professional Positions:
+  * HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi
+    - Period:   Feb 2025 — Aug 2026 (1.5 year)
+    - Context:  Working as an HPC Application Engineer at IIT (BHU), deputed by C-DAC, supporting large-scale scientific and computational research workloads.

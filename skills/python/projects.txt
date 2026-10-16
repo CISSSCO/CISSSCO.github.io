@@ -1,0 +1,21 @@
+======================================================================
+PROJECT UTILIZATION: Python
+======================================================================
+
+Portfolio Utilization: 3 of 9 projects (33.3%)
+
+Projects Utilizing Python:
+  * Playlisto (playlisto)
+    - Tagline: Turn Google Drive into your personal music streaming server
+    - Stack:   Python, FastAPI, React, TypeScript, Google Drive API, HTTP Streaming, Kodi Add-on
+    - Repo:    https://github.com/CISSSCO/Playlisto
+
+  * CerrFix (cerrfix)
+    - Tagline: Rule-based error analysis and fix suggestion tool for Linux systems
+    - Stack:   Python, Bash Scripting, YAML
+    - Repo:    https://github.com/CISSSCO/cerrfix
+
+  * Dotfiles (dotfiles)
+    - Tagline: Reproducible Linux shell and development environment configuration
+    - Stack:   Bash Scripting, Vimscript, Python, Lisp, YAML
+    - Repo:    https://github.com/CISSSCO/dotfiles

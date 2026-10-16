@@ -1,0 +1,10 @@
+======================================================================
+RESPONSIBILITIES & HIGHLIGHTS: Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India
+======================================================================
+
+* Contributing to the National Supercomputing Mission (NSM) through research, development, and capacity-building in High-Performance Computing and Supercomputing.
+* Design, manage, and optimize HPC environments using parallel programming models such as MPI, OpenMP, Pthreads, and GPU programming frameworks including CUDA and OpenACC.
+* Work on R&D of HPC software tools with a focus on performance optimization, scalability, and efficient resource utilization.
+* Develop technical training content and educational materials to support HPC adoption across academic and research institutions.
+* Conduct workshops, training programs, and mentoring sessions for students, researchers, and professionals in HPC and parallel programming.
+* Support national initiatives aimed at strengthening India’s supercomputing ecosystem and next-generation computing capabilities.

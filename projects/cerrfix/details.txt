@@ -1,0 +1,17 @@
+======================================================================
+PROJECT: CerrFix
+======================================================================
+Tagline: Rule-based error analysis and fix suggestion tool for Linux systems
+Status:  Featured Project
+
+DESCRIPTION:
+cerrfix is a lightweight, extensible command-line tool designed to help users and system administrators diagnose and resolve common errors on Linux-based systems.
+
+STACK:
+  * Python
+  * Bash Scripting
+  * YAML
+
+LINKS:
+  Repository: https://github.com/CISSSCO/cerrfix
+  Live Demo:  https://cisssco.github.io/cerrfix

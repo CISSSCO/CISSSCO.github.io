@@ -1,0 +1,24 @@
+======================================================================
+TECHNICAL DOSSIER: ReactJS
+======================================================================
+ID:                react
+Domain / Category: Web Technology
+Proficiency:       50% [██████████░░░░░░░░░░]
+Status:            Familiar / Foundational
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Used React to develop this Portfolio
+
+PORTFOLIO USAGE:
+Used in 1 of 9 projects (11.1%)
+  - Playlisto: Turn Google Drive into your personal music streaming server
+
+ORGANIZATIONAL ROLES:
+  - Independent technical practice & systems customization
+
+RELATED SKILLS (Web Technology):
+  - HTML (90%)
+  - CSS (80%)
+  - JavaScript (65%)
+  - ThreeJS (50%)

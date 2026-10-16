@@ -1,0 +1,29 @@
+======================================================================
+TECHNICAL DOSSIER: Python
+======================================================================
+ID:                python
+Domain / Category: Programming
+Proficiency:       75% [███████████████░░░░░]
+Status:            Advanced / Production-ready
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Automation, scripting, tooling
+
+PORTFOLIO USAGE:
+Used in 3 of 9 projects (33.3%)
+  - Playlisto: Turn Google Drive into your personal music streaming server
+  - CerrFix: Rule-based error analysis and fix suggestion tool for Linux systems
+  - Dotfiles: Reproducible Linux shell and development environment configuration
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (Programming):
+  - C / C++ (90%)
+  - JAVA (60%)
+  - Data Structure and Algorithms (70%)
+  - Fortran (75%)
+  - Perl (60%)
+  - Batch Scripting (70%)

@@ -1,0 +1,24 @@
+======================================================================
+TECHNICAL DOSSIER: Spack
+======================================================================
+ID:                spack
+Domain / Category: HPC Tools
+Proficiency:       90% [██████████████████░░]
+Status:            Expert / Core Competency
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+I use Spack extensively to build, install, and manage scientific software on HPC systems
+
+PORTFOLIO USAGE:
+Used in 1 of 9 projects (11.1%)
+  - HPCCFS: Build a production-like HPC cluster from scratch using open-source technologies
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (HPC Tools):
+  - Slurm (75%)
+  - Conda (90%)
+  - JupyterHub (90%)

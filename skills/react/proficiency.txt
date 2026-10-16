@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: ReactJS
+CATEGORY:          Web Technology
+======================================================================
+
+Proficiency Level: 50%
+Rating Meter:      [██████████░░░░░░░░░░] (50 / 100)
+Mastery Status:    Familiar / Foundational
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Used React to develop this Portfolio

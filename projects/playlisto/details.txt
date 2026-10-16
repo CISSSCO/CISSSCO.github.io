@@ -1,0 +1,21 @@
+======================================================================
+PROJECT: Playlisto
+======================================================================
+Tagline: Turn Google Drive into your personal music streaming server
+Status:  Featured Project
+
+DESCRIPTION:
+Developed a personal cloud music server that streams Google Drive media seamlessly across web browsers and Kodi
+
+STACK:
+  * Python
+  * FastAPI
+  * React
+  * TypeScript
+  * Google Drive API
+  * HTTP Streaming
+  * Kodi Add-on
+
+LINKS:
+  Repository: https://github.com/CISSSCO/Playlisto
+  Live Demo:  N/A

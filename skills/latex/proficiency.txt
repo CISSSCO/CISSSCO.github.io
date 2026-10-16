@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: LaTeX
+CATEGORY:          Literate Programming
+======================================================================
+
+Proficiency Level: 80%
+Rating Meter:      [████████████████░░░░] (80 / 100)
+Mastery Status:    Advanced / Production-ready
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Use LaTeX to prepare technical reports, research documents, presentations, and professional resumes

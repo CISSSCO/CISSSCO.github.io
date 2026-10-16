@@ -1,0 +1,11 @@
+======================================================================
+PROJECT UTILIZATION: CMake
+======================================================================
+
+Portfolio Utilization: 1 of 9 projects (11.1%)
+
+Projects Utilizing CMake:
+  * HPCCFS (hpccfs)
+    - Tagline: Build a production-like HPC cluster from scratch using open-source technologies
+    - Stack:   Rocky Linux, Slurm, OpenMPI, LDAP, NFS, Environment Modules, Spack, Munge, MariaDB, SlurmDBD, Bash, C, MPI
+    - Repo:    https://github.com/CISSSCO/HPCCFS

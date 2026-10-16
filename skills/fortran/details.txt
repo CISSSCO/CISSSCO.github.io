@@ -1,0 +1,27 @@
+======================================================================
+TECHNICAL DOSSIER: Fortran
+======================================================================
+ID:                fortran
+Domain / Category: Programming
+Proficiency:       75% [███████████████░░░░░]
+Status:            Advanced / Production-ready
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Have experience with fortran while working on scientific/parallel programming codes
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (Programming):
+  - C / C++ (90%)
+  - Python (75%)
+  - JAVA (60%)
+  - Data Structure and Algorithms (70%)
+  - Perl (60%)
+  - Batch Scripting (70%)

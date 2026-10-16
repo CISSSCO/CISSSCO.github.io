@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: System Administration
+CATEGORY:          Systems
+======================================================================
+
+Proficiency Level: 85%
+Rating Meter:      [█████████████████░░░] (85 / 100)
+Mastery Status:    Advanced / Production-ready
+Featured Skill:    Yes (Highlight Competency)
+
+PRACTICAL CONTEXT:
+My daily work involves parts of system admin and monitoring for efficient cluster usage

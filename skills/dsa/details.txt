@@ -1,0 +1,27 @@
+======================================================================
+TECHNICAL DOSSIER: Data Structure and Algorithms
+======================================================================
+ID:                dsa
+Domain / Category: Programming
+Proficiency:       70% [██████████████░░░░░░]
+Status:            Proficient / Working Knowledge
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Understand the fundamentals of DSA and use it wherever possible in my work
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (Programming):
+  - C / C++ (90%)
+  - Python (75%)
+  - JAVA (60%)
+  - Fortran (75%)
+  - Perl (60%)
+  - Batch Scripting (70%)

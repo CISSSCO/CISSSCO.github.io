@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Kubernetes
+CATEGORY:          DevOps
+======================================================================
+
+Proficiency Level: 60%
+Rating Meter:      [████████████░░░░░░░░] (60 / 100)
+Mastery Status:    Proficient / Working Knowledge
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Have working knowledge of Kubernetes for container orchestration and application deployment

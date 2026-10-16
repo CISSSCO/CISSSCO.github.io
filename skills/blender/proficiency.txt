@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Blender
+CATEGORY:          3D/Design
+======================================================================
+
+Proficiency Level: 80%
+Rating Meter:      [████████████████░░░░] (80 / 100)
+Mastery Status:    Advanced / Production-ready
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Use this tools to create my own 3D assets for projects

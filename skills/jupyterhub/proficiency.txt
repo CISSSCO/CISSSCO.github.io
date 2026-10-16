@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: JupyterHub
+CATEGORY:          HPC Tools
+======================================================================
+
+Proficiency Level: 90%
+Rating Meter:      [██████████████████░░] (90 / 100)
+Mastery Status:    Expert / Core Competency
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Designed and deployed JupyterHub platforms integrated with HPC resources and authentication

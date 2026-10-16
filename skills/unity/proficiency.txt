@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Unity
+CATEGORY:          3D/Design
+======================================================================
+
+Proficiency Level: 65%
+Rating Meter:      [█████████████░░░░░░░] (65 / 100)
+Mastery Status:    Proficient / Working Knowledge
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Used this to develop and port my applications to different plateform including web and windows devices

@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: JAVA
+CATEGORY:          Programming
+======================================================================
+
+Proficiency Level: 60%
+Rating Meter:      [████████████░░░░░░░░] (60 / 100)
+Mastery Status:    Proficient / Working Knowledge
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Intermediate Level Understanding of Java

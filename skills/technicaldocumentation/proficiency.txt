@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Technical Documentation
+CATEGORY:          Systems
+======================================================================
+
+Proficiency Level: 95%
+Rating Meter:      [███████████████████░] (95 / 100)
+Mastery Status:    Expert / Core Competency
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+I prepare installation guides, deployment manuals, and technical documentation

@@ -1,0 +1,45 @@
+======================================================================
+ROLE:         HPC Application Engineer
+ORGANIZATION: Indian Institute of Technology (Banaras Hindu University), Varanasi
+PERIOD:       Feb 2025 — Aug 2026
+DURATION:     1.5 year
+======================================================================
+
+SUMMARY:
+Working as an HPC Application Engineer at IIT (BHU), deputed by C-DAC, supporting large-scale scientific and computational research workloads.
+
+======================================================================
+RESPONSIBILITIES & HIGHLIGHTS: HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi
+======================================================================
+
+* Currently deputed to IIT (BHU), managing HPC application workflows on the PARAM Shivay supercomputing cluster.
+* Responsible for system administration tasks including user management, job monitoring, workload scheduling, and identifying unauthorized or inefficient applications.
+* Provide customized software environments for researchers running simulations, DFT calculations, and AI/ML/DL workloads.
+* Collaborate closely with researchers to optimize performance, troubleshoot execution issues, and ensure reliable operation of scientific workloads.
+* Actively contribute to open-source software and customize Linux environments for improved performance and usability.
+
+======================================================================
+TECHNICAL STACK & ENVIRONMENTS: Indian Institute of Technology (Banaras Hindu University), Varanasi
+======================================================================
+
+Technologies & Tools:
+  [C]
+  [C++]
+  [Python]
+  [Bash]
+  [MPI]
+  [OpenMP]
+  [CUDA]
+  [Linux]
+  [SLURM]
+  [Spack]
+  [Conda]
+  [JupyterHub]
+  [Apptainer]
+  [Intel MPI]
+  [OpenMPI]
+  [Intel oneAPI]
+  [Scientific Computing]
+  [HPC Systems]
+
+Total Stack Items: 18

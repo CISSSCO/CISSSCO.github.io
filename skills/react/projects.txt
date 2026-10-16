@@ -1,0 +1,11 @@
+======================================================================
+PROJECT UTILIZATION: ReactJS
+======================================================================
+
+Portfolio Utilization: 1 of 9 projects (11.1%)
+
+Projects Utilizing ReactJS:
+  * Playlisto (playlisto)
+    - Tagline: Turn Google Drive into your personal music streaming server
+    - Stack:   Python, FastAPI, React, TypeScript, Google Drive API, HTTP Streaming, Kodi Add-on
+    - Repo:    https://github.com/CISSSCO/Playlisto

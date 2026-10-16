@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: AI/ML
+CATEGORY:          AI
+======================================================================
+
+Proficiency Level: 70%
+Rating Meter:      [██████████████░░░░░░] (70 / 100)
+Mastery Status:    Proficient / Working Knowledge
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Have hands on experience in working with AI/ML environment and projects

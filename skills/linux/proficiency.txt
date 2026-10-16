@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Linux
+CATEGORY:          Systems
+======================================================================
+
+Proficiency Level: 95%
+Rating Meter:      [███████████████████░] (95 / 100)
+Mastery Status:    Expert / Core Competency
+Featured Skill:    Yes (Highlight Competency)
+
+PRACTICAL CONTEXT:
+Primary environment for HPC clusters, system administration, and development

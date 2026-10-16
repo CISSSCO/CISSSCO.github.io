@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Grafana
+CATEGORY:          DevOps
+======================================================================
+
+Proficiency Level: 55%
+Rating Meter:      [███████████░░░░░░░░░] (55 / 100)
+Mastery Status:    Familiar / Foundational
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Created dashboards for monitoring infrastructure and application performance

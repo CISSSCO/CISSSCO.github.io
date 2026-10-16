@@ -1,0 +1,27 @@
+======================================================================
+TECHNICAL DOSSIER: C / C++
+======================================================================
+ID:                c_cpp
+Domain / Category: Programming
+Proficiency:       90% [██████████████████░░]
+Status:            Expert / Core Competency
+Featured:          Yes
+
+DESCRIPTION & CONTEXT:
+Performance-critical HPC and scientific applications
+
+PORTFOLIO USAGE:
+Used in 1 of 9 projects (11.1%)
+  - HPCCFS: Build a production-like HPC cluster from scratch using open-source technologies
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (Programming):
+  - Python (75%)
+  - JAVA (60%)
+  - Data Structure and Algorithms (70%)
+  - Fortran (75%)
+  - Perl (60%)
+  - Batch Scripting (70%)

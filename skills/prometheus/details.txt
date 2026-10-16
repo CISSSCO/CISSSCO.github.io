@@ -1,0 +1,25 @@
+======================================================================
+TECHNICAL DOSSIER: Prometheus
+======================================================================
+ID:                prometheus
+Domain / Category: DevOps
+Proficiency:       55% [███████████░░░░░░░░░]
+Status:            Familiar / Foundational
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Used Prometheus for monitoring Linux systems and collecting infrastructure metrics
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - Independent technical practice & systems customization
+
+RELATED SKILLS (DevOps):
+  - Git (90%)
+  - Ansible (60%)
+  - Jenkins (60%)
+  - Kubernetes (60%)
+  - Grafana (55%)

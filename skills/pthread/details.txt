@@ -1,0 +1,23 @@
+======================================================================
+TECHNICAL DOSSIER: Pthread
+======================================================================
+ID:                pthread
+Domain / Category: Parallel Computing
+Proficiency:       70% [██████████████░░░░░░]
+Status:            Proficient / Working Knowledge
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Shared-memory parallel programming
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (Parallel Computing):
+  - MPI (85%)
+  - OpenMP (85%)
+  - Distributed Computing (75%)

@@ -1,0 +1,8 @@
+======================================================================
+PROJECT UTILIZATION: ThreeJS
+======================================================================
+
+Portfolio Utilization: 0 of 9 projects (0.0%)
+
+* Not utilized in public standalone portfolio projects.
+* Extensively deployed in production HPC cluster operations, scientific workloads, and research infrastructure.

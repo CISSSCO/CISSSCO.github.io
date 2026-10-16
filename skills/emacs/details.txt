@@ -1,0 +1,25 @@
+======================================================================
+TECHNICAL DOSSIER: GNU Emacs
+======================================================================
+ID:                emacs
+Domain / Category: Literate Programming
+Proficiency:       90% [██████████████████░░]
+Status:            Expert / Core Competency
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Daily development environment customized for programming, documentation, knowledge management, and productivity
+
+PORTFOLIO USAGE:
+Used in 2 of 9 projects (22.2%)
+  - OrgSlide: Transform Emacs Org-mode and Markdown files into beautiful, interactive web presentations
+  - Dotfiles: Reproducible Linux shell and development environment configuration
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (Literate Programming):
+  - Org Mode (95%)
+  - Markdown (85%)
+  - LaTeX (80%)

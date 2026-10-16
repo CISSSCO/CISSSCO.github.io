@@ -260,10 +260,18 @@
 
 /* ================= Terminal Tables & Tags ================= */
 
+.term-table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0.4rem 0 0.8rem;
+}
+
 .term-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 0.5rem 0 1rem;
+  margin: 0.25rem 0 0.5rem;
+  font-size: 0.95rem;
 }
 
 .term-table th {
@@ -271,23 +279,86 @@
   color: var(--accent);
   font-weight: 600;
   border-bottom: 1px dashed var(--border);
-  padding: 0.4rem 1rem 0.4rem 0;
+  padding: 0.4rem 0.85rem 0.4rem 0;
+  white-space: nowrap;
 }
 
 .term-table td {
-  padding: 0.35rem 1rem 0.35rem 0;
+  padding: 0.35rem 0.85rem 0.35rem 0;
   vertical-align: top;
+}
+
+/* ================= Terminal ls Multi-Column Grid ================= */
+
+.term-ls-container {
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.term-ls-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 0.35rem 1rem;
+  line-height: 1.5;
+  margin: 0.35rem 0 0.75rem;
+  width: 100%;
+}
+
+.term-ls-item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.term-ls-table {
+  border-collapse: collapse;
+  font-family: inherit;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  width: 100%;
+}
+
+.term-ls-table td {
+  padding: 0.15rem 0.5rem 0.15rem 0;
+}
+
+@media (max-width: 768px) {
+  .term-ls-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.3rem 0.75rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .term-ls-grid {
+    grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
+    gap: 0.25rem 0.5rem;
+    font-size: 0.88rem;
+  }
+  .term-table th, .term-table td {
+    padding-right: 0.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .term-ls-grid {
+    grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
+    gap: 0.2rem 0.35rem;
+    font-size: 0.82rem;
+  }
 }
 
 .term-badge {
   display: inline-block;
   color: var(--cyan);
   background: var(--accent-soft);
-  padding: 0 0.4rem;
+  padding: 0.05rem 0.45rem;
   margin-right: 0.3rem;
-  margin-bottom: 0.2rem;
-  font-size: 0.88rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.85rem;
   border: 1px solid var(--border);
+  border-radius: 2px;
 }
 
 /* Progress bar */
@@ -299,7 +370,7 @@
   color: var(--border);
 }
 
-/* ================= PRE / ASCII Banner ================= */
+/* ================= PRE / ASCII Banner / Neofetch ================= */
 
 pre {
   margin: 0.5rem 0;
@@ -307,22 +378,46 @@ pre {
   overflow-x: auto;
   white-space: pre;
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   line-height: 1.35;
   background: transparent;
   border: none;
   padding: 0;
+  -webkit-overflow-scrolling: touch;
 }
 
-@media (max-width: 600px) {
-  pre {
+.neofetch {
+  max-width: 100%;
+  overflow-x: auto;
+  font-size: 0.92rem;
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  pre, .neofetch {
     font-size: 0.72rem;
+    line-height: 1.25;
   }
 }
 
-@media (max-width: 420px) {
-  pre {
-    font-size: 0.6rem;
+@media (max-width: 520px) {
+  pre, .neofetch {
+    font-size: 0.58rem;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 400px) {
+  pre, .neofetch {
+    font-size: 0.48rem;
+    line-height: 1.15;
+  }
+}
+
+@media (max-width: 340px) {
+  pre, .neofetch {
+    font-size: 0.42rem;
+    line-height: 1.1;
   }
 }
 
@@ -344,6 +439,34 @@ pre {
 
 .about-body {
   animation: term-fade-in 0.2s ease-in;
+  white-space: pre-wrap;
+  word-break: break-word;
+  display: block;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .about-body {
+    font-size: 0.86rem;
+    line-height: 1.5;
+  }
+}
+
+/* Neofetch Palette Swatches */
+.neofetch-palette {
+  display: inline-flex;
+  gap: 5px;
+  margin: 0.6rem 0 0.4rem;
+  vertical-align: middle;
+}
+
+.palette-swatch {
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  border-radius: 2px;
 }
 
 @keyframes term-blink {
@@ -414,3 +537,170 @@ pre {
   font-size: 0.85rem;
   color: var(--muted);
 }
+
+/* ================= Ranger File Manager TUI ================= */
+
+.ranger-overlay {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bg);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  font-family: inherit;
+  color: var(--fg);
+  border-top: 1px solid var(--border);
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.ranger-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0.85rem;
+  background: var(--bg-bar);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ranger-columns {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.ranger-col-parent {
+  width: 22%;
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  padding: 0.45rem 0.5rem;
+  opacity: 0.65;
+  font-size: 0.86rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ranger-col-current {
+  width: 33%;
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  padding: 0.45rem 0.5rem;
+  font-size: 0.9rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ranger-col-preview {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.88rem;
+  background: rgba(0, 0, 0, 0.15);
+  -webkit-overflow-scrolling: touch;
+}
+
+.ranger-item {
+  padding: 0.22rem 0.5rem;
+  border-radius: 2px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5;
+  user-select: none;
+}
+
+.ranger-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.ranger-item.active {
+  background: var(--accent-soft);
+  color: var(--white);
+  font-weight: 600;
+  border-left: 3px solid var(--accent);
+}
+
+.ranger-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 0.85rem;
+  background: var(--bg-bar);
+  font-size: 0.82rem;
+  color: var(--muted);
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ranger-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  padding: 0.18rem 0.55rem;
+  font-size: 0.8rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.ranger-btn:hover {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+}
+
+.ranger-btn-exit {
+  background: rgba(255, 95, 86, 0.2);
+  border-color: #ff5f56;
+  color: #ff5f56;
+}
+
+.ranger-btn-exit:hover {
+  background: #ff5f56;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .ranger-col-parent {
+    display: none;
+  }
+  .ranger-col-current {
+    width: 45%;
+  }
+}
+
+@media (max-width: 520px) {
+  .ranger-columns {
+    flex-direction: column;
+  }
+  .ranger-col-current {
+    width: 100%;
+    max-height: 45%;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .ranger-col-preview {
+    max-height: 55%;
+  }
+  .ranger-header {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  .ranger-btn {
+    padding: 0.15rem 0.4rem;
+    font-size: 0.75rem;
+  }
+}
+

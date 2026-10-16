@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Cluster Administration
+CATEGORY:          HPC
+======================================================================
+
+Proficiency Level: 85%
+Rating Meter:      [█████████████████░░░] (85 / 100)
+Mastery Status:    Advanced / Production-ready
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+My daily work involves administering and maintaining Linux based HPC clusters

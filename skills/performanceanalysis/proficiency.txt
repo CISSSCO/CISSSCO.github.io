@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Performance Analysis
+CATEGORY:          HPC
+======================================================================
+
+Proficiency Level: 75%
+Rating Meter:      [███████████████░░░░░] (75 / 100)
+Mastery Status:    Advanced / Production-ready
+Featured Skill:    Yes (Highlight Competency)
+
+PRACTICAL CONTEXT:
+I analyze and optimize the performance of scientific and parallel applications

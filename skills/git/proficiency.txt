@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Git
+CATEGORY:          DevOps
+======================================================================
+
+Proficiency Level: 90%
+Rating Meter:      [██████████████████░░] (90 / 100)
+Mastery Status:    Expert / Core Competency
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+I use Git for version control and collaborative software development

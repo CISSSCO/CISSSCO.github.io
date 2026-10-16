@@ -1,0 +1,26 @@
+======================================================================
+TECHNICAL DOSSIER: Application Porting
+======================================================================
+ID:                applicationporting
+Domain / Category: Systems
+Proficiency:       90% [██████████████████░░]
+Status:            Expert / Core Competency
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+I have experience porting scientific applications across Linux and HPC platforms
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (Systems):
+  - Shell Scripting (90%)
+  - Linux (95%)
+  - System Administration (85%)
+  - Software Deployment (90%)
+  - Technical Documentation (95%)

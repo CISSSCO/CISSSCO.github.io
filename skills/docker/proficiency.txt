@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Docker
+CATEGORY:          Containers
+======================================================================
+
+Proficiency Level: 75%
+Rating Meter:      [███████████████░░░░░] (75 / 100)
+Mastery Status:    Advanced / Production-ready
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+I use Docker to build and manage containerized development and scientific computing environments

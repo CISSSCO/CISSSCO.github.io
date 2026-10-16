@@ -1,0 +1,14 @@
+# OrgSlide
+**Transform Emacs Org-mode and Markdown files into beautiful, interactive web presentations**
+## Description
+Developed a lightweight, browser-based presentation engine that transforms Emacs Org-mode and Markdown files into responsive, PowerPoint-style web presentations. Features client-side file parsing for privacy, interactive table of contents with multiple layouts, infinite-canvas navigation, light and dark themes, syntax-highlighted code blocks, keyboard-driven controls, and touch-friendly interactions. Designed as a zero-dependency, single-file HTML application that runs entirely in the browser without a backend, installation, or build process.
+## Tech Stack
+- Org-mode
+- Markdown
+- HTML5
+- CSS3
+- JavaScript
+- HTML5 FileReader API
+## Links
+- **Repository:** https://github.com/CISSSCO/OrgSlide
+- **Website / Demo:** https://cisssco.github.io/OrgSlide/

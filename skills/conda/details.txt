@@ -1,0 +1,24 @@
+======================================================================
+TECHNICAL DOSSIER: Conda
+======================================================================
+ID:                conda
+Domain / Category: HPC Tools
+Proficiency:       90% [██████████████████░░]
+Status:            Expert / Core Competency
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+I use Conda to create and manage reproducible scientific and AI/ML environments
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (HPC Tools):
+  - Slurm (75%)
+  - Spack (90%)
+  - JupyterHub (90%)

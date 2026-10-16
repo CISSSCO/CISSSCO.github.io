@@ -1,0 +1,25 @@
+======================================================================
+TECHNICAL STACK & ENVIRONMENTS: Indian Institute of Technology (Banaras Hindu University), Varanasi
+======================================================================
+
+Technologies & Tools:
+  [C]
+  [C++]
+  [Python]
+  [Bash]
+  [MPI]
+  [OpenMP]
+  [CUDA]
+  [Linux]
+  [SLURM]
+  [Spack]
+  [Conda]
+  [JupyterHub]
+  [Apptainer]
+  [Intel MPI]
+  [OpenMPI]
+  [Intel oneAPI]
+  [Scientific Computing]
+  [HPC Systems]
+
+Total Stack Items: 18

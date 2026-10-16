@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Apptainer
+CATEGORY:          Containers
+======================================================================
+
+Proficiency Level: 70%
+Rating Meter:      [██████████████░░░░░░] (70 / 100)
+Mastery Status:    Proficient / Working Knowledge
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+I use Apptainer to deploy portable and reproducible applications on HPC systems

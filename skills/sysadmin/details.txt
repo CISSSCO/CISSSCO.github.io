@@ -1,0 +1,25 @@
+======================================================================
+TECHNICAL DOSSIER: System Administration
+======================================================================
+ID:                sysadmin
+Domain / Category: Systems
+Proficiency:       85% [█████████████████░░░]
+Status:            Advanced / Production-ready
+Featured:          Yes
+
+DESCRIPTION & CONTEXT:
+My daily work involves parts of system admin and monitoring for efficient cluster usage
+
+PORTFOLIO USAGE:
+Used in 1 of 9 projects (11.1%)
+  - HPCCFS: Build a production-like HPC cluster from scratch using open-source technologies
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+
+RELATED SKILLS (Systems):
+  - Shell Scripting (90%)
+  - Linux (95%)
+  - Software Deployment (90%)
+  - Application Porting (90%)
+  - Technical Documentation (95%)

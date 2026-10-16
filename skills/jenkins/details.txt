@@ -1,0 +1,25 @@
+======================================================================
+TECHNICAL DOSSIER: Jenkins
+======================================================================
+ID:                jenkins
+Domain / Category: DevOps
+Proficiency:       60% [████████████░░░░░░░░]
+Status:            Proficient / Working Knowledge
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Have experience creating and maintaining CI/CD pipelines using Jenkins
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - Independent technical practice & systems customization
+
+RELATED SKILLS (DevOps):
+  - Git (90%)
+  - Ansible (60%)
+  - Kubernetes (60%)
+  - Prometheus (55%)
+  - Grafana (55%)

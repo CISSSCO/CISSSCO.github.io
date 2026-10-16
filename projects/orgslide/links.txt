@@ -1,0 +1,6 @@
+======================================================================
+LINKS & REPOSITORIES: OrgSlide
+======================================================================
+
+GitHub Repo: https://github.com/CISSSCO/OrgSlide
+Live Web:    https://cisssco.github.io/OrgSlide/

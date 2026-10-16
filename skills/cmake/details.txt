@@ -1,0 +1,22 @@
+======================================================================
+TECHNICAL DOSSIER: CMake
+======================================================================
+ID:                cmake
+Domain / Category: Compilers and Build Tolls
+Proficiency:       80% [████████████████░░░░]
+Status:            Advanced / Production-ready
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+I use CMake to configure and build scientific and HPC software projects
+
+PORTFOLIO USAGE:
+Used in 1 of 9 projects (11.1%)
+  - HPCCFS: Build a production-like HPC cluster from scratch using open-source technologies
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (Compilers and Build Tolls):
+  - GNU Make (70%)

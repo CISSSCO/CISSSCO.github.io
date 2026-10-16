@@ -1,0 +1,31 @@
+======================================================================
+TECHNICAL STACK & ENVIRONMENTS: Centre for Development of Advanced Computing (C-DAC), India
+======================================================================
+
+Technologies & Tools:
+  [Linux]
+  [C]
+  [C++]
+  [Python]
+  [Bash]
+  [MPI]
+  [OpenMP]
+  [Pthreads]
+  [CUDA]
+  [OpenACC]
+  [SLURM]
+  [Spack]
+  [Conda]
+  [Intel oneAPI]
+  [Intel MPI]
+  [OpenMPI]
+  [NVHPC]
+  [GCC]
+  [MKL]
+  [VTune]
+  [Git]
+  [Scientific Computing]
+  [HPC Toolchains]
+  [Supercomputing]
+
+Total Stack Items: 24

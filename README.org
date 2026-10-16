@@ -115,10 +115,11 @@ The intent is to provide context about my daily working environment.
 Displays technical skills, proficiency levels with ASCII progress bars,
 and primary usage areas. Supports filtering by keyword (e.g. =skills c++=).
 
-** experience
+** experience / experiences
 
 Displays chronological work experience and research engineering roles at
 IIT (BHU) and C-DAC under the National Supercomputing Mission (NSM).
+Supports filtering by keyword (e.g. =experience hpc=).
 
 ** man
 
@@ -131,17 +132,21 @@ Clears all rendered output from the terminal screen or press =Ctrl+L=.
 ** Shell Utilities
 
 The terminal emulator also supports common Unix shell tools:
-- =ls [-l]=: List simulated filesystem entries
-- =cat <file>=: Display contents of virtual files
-- =tree=: Display visual ASCII directory tree
+- =cd [dir]=: Navigate the virtual filesystem (=projects/=, =skills/=, =experiences/=)
+- =ls [-l] [dir]=: List directory entries in a responsive wrapped grid or long table
+- =cat <file>=: Display contents of virtual files (with automatic directory README previews)
+- =tree [dir]=: Display visual ASCII directory tree
 - =whoami=: Print user identity
 - =uname -a=: Display operating system signature
 - =pwd=: Print current working directory
 - =date=: Show system date and time
 - =theme [name]=: Switch color palette (=default=, =matrix=, =dracula=, =nord=, =gruvbox=, =amber=)
-- =crt=: Toggle retro CRT cathode scanline effect
+- =ranger [dir]= / =r=: Interactive terminal file manager with Miller columns and live previews
+- =alias=: Display list of all defined command shortcuts
+- =neofetch=: Display compact system identity banner and profile links
 - =history=: View session command history
-- =exit=: Terminate terminal session
+- =exit / quit / q=: Terminate terminal session
+
 
 
 Commands are implemented as string keys mapped to content blocks.

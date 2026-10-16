@@ -1,0 +1,21 @@
+======================================================================
+PROJECT UTILIZATION: Technical Documentation
+======================================================================
+
+Portfolio Utilization: 3 of 9 projects (33.3%)
+
+Projects Utilizing Technical Documentation:
+  * OrgSlide (orgslide)
+    - Tagline: Transform Emacs Org-mode and Markdown files into beautiful, interactive web presentations
+    - Stack:   Org-mode, Markdown, HTML5, CSS3, JavaScript, HTML5 FileReader API
+    - Repo:    https://github.com/CISSSCO/OrgSlide
+
+  * HPCCFS (hpccfs)
+    - Tagline: Build a production-like HPC cluster from scratch using open-source technologies
+    - Stack:   Rocky Linux, Slurm, OpenMPI, LDAP, NFS, Environment Modules, Spack, Munge, MariaDB, SlurmDBD, Bash, C, MPI
+    - Repo:    https://github.com/CISSSCO/HPCCFS
+
+  * CISSSCO.github.io (cisssco)
+    - Tagline: Terminal style Personal portfolio
+    - Stack:   JavaScript, HTML, CSS
+    - Repo:    https://github.com/CISSSCO/CISSSCO.github.io

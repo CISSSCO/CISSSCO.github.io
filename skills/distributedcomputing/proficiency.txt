@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Distributed Computing
+CATEGORY:          Parallel Computing
+======================================================================
+
+Proficiency Level: 75%
+Rating Meter:      [███████████████░░░░░] (75 / 100)
+Mastery Status:    Advanced / Production-ready
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+My daily work involve working on distributed computing environment like PARAM Series of Supercomputers

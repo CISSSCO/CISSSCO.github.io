@@ -1,0 +1,31 @@
+======================================================================
+PROJECT UTILIZATION: Shell Scripting
+======================================================================
+
+Portfolio Utilization: 5 of 9 projects (55.6%)
+
+Projects Utilizing Shell Scripting:
+  * HPCCFS (hpccfs)
+    - Tagline: Build a production-like HPC cluster from scratch using open-source technologies
+    - Stack:   Rocky Linux, Slurm, OpenMPI, LDAP, NFS, Environment Modules, Spack, Munge, MariaDB, SlurmDBD, Bash, C, MPI
+    - Repo:    https://github.com/CISSSCO/HPCCFS
+
+  * CerrFix (cerrfix)
+    - Tagline: Rule-based error analysis and fix suggestion tool for Linux systems
+    - Stack:   Python, Bash Scripting, YAML
+    - Repo:    https://github.com/CISSSCO/cerrfix
+
+  * GitPush (gitpush)
+    - Tagline: Minimal CLI helper to automate common git workflows
+    - Stack:   Bash Scripting
+    - Repo:    https://github.com/CISSSCO/gitpush
+
+  * Dotfiles (dotfiles)
+    - Tagline: Reproducible Linux shell and development environment configuration
+    - Stack:   Bash Scripting, Vimscript, Python, Lisp, YAML
+    - Repo:    https://github.com/CISSSCO/dotfiles
+
+  * My VimRC (myvimrc)
+    - Tagline: Customized Vim configuration for personal use and efficient editing
+    - Stack:   Vimscript, Bash Scripting
+    - Repo:    https://github.com/CISSSCO/myvimrc_config

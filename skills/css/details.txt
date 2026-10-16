@@ -1,0 +1,26 @@
+======================================================================
+TECHNICAL DOSSIER: CSS
+======================================================================
+ID:                css
+Domain / Category: Web Technology
+Proficiency:       80% [████████████████░░░░]
+Status:            Advanced / Production-ready
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Style Webpages and my ORG Documents
+
+PORTFOLIO USAGE:
+Used in 3 of 9 projects (33.3%)
+  - OrgSlide: Transform Emacs Org-mode and Markdown files into beautiful, interactive web presentations
+  - CISSSCO.github.io: Terminal style Personal portfolio
+  - PopularWebsiteThemes: Custom themes for popular websites like 10fastfingers
+
+ORGANIZATIONAL ROLES:
+  - Independent technical practice & systems customization
+
+RELATED SKILLS (Web Technology):
+  - HTML (90%)
+  - JavaScript (65%)
+  - ReactJS (50%)
+  - ThreeJS (50%)

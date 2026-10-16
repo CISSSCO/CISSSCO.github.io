@@ -79,14 +79,172 @@
       ]
     },
 
+    "experience": {
+      "summary": "Display professional engineering experience",
+      "usage": [
+        "experience",
+        "experience <keyword>"
+      ],
+      "description": "Display work history, research roles at IIT (BHU) and C-DAC, key responsibilities, and technologies used.",
+      "examples": [
+        "experience",
+        "experience hpc",
+        "experience cdac"
+      ]
+    },
+
+    "experiences": {
+      "summary": "Display professional engineering experience (alias)",
+      "usage": [
+        "experiences",
+        "experiences <keyword>"
+      ],
+      "description": "Alias for the experience command.",
+      "examples": [
+        "experiences"
+      ]
+    },
+
+    "cd": {
+      "summary": "Change current working directory",
+      "usage": [
+        "cd [directory]"
+      ],
+      "description": "Navigate through the virtual filesystem. Explore folders via 'cd projects', 'cd skills', 'cd experiences', and their subdirectories.",
+      "examples": [
+        "cd projects",
+        "cd skills",
+        "cd experiences",
+        "cd skills/python",
+        "cd ..",
+        "cd ~"
+      ]
+    },
+
+    "ls": {
+      "summary": "List simulated filesystem entries",
+      "usage": [
+        "ls",
+        "ls -l",
+        "ls [directory]"
+      ],
+      "description": "Lists virtual files and directories in the current or specified directory in a responsive grid or detailed table.",
+      "examples": [
+        "ls",
+        "ls -l",
+        "ls projects",
+        "ls skills",
+        "ls experiences"
+      ]
+    },
+
+    "cat": {
+      "summary": "Concatenate and print files",
+      "usage": [
+        "cat <file>"
+      ],
+      "description": "Reads and renders simulated file content to the terminal screen.",
+      "examples": [
+        "cat about.txt",
+        "cat skills/python/proficiency.txt",
+        "cat projects/orgslide/README.md",
+        "cat experiences/iitbhu/role.txt"
+      ]
+    },
+
+    "tree": {
+      "summary": "List contents of directories in a tree format",
+      "usage": [
+        "tree",
+        "tree [directory]"
+      ],
+      "description": "Displays a visual ASCII tree of the entire portfolio filesystem or a target directory.",
+      "examples": [
+        "tree",
+        "tree projects",
+        "tree skills",
+        "tree experiences"
+      ]
+    },
+
+    "theme": {
+      "summary": "Switch terminal color palette",
+      "usage": [
+        "theme",
+        "theme <name>"
+      ],
+      "description": "Allows switching between different terminal color schemes: default, matrix, dracula, gruvbox, nord, amber.",
+      "examples": [
+        "theme",
+        "theme matrix",
+        "theme dracula",
+        "theme gruvbox"
+      ]
+    },
+
+    "crt": {
+      "summary": "Toggle retro CRT scanline effect",
+      "usage": [
+        "crt"
+      ],
+      "description": "Toggles retro cathode-ray-tube scanline styling overlay on the terminal viewport.",
+      "examples": [
+        "crt"
+      ]
+    },
+
+    "ranger": {
+      "summary": "Interactive terminal file manager with Miller columns",
+      "usage": [
+        "ranger",
+        "ranger [directory]",
+        "r"
+      ],
+      "description": "Curses/TUI-style file navigator. Browse virtual directories with arrow keys (or h/j/k/l), inspect live text and directory previews, and change working directories upon exit.",
+      "examples": [
+        "ranger",
+        "ranger projects",
+        "ranger skills",
+        "ranger experiences",
+        "r"
+      ]
+    },
+
+    "neofetch": {
+      "summary": "Display author identity, roles, and compact system banner",
+      "usage": [
+        "neofetch",
+        "fetch"
+      ],
+      "description": "Fastfetch/Neofetch inspired system overview displaying author name, current position at C-DAC (National Supercomputing Mission), former deputation at IIT (BHU) Varanasi, profile links, and ANSI color swatches.",
+      "examples": [
+        "neofetch",
+        "fetch"
+      ]
+    },
+
+    "alias": {
+      "summary": "Display list of all defined command shortcuts and aliases",
+      "usage": [
+        "alias"
+      ],
+      "description": "Prints an aligned table of all shortcut commands (e.g. c -> clear, q -> exit, ll -> ls -l, r -> ranger).",
+      "examples": [
+        "alias"
+      ]
+    },
+
     "clear": {
       "summary": "Clear the terminal screen",
       "usage": [
-        "clear"
+        "clear",
+        "c",
+        "cls"
       ],
       "description": "Clear all output from the terminal.",
       "examples": [
-        "clear"
+        "clear",
+        "c"
       ]
     }
   },

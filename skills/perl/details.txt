@@ -1,0 +1,26 @@
+======================================================================
+TECHNICAL DOSSIER: Perl
+======================================================================
+ID:                perl
+Domain / Category: Programming
+Proficiency:       60% [████████████░░░░░░░░]
+Status:            Proficient / Working Knowledge
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Used Perl for scripting, automation, and maintaining scientific software workflows
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+
+RELATED SKILLS (Programming):
+  - C / C++ (90%)
+  - Python (75%)
+  - JAVA (60%)
+  - Data Structure and Algorithms (70%)
+  - Fortran (75%)
+  - Batch Scripting (70%)

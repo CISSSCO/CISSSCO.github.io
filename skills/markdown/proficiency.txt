@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Markdown
+CATEGORY:          Literate Programming
+======================================================================
+
+Proficiency Level: 85%
+Rating Meter:      [█████████████████░░░] (85 / 100)
+Mastery Status:    Advanced / Production-ready
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Write technical documentation, project documentation, README files, and knowledge base articles using Markdown

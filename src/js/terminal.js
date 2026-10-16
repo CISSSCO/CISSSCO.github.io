@@ -77,6 +77,35 @@
     });
   }
 
+  // Interactive workspace tag badges
+  const tagBadges = document.querySelectorAll(".tag-badge");
+  tagBadges.forEach((badge, idx) => {
+    badge.style.cursor = "pointer";
+    badge.addEventListener("click", () => {
+      tagBadges.forEach(b => b.classList.remove("active"));
+      badge.classList.add("active");
+      if (idx === 0) {
+        terminalAPI.banner();
+      } else if (idx === 1) {
+        executeCommand("projects hpccfs");
+      } else if (idx === 2) {
+        executeCommand("projects");
+      }
+    });
+  });
+
+  // Cycle themes on clicking theme badge
+  if (themeBadge) {
+    themeBadge.style.cursor = "pointer";
+    themeBadge.title = "Click to cycle theme";
+    themeBadge.addEventListener("click", () => {
+      const themes = window.COMMANDS ? window.COMMANDS.getThemes() : ["default", "matrix", "dracula", "gruvbox", "nord", "amber"];
+      const nextIdx = (themes.indexOf(currentTheme) + 1) % themes.length;
+      setTheme(themes[nextIdx]);
+      printLine(`Theme switched to '${themes[nextIdx]}'`);
+    });
+  }
+
   /* ================= Core Helpers ================= */
 
   function escapeHTML(str) {
@@ -285,7 +314,7 @@
     try {
       const res = await fetch("src/data/projects.json");
       const data = await res.json();
-      PROJECTS_CACHE = data.projects;
+      PROJECTS_CACHE = Array.isArray(data) ? data : (data.projects || []);
       return PROJECTS_CACHE;
     } catch (err) {
       return [];
@@ -297,7 +326,7 @@
     try {
       const res = await fetch("src/data/skills.json");
       const data = await res.json();
-      SKILLS_CACHE = data.skills;
+      SKILLS_CACHE = Array.isArray(data) ? data : (data.skills || []);
       return SKILLS_CACHE;
     } catch (err) {
       return [];
@@ -309,7 +338,7 @@
     try {
       const res = await fetch("src/data/experience.json");
       const data = await res.json();
-      EXPERIENCE_CACHE = data.experience;
+      EXPERIENCE_CACHE = Array.isArray(data) ? data : (data.experience || []);
       return EXPERIENCE_CACHE;
     } catch (err) {
       return [];
@@ -327,6 +356,16 @@
     }
   }
 
+  async function initVFSData() {
+    try {
+      const [p, s, e] = await Promise.all([loadProjects(), loadSkills(), loadExperience()]);
+      if (p.length && s.length && e.length && window.VFS && window.VFS.init) {
+        window.VFS.init(p, s, e);
+      }
+    } catch (err) {}
+  }
+  initVFSData();
+
   /* ================= Terminal-Native Renderers ================= */
 
   function renderProjects(projects) {
@@ -340,14 +379,18 @@
       const branchChar = isLast ? "└──" : "├──";
       const pipeChar = isLast ? "    " : "│   ";
 
-      const stackBadges = p.stack.map(s => `[${s}]`).join(" ");
+      const stackBadges = (p.stack || []).map(s => `[${s}]`).join(" ");
+      const title = p.title || p.name || p.id;
+      const excerpt = p.excerpt || p.description || "";
+      const repo = p.repo || "";
+      const web = p.url || p.website || null;
 
       return `
-<span class="tree-branch">${branchChar} </span><span class="tree-node term-bold">${p.name}</span> <span class="term-dim">(${p.domain})</span>
-<span class="tree-branch">${pipeChar}├── </span><span class="term-key">desc:</span>  <span class="tree-desc">${p.description}</span>
+<span class="tree-branch">${branchChar} </span><span class="tree-node term-bold">${title}</span> ${p.featured ? '<span class="term-badge term-yellow">featured</span>' : ""}
+<span class="tree-branch">${pipeChar}├── </span><span class="term-key">desc:</span>  <span class="tree-desc">${excerpt}</span>
 <span class="tree-branch">${pipeChar}├── </span><span class="term-key">stack:</span> <span class="term-cyan">${stackBadges}</span>
-<span class="tree-branch">${pipeChar}${p.website ? "├──" : "└──"} </span><span class="term-key">repo:</span>  <a class="term-link" href="${p.repo}" target="_blank">${p.repo}</a>
-${p.website ? `<span class="tree-branch">${pipeChar}└── </span><span class="term-key">web:</span>   <a class="term-link" href="${p.website}" target="_blank">${p.website}</a>` : ""}
+<span class="tree-branch">${pipeChar}${web ? "├──" : "└──"} </span><span class="term-key">repo:</span>  <a class="term-link" href="${repo}" target="_blank">${repo}</a>
+${web ? `<span class="tree-branch">${pipeChar}└── </span><span class="term-key">web:</span>   <a class="term-link" href="${web}" target="_blank">${web}</a>` : ""}
       `.trim();
     }).join("\n");
 
@@ -358,7 +401,7 @@ ${p.website ? `<span class="tree-branch">${pipeChar}└── </span><span class
 ${items}
   </div>
   <div class="term-dim" style="margin-top: 0.75rem;">
-    [Tip] Navigate into projects with '<span class="term-cyan">cd projects</span>', then '<span class="term-green">ls</span>' and '<span class="term-green">cat README.md</span>' (or features.txt, stack.txt, links.txt).
+    [Tip] Navigate into projects with '<span class="term-cyan">cd projects/&lt;id&gt;</span>', then '<span class="term-green">ls</span>' and '<span class="term-green">cat README.md</span>' (or details.txt, stack.txt, links.txt).
   </div>
 </div>
     `);
@@ -371,18 +414,20 @@ ${items}
     }
 
     const rows = skills.map(s => {
-      const level = Math.min(10, Math.max(0, s.level || 0));
-      const fillBar = "█".repeat(level);
-      const emptyBar = "░".repeat(10 - level);
+      const rawLevel = s.level != null ? s.level : 70;
+      const pct = rawLevel <= 10 ? rawLevel * 10 : rawLevel;
+      const level10 = Math.min(10, Math.max(0, Math.round(pct / 10)));
+      const fillBar = "█".repeat(level10);
+      const emptyBar = "░".repeat(10 - level10);
       const barHTML = `<span class="bar-fill">${fillBar}</span><span class="bar-empty">${emptyBar}</span>`;
 
       return `
       <tr>
-        <td style="font-weight:600; width: 130px;"><span class="term-cyan">${s.name}</span></td>
-        <td style="width: 170px;"><span style="font-family:inherit;">[${barHTML}]</span> <span class="term-dim">${level}/10</span></td>
+        <td style="font-weight:600; min-width: 130px;"><span class="term-cyan">${s.name}</span></td>
+        <td style="min-width: 140px; white-space: nowrap;"><span style="font-family:inherit;">[${barHTML}]</span> <span class="term-dim">${pct}%</span></td>
+        <td style="min-width: 110px;"><span class="term-yellow">${s.category || ""}</span></td>
         <td>
-          <span class="term-fg">${s.notes || ""}</span>
-          <div class="term-dim" style="font-size:0.85rem; margin-top: 0.15rem;">areas: ${s.areas ? s.areas.join(", ") : ""}</div>
+          <span class="term-fg">${s.context || s.notes || ""}</span>
         </td>
       </tr>
       `;
@@ -391,18 +436,24 @@ ${items}
     printHTML(`
 <div class="terminal-section">
   <div class="term-title term-bold" style="margin-bottom: 0.5rem;">~/skills (${skills.length} competencies)</div>
-  <table class="term-table">
-    <thead>
-      <tr>
-        <th>SKILL</th>
-        <th>PROFICIENCY</th>
-        <th>NOTES & AREAS</th>
-      </tr>
-    </thead>
-    <tbody>
-      ${rows}
-    </tbody>
-  </table>
+  <div class="term-table-responsive">
+    <table class="term-table">
+      <thead>
+        <tr>
+          <th>SKILL</th>
+          <th>PROFICIENCY</th>
+          <th>CATEGORY</th>
+          <th>PRACTICAL CONTEXT</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${rows}
+      </tbody>
+    </table>
+  </div>
+  <div class="term-dim" style="margin-top: 0.5rem;">
+    [Tip] Explore detailed skill dossiers with '<span class="term-cyan">cd skills/&lt;skill_id&gt;</span>' and view '<span class="term-green">proficiency.txt</span>', '<span class="term-green">projects.txt</span>', '<span class="term-green">experience.txt</span>'.
+  </div>
 </div>
     `);
   }
@@ -413,37 +464,48 @@ ${items}
       return;
     }
 
-    const cards = experiences.map(e => `
+    const cards = experiences.map(e => {
+      const role = e.role || e.title;
+      const org = e.org || e.organization;
+      const period = e.period;
+      const duration = e.duration ? `(${e.duration})` : "";
+      const summary = e.summary || "";
+      const highlights = e.highlights || e.responsibilities || [];
+      const stack = e.stack || e.technologies || [];
+
+      return `
 <div style="margin-bottom: 1.5rem;">
   <div>
-    <span class="term-green term-bold">* ${e.period}</span>
-    <span class="term-dim"> · </span>
-    <span class="term-yellow">${e.type}</span>
-    <span class="term-dim"> (${e.location})</span>
+    <span class="term-green term-bold">* ${period}</span>
+    ${duration ? `<span class="term-dim"> · </span><span class="term-yellow">${duration}</span>` : ""}
   </div>
   <div style="font-size: 1.05rem; margin: 0.2rem 0 0.1rem;">
-    <span class="term-title term-bold">${e.title}</span>
+    <span class="term-title term-bold">${role}</span>
     <span class="term-dim"> @ </span>
-    <span class="term-cyan">${e.organization}</span>
+    <span class="term-cyan">${org}</span>
   </div>
-  <div class="term-fg" style="margin: 0.4rem 0 0.6rem;">${e.summary}</div>
+  <div class="term-fg" style="margin: 0.4rem 0 0.6rem;">${summary}</div>
 
-  <div class="term-key" style="margin-bottom: 0.3rem;">Key Responsibilities:</div>
+  <div class="term-key" style="margin-bottom: 0.3rem;">Key Highlights & Responsibilities:</div>
   <ul style="margin: 0 0 0.8rem 0; padding-left: 1.2rem;">
-    ${e.responsibilities.map(r => `<li style="margin-bottom: 0.25rem;">${r}</li>`).join("")}
+    ${highlights.map(r => `<li style="margin-bottom: 0.25rem;">${r}</li>`).join("")}
   </ul>
 
   <div>
     <span class="term-key">Stack: </span>
-    ${e.technologies.map(t => `<span class="term-badge">${t}</span>`).join(" ")}
+    ${stack.map(t => `<span class="term-badge">${t}</span>`).join(" ")}
   </div>
 </div>
-    `).join("");
+      `;
+    }).join("");
 
     printHTML(`
 <div class="terminal-section">
-  <div class="term-title term-bold" style="margin-bottom: 0.75rem;">~/experience (${experiences.length} positions)</div>
+  <div class="term-title term-bold" style="margin-bottom: 0.75rem;">~/experiences (${experiences.length} positions)</div>
   ${cards}
+  <div class="term-dim" style="margin-top: 0.75rem;">
+    [Tip] Explore detailed role logs with '<span class="term-cyan">cd experiences/&lt;id&gt;</span>' and view '<span class="term-green">role.txt</span>', '<span class="term-green">responsibilities.txt</span>', '<span class="term-green">stack.txt</span>'.
+  </div>
 </div>
     `);
   }
@@ -497,6 +559,34 @@ ${items}
     printHTML(html);
   }
 
+  function renderAllManEntries() {
+    const docs = window.HELP_DOCS || {};
+    let sections = Object.entries(docs).map(([name, entry]) => `
+<div style="margin-bottom: 1.2rem; border-left: 2px solid var(--accent); padding-left: 0.85rem;">
+  <div style="margin-bottom: 0.35rem;">
+    <span class="term-cyan term-bold" style="font-size: 1.05rem;">${name}</span>
+    <span class="term-dim"> — </span>
+    <span class="term-value">${entry.summary || ""}</span>
+  </div>
+  <div style="margin: 0.25rem 0;"><span class="term-key">Synopsis:</span> <span class="term-yellow">${entry.usage ? entry.usage.join(" | ") : name}</span></div>
+  <div style="line-height: 1.5; margin: 0.35rem 0;"><span class="term-dim">${entry.description || ""}</span></div>
+  ${entry.examples ? `<div style="margin-top: 0.25rem;"><span class="term-key">Examples:</span> <span class="term-green">${entry.examples.join(", ")}</span></div>` : ""}
+</div>
+    `).join("");
+
+    printHTML(`
+<div class="terminal-section">
+  <div class="term-title term-bold" style="font-size: 1.1rem; margin-bottom: 0.4rem;">CISSSCO MANUAL — COMPLETE COMMAND REFERENCE</div>
+  <div class="term-dim" style="margin-bottom: 1rem;">Comprehensive manual pages for all commands, shell utilities, and navigation tools.</div>
+  ${sections}
+  <div class="term-dim" style="margin-top: 0.8rem; border-top: 1px dashed var(--border); padding-top: 0.5rem;">
+    [Tip] Type '<span class="term-cyan">man &lt;command&gt;</span>' (e.g. '<span class="term-green">man ranger</span>', '<span class="term-green">man projects</span>') for individual command manuals.<br>
+    [Tip] Type '<span class="term-cyan">help</span>' for a concise summary.
+  </div>
+</div>
+    `);
+  }
+
   /* ================= Terminal API for Commands ================= */
 
   const terminalAPI = {
@@ -547,9 +637,13 @@ ${items}
 
       const term = args[0].toLowerCase();
       renderProjects(list.filter(p =>
-        p.name.toLowerCase().includes(term) ||
-        p.domain.toLowerCase().includes(term) ||
-        p.stack.some(s => s.toLowerCase().includes(term))
+        (p.title && p.title.toLowerCase().includes(term)) ||
+        (p.name && p.name.toLowerCase().includes(term)) ||
+        (p.id && p.id.toLowerCase().includes(term)) ||
+        (p.excerpt && p.excerpt.toLowerCase().includes(term)) ||
+        (p.domain && p.domain.toLowerCase().includes(term)) ||
+        (p.description && p.description.toLowerCase().includes(term)) ||
+        (p.stack && p.stack.some(s => s.toLowerCase().includes(term)))
       ));
     },
 
@@ -559,7 +653,11 @@ ${items}
 
       const term = args[0].toLowerCase();
       renderSkills(list.filter(s =>
-        s.name.toLowerCase().includes(term) ||
+        (s.name && s.name.toLowerCase().includes(term)) ||
+        (s.id && s.id.toLowerCase().includes(term)) ||
+        (s.category && s.category.toLowerCase().includes(term)) ||
+        (s.context && s.context.toLowerCase().includes(term)) ||
+        (s.notes && s.notes.toLowerCase().includes(term)) ||
         (s.areas && s.areas.some(a => a.toLowerCase().includes(term)))
       ));
     },
@@ -570,15 +668,19 @@ ${items}
 
       const term = args[0].toLowerCase();
       renderExperience(list.filter(e =>
-        e.title.toLowerCase().includes(term) ||
-        e.organization.toLowerCase().includes(term) ||
-        (e.technologies && e.technologies.some(t => t.toLowerCase().includes(term)))
+        (e.role && e.role.toLowerCase().includes(term)) ||
+        (e.title && e.title.toLowerCase().includes(term)) ||
+        (e.id && e.id.toLowerCase().includes(term)) ||
+        (e.org && e.org.toLowerCase().includes(term)) ||
+        (e.organization && e.organization.toLowerCase().includes(term)) ||
+        (e.summary && e.summary.toLowerCase().includes(term)) ||
+        ((e.stack || e.technologies) && (e.stack || e.technologies).some(t => t.toLowerCase().includes(term)))
       ));
     },
 
     async man(args = []) {
-      if (!args.length) {
-        printLine("usage: man <command>");
+      if (!args.length || args[0] === "--all") {
+        renderAllManEntries();
         return;
       }
       const name = args[0].toLowerCase();

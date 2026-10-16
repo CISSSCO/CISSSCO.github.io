@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: CMake
+CATEGORY:          Compilers and Build Tolls
+======================================================================
+
+Proficiency Level: 80%
+Rating Meter:      [████████████████░░░░] (80 / 100)
+Mastery Status:    Advanced / Production-ready
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+I use CMake to configure and build scientific and HPC software projects

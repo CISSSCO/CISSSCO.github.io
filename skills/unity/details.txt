@@ -1,0 +1,22 @@
+======================================================================
+TECHNICAL DOSSIER: Unity
+======================================================================
+ID:                unity
+Domain / Category: 3D/Design
+Proficiency:       65% [█████████████░░░░░░░]
+Status:            Proficient / Working Knowledge
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Used this to develop and port my applications to different plateform including web and windows devices
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - Independent technical practice & systems customization
+
+RELATED SKILLS (3D/Design):
+  - Digital Sculpting (80%)
+  - Blender (80%)

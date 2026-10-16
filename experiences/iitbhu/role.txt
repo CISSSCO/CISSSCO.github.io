@@ -1,0 +1,9 @@
+======================================================================
+ROLE:         HPC Application Engineer
+ORGANIZATION: Indian Institute of Technology (Banaras Hindu University), Varanasi
+PERIOD:       Feb 2025 — Aug 2026
+DURATION:     1.5 year
+======================================================================
+
+SUMMARY:
+Working as an HPC Application Engineer at IIT (BHU), deputed by C-DAC, supporting large-scale scientific and computational research workloads.

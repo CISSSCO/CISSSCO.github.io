@@ -1,0 +1,23 @@
+======================================================================
+TECHNICAL DOSSIER: JupyterHub
+======================================================================
+ID:                jupyterhub
+Domain / Category: HPC Tools
+Proficiency:       90% [██████████████████░░]
+Status:            Expert / Core Competency
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Designed and deployed JupyterHub platforms integrated with HPC resources and authentication
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+
+RELATED SKILLS (HPC Tools):
+  - Slurm (75%)
+  - Spack (90%)
+  - Conda (90%)

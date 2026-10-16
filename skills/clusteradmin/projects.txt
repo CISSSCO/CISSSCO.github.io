@@ -1,0 +1,11 @@
+======================================================================
+PROJECT UTILIZATION: Cluster Administration
+======================================================================
+
+Portfolio Utilization: 1 of 9 projects (11.1%)
+
+Projects Utilizing Cluster Administration:
+  * HPCCFS (hpccfs)
+    - Tagline: Build a production-like HPC cluster from scratch using open-source technologies
+    - Stack:   Rocky Linux, Slurm, OpenMPI, LDAP, NFS, Environment Modules, Spack, Munge, MariaDB, SlurmDBD, Bash, C, MPI
+    - Repo:    https://github.com/CISSSCO/HPCCFS

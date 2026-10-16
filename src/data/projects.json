@@ -1,55 +1,113 @@
-{
-  "projects": [
+[
     {
-      "name": "cerrfix",
-      "domain": "linux tooling",
-      "stack": ["python", "shell"],
-      "description": "Rule-based error analysis and fix suggestion tool",
-      "repo": "https://github.com/CISSSCO/cerrfix"
+        "id": "orgslide",
+        "title": "OrgSlide",
+        "excerpt": "Transform Emacs Org-mode and Markdown files into beautiful, interactive web presentations",
+        "description": "Developed a lightweight, browser-based presentation engine that transforms Emacs Org-mode and Markdown files into responsive, PowerPoint-style web presentations. Features client-side file parsing for privacy, interactive table of contents with multiple layouts, infinite-canvas navigation, light and dark themes, syntax-highlighted code blocks, keyboard-driven controls, and touch-friendly interactions. Designed as a zero-dependency, single-file HTML application that runs entirely in the browser without a backend, installation, or build process.",
+        "stack": [
+            "Org-mode",
+            "Markdown",
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "HTML5 FileReader API"
+        ],
+        "featured": true,
+        "repo": "https://github.com/CISSSCO/OrgSlide",
+        "url": "https://cisssco.github.io/OrgSlide/"
     },
     {
-      "name": "gitpush",
-      "domain": "developer tooling",
-      "stack": ["shell", "git"],
-      "description": "Minimal helper for repetitive git workflows",
-      "repo": "https://github.com/CISSSCO/gitpush"
+        "id": "hpccfs",
+        "title": "HPCCFS",
+        "excerpt": "Build a production-like HPC cluster from scratch using open-source technologies",
+        "description": "Designed and documented a complete HPC cluster from the ground up, implementing centralized authentication, shared storage, workload scheduling, accounting, QoS, fairshare scheduling, software management with Environment Modules, and distributed MPI execution. The project serves as a comprehensive educational guide that closely follows real-world HPC center practices.",
+        "stack": [
+            "Rocky Linux",
+            "Slurm",
+            "OpenMPI",
+            "LDAP",
+            "NFS",
+            "Environment Modules",
+            "Spack",
+            "Munge",
+            "MariaDB",
+            "SlurmDBD",
+            "Bash",
+            "C",
+            "MPI"
+        ],
+        "featured": true,
+        "repo": "https://github.com/CISSSCO/HPCCFS",
+        "url": "https://cisssco.github.io/HPCCFS/"
     },
     {
-      "name": "Portfolio",
-      "domain": "portfolio",
-      "stack": ["react", "threejs", "typescript", "web dev"],
-      "description": "Personal Website",
-      "repo": "https://github.com/CISSSCO/CiscoRamon",
-      "website": "https://ciscoramon.pages.dev"
+        "id": "playlisto",
+        "title": "Playlisto",
+        "excerpt": "Turn Google Drive into your personal music streaming server",
+        "description": "Developed a personal cloud music server that streams Google Drive media seamlessly across web browsers and Kodi",
+        "stack": [
+            "Python",
+            "FastAPI",
+            "React",
+            "TypeScript",
+            "Google Drive API",
+            "HTTP Streaming",
+            "Kodi Add-on"
+        ],
+        "featured": true,
+        "repo": "https://github.com/CISSSCO/Playlisto"
     },
     {
-      "name": "dotfiles",
-      "domain": "environment",
-      "stack": ["shell"],
-      "description": "Reproducible Linux shell and development configuration",
-      "repo": "https://github.com/CISSSCO/dotfiles"
+        "id": "cerrfix",
+        "title": "CerrFix",
+        "excerpt": "Rule-based error analysis and fix suggestion tool for Linux systems",
+        "description": "cerrfix is a lightweight, extensible command-line tool designed to help users and system administrators diagnose and resolve common errors on Linux-based systems.",
+        "stack": ["Python", "Bash Scripting", "YAML"],
+        "featured": true,
+        "repo": "https://github.com/CISSSCO/cerrfix",
+        "url": "https://cisssco.github.io/cerrfix"
     },
     {
-      "name": "MYVIMRC",
-      "domain": "vim customization",
-      "stack": ["vimscript", "shell"],
-      "description": "Custom configuration for vim",
-      "repo": "https://github.com/CISSSCO/myvimrc_config"
+        "id": "gitpush",
+        "title": "GitPush",
+        "excerpt": "Minimal CLI helper to automate common git workflows",
+        "description": "A simple tool for git to automate some of the commonly used tasks.",
+        "stack": ["Bash Scripting"],
+        "repo": "https://github.com/CISSSCO/gitpush"
     },
     {
-      "name": "CISSSCO",
-      "domain": "portfolio",
-      "stack": ["html", "css", "javascript"],
-      "description": "Terminal Style Portfolio Website",
-      "repo": "https://github.com/CISSSCO/CISSSCO.github.io",
-      "website": "https://cisssco.github.io"
+        "id": "dotfiles",
+        "title": "Dotfiles",
+        "excerpt": "Reproducible Linux shell and development environment configuration",
+        "description": "Personal configurations for Linux shell and development environment, managed with GNU Stow for easy reproducibility across different systems.",
+        "stack": ["Bash Scripting", "Vimscript", "Python", "Lisp", "YAML"],
+        "repo": "https://github.com/CISSSCO/dotfiles"
     },
     {
-      "name": "PopularWebsiteThemes",
-      "domain": "web dev",
-      "stack": ["html", "css"],
-      "description": "Custom themes for popular websites like 10fastfingers",
-      "repo": "https://github.com/CISSSCO/PopularWebsiteThemes"
+        "id": "myvimrc",
+        "title": "My VimRC",
+        "excerpt": "Customized Vim configuration for personal use and efficient editing",
+        "description": "A personalized Vim configuration file (.vimrc) that enhances the functionality of the Vim text editor with custom settings, key mappings, and plugins to improve productivity and streamline the editing experience.",
+        "stack": ["Vimscript", "Bash Scripting"],
+        "repo": "https://github.com/CISSSCO/myvimrc_config"
+    },
+    {
+        "id": "cisssco",
+        "title": "CISSSCO.github.io",
+        "excerpt": "Terminal style Personal portfolio",
+        "description": "This repository contains my personal portfolio website in terminal style, built and hosted using GitHub Pages.",
+        "stack": ["JavaScript", "HTML", "CSS"],
+        "repo": "https://github.com/CISSSCO/CISSSCO.github.io",
+        "url": "https://cisssco.github.io"
+    },
+    {
+        "id": "popularwebsitethemes",
+        "title": "PopularWebsiteThemes",
+        "excerpt": "Custom themes for popular websites like 10fastfingers",
+        "description": "This repo have some of my custom themes for popular websites.",
+        "stack": ["CSS", "HTML"],
+        "url": "https://userstyles.org/user-profile/1051695",
+        "repo": "https://github.com/CISSSCO/PopularWebsiteThemes"
     }
-  ]
-}
+
+]

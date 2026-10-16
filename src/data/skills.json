@@ -1,46 +1,418 @@
-{
-  "skills": [
+[
     {
-      "name": "C",
-      "level": 9,
-      "areas": ["systems programming", "performance", "linux"],
-      "used_in": ["cerrfix", "HPC experiments"],
-      "notes": "Primary language for low-level and performance-critical work"
+        "id": "c_cpp",
+        "name": "C / C++",
+        "category": "Programming",
+        "level": 90,
+        "context": "Performance-critical HPC and scientific applications",
+        "featured": true
     },
     {
-      "name": "C++",
-      "level": 8,
-      "areas": ["systems programming", "HPC", "performance"],
-      "used_in": ["parallel programming"],
-      "notes": "Used with modern C++ features for performance-aware design"
+        "id": "supercomputing",
+        "name": "Supercomputing",
+        "category": "HPC",
+        "level": 90,
+        "context": "Work experience on multiple PARAM Series of Supercomputers of INDIA",
+        "featured": true 
     },
     {
-      "name": "Python",
-      "level": 8,
-      "areas": ["automation", "tooling", "analysis"],
-      "used_in": ["cerrfix", "CLI tools"],
-      "notes": "Scripting, tooling, and glue language"
+        "id": "mpi",
+        "name": "MPI",
+        "category": "Parallel Computing",
+        "level": 85,
+        "context": "Distributed-memory parallelism on multi-node clusters",
+        "featured": true
     },
     {
-      "name": "Shell",
-      "level": 9,
-      "areas": ["automation", "linux", "tooling"],
-      "used_in": ["dotfiles", "gitpush"],
-      "notes": "Daily driver for automation and workflows"
+        "id": "openmp",
+        "name": "OpenMP",
+        "category": "Parallel Computing",
+        "level": 85,
+        "context": "Shared-memory and hybrid parallel programming",
+        "featured": true
     },
     {
-      "name": "Linux",
-      "level": 9,
-      "areas": ["systems", "customization", "performance"],
-      "used_in": ["daily workflow", "training"],
-      "notes": "Primary OS; deep familiarity with internals and tooling"
+        "id": "pthread",
+        "name": "Pthread",
+        "category": "Parallel Computing",
+        "level": 70,
+        "context": "Shared-memory parallel programming",
+        "featured": false
     },
     {
-      "name": "Vim",
-      "level": 9,
-      "areas": ["editing", "productivity"],
-      "used_in": ["MYVIMRC"],
-      "notes": "Heavily customized editing environment"
+        "id": "cuda",
+        "name": "CUDA",
+        "category": "GPU Computing",
+        "level": 70,
+        "context": "GPU acceleration for scientific and compute workloads",
+        "featured": false
+    },
+    {
+        "id": "slurm",
+        "name": "Slurm",
+        "category": "HPC Tools",
+        "level": 75,
+        "context": "Job scheduling and workload management on clusters",
+        "featured": false
+    },
+    {
+        "id": "python",
+        "name": "Python",
+        "category": "Programming",
+        "level": 75,
+        "context": "Automation, scripting, tooling",
+        "featured": false
+    },
+    {
+        "id": "java",
+        "name": "JAVA",
+        "category": "Programming",
+        "level": 60,
+        "context": "Intermediate Level Understanding of Java",
+        "featured": false
+    },
+    {
+        "id": "shell",
+        "name": "Shell Scripting",
+        "category": "Systems",
+        "level": 90,
+        "context": "Workflow automation and system setup",
+        "featured": true
+    },
+    {
+        "id": "linux",
+        "name": "Linux",
+        "category": "Systems",
+        "level": 95,
+        "context": "Primary environment for HPC clusters, system administration, and development",
+        "featured": true
+    },
+    {
+        "id": "dsa",
+        "name": "Data Structure and Algorithms",
+        "category": "Programming",
+        "level": 70,
+        "context": "Understand the fundamentals of DSA and use it wherever possible in my work",
+        "featured": false
+    },
+    {
+        "id": "ai",
+        "name": "AI/ML",
+        "category": "AI",
+        "level": 70,
+        "context": "Have hands on experience in working with AI/ML environment and projects",
+        "featured": false
+    },
+        {
+        "id": "fortran",
+        "name": "Fortran",
+        "category": "Programming",
+        "level": 75,
+        "context": "Have experience with fortran while working on scientific/parallel programming codes",
+        "featured": false
+    },
+    {
+        "id": "openacc",
+        "name": "OpenACC",
+        "category": "GPU Computing",
+        "level": 65,
+        "context": "Experience with OpenACC for Pragma based GPU programming",
+        "featured": false
+    },
+    {
+        "id": "sysadmin",
+        "name": "System Administration",
+        "category": "Systems",
+        "level": 85,
+        "context": "My daily work involves parts of system admin and monitoring for efficient cluster usage",
+        "featured": true 
+    },
+    {
+        "id": "html",
+        "name": "HTML",
+        "category": "Web Technology",
+        "level": 90,
+        "context": "I use HTML to write my documents and also to develop my Portfolios",
+        "featured": false
+    },
+    {
+        "id": "css",
+        "name": "CSS",
+        "category": "Web Technology",
+        "level": 80,
+        "context": "Style Webpages and my ORG Documents",
+        "featured": false
+    },
+    {
+        "id": "javascript",
+        "name": "JavaScript",
+        "category": "Web Technology",
+        "level": 65,
+        "context": "Used JavaScript in my Portfolios and my projects",
+        "featured": false
+    },
+    {
+        "id": "react",
+        "name": "ReactJS",
+        "category": "Web Technology",
+        "level": 50,
+        "context": "Used React to develop this Portfolio",
+        "featured": false
+    },
+    {
+        "id": "threejs",
+        "name": "ThreeJS",
+        "category": "Web Technology",
+        "level": 50,
+        "context": "Have Basic Understanding about Threejs fundamentals",
+        "featured": false
+    },
+    {
+        "id": "distributedcomputing",
+        "name": "Distributed Computing",
+        "category": "Parallel Computing",
+        "level": 75,
+        "context": "My daily work involve working on distributed computing environment like PARAM Series of Supercomputers",
+        "featured": false
+    },
+    {
+        "id": "spack",
+        "name": "Spack",
+        "category": "HPC Tools",
+        "level": 90,
+        "context": "I use Spack extensively to build, install, and manage scientific software on HPC systems",
+        "featured": false
+    },
+    {
+        "id": "conda",
+        "name": "Conda",
+        "category": "HPC Tools",
+        "level": 90,
+        "context": "I use Conda to create and manage reproducible scientific and AI/ML environments",
+        "featured": false
+    },
+    {
+        "id": "docker",
+        "name": "Docker",
+        "category": "Containers",
+        "level": 75,
+        "context": "I use Docker to build and manage containerized development and scientific computing environments",
+        "featured": false
+    },
+    {
+        "id": "apptainer",
+        "name": "Apptainer",
+        "category": "Containers",
+        "level": 70,
+        "context": "I use Apptainer to deploy portable and reproducible applications on HPC systems",
+        "featured": false
+    },
+    {
+        "id": "jupyterhub",
+        "name": "JupyterHub",
+        "category": "HPC Tools",
+        "level": 90,
+        "context": "Designed and deployed JupyterHub platforms integrated with HPC resources and authentication",
+        "featured": false
+    },
+    {
+        "id": "clusteradmin",
+        "name": "Cluster Administration",
+        "category": "HPC",
+        "level": 85,
+        "context": "My daily work involves administering and maintaining Linux based HPC clusters",
+        "featured": false
+    },
+    {
+        "id": "scientificcomputing",
+        "name": "Scientific Computing",
+        "category": "HPC",
+        "level": 90,
+        "context": "My work involves deploying, maintaining, and optimizing scientific computing applications",
+        "featured": true
+    },
+    {
+        "id": "researchcomputing",
+        "name": "Research Computing",
+        "category": "HPC",
+        "level": 90,
+        "context": "I develop and support computing environments for multidisciplinary research workloads",
+        "featured": false
+    },
+    {
+        "id": "softwaredeployment",
+        "name": "Software Deployment",
+        "category": "Systems",
+        "level": 90,
+        "context": "I deploy and maintain scientific software on Linux and HPC environments",
+        "featured": true
+    },
+    {
+        "id": "applicationporting",
+        "name": "Application Porting",
+        "category": "Systems",
+        "level": 90,
+        "context": "I have experience porting scientific applications across Linux and HPC platforms",
+        "featured": false
+    },
+    {
+        "id": "performanceanalysis",
+        "name": "Performance Analysis",
+        "category": "HPC",
+        "level": 75,
+        "context": "I analyze and optimize the performance of scientific and parallel applications",
+        "featured": true
+    },
+    {
+        "id": "git",
+        "name": "Git",
+        "category": "DevOps",
+        "level": 90,
+        "context": "I use Git for version control and collaborative software development",
+        "featured": false
+    },
+    {
+        "id": "cmake",
+        "name": "CMake",
+        "category": "Compilers and Build Tolls",
+        "level": 80,
+        "context": "I use CMake to configure and build scientific and HPC software projects",
+        "featured": false
+    },
+    {
+        "id": "make",
+        "name": "GNU Make",
+        "category": "Compilers and Build Tolls",
+        "level": 70,
+        "context": "I use GNU Make to build and automate compilation of scientific software",
+        "featured": false
+    },
+    {
+        "id": "technicaldocumentation",
+        "name": "Technical Documentation",
+        "category": "Systems",
+        "level": 95,
+        "context": "I prepare installation guides, deployment manuals, and technical documentation",
+        "featured": false
+    },
+    {
+        "id": "sculpting",
+        "name": "Digital Sculpting",
+        "category": "3D/Design",
+        "level": 80,
+        "context": "I do digital sculpting as hobby in my free time using tools like blender and zbrush",
+        "featured": false
+    },
+    {
+        "id": "blender",
+        "name": "Blender",
+        "category": "3D/Design",
+        "level": 80,
+        "context": "Use this tools to create my own 3D assets for projects",
+        "featured": false
+    },
+    {
+        "id": "unity",
+        "name": "Unity",
+        "category": "3D/Design",
+        "level": 65,
+        "context": "Used this to develop and port my applications to different plateform including web and windows devices",
+        "featured": false
+    },
+    {
+        "id": "perl",
+        "name": "Perl",
+        "category": "Programming",
+        "level": 60,
+        "context": "Used Perl for scripting, automation, and maintaining scientific software workflows",
+        "featured": false
+    },
+    {
+        "id": "ansible",
+        "name": "Ansible",
+        "category": "DevOps",
+        "level": 60,
+        "context": "Use Ansible to automate Linux system configuration and software deployment",
+        "featured": false
+    },
+    {
+        "id": "jenkins",
+        "name": "Jenkins",
+        "category": "DevOps",
+        "level": 60,
+        "context": "Have experience creating and maintaining CI/CD pipelines using Jenkins",
+        "featured": false
+    },
+    {
+        "id": "kubernetes",
+        "name": "Kubernetes",
+        "category": "DevOps",
+        "level": 60,
+        "context": "Have working knowledge of Kubernetes for container orchestration and application deployment",
+        "featured": false
+    },
+    {
+        "id": "aws",
+        "name": "Amazon Web Services",
+        "category": "Cloud",
+        "level": 50,
+        "context": "Basic understanding of AWS cloud services and cloud infrastructure concepts",
+        "featured": false
+    },
+    {
+        "id": "prometheus",
+        "name": "Prometheus",
+        "category": "DevOps",
+        "level": 55,
+        "context": "Used Prometheus for monitoring Linux systems and collecting infrastructure metrics",
+        "featured": false
+    },
+    {
+        "id": "grafana",
+        "name": "Grafana",
+        "category": "DevOps",
+        "level": 55,
+        "context": "Created dashboards for monitoring infrastructure and application performance",
+        "featured": false
+    },
+    {
+        "id": "batch",
+        "name": "Batch Scripting",
+        "category": "Programming",
+        "level": 70,
+        "context": "Write batch scripts to automate administrative and development tasks on Windows systems",
+        "featured": false
+    },
+    {
+        "id": "org",
+        "name": "Org Mode",
+        "category": "Literate Programming",
+        "level": 95,
+        "context": "Extensively use Org Mode for literate programming, technical documentation, project management, note-taking, presentations, and personal knowledge management",
+        "featured": false
+    },
+    {
+        "id": "emacs",
+        "name": "GNU Emacs",
+        "category": "Literate Programming",
+        "level": 90,
+        "context": "Daily development environment customized for programming, documentation, knowledge management, and productivity",
+        "featured": false 
+    },
+    {
+        "id": "markdown",
+        "name": "Markdown",
+        "category": "Literate Programming",
+        "level": 85,
+        "context": "Write technical documentation, project documentation, README files, and knowledge base articles using Markdown",
+        "featured": false
+    },
+    {
+        "id": "latex",
+        "name": "LaTeX",
+        "category": "Literate Programming",
+        "level": 80,
+        "context": "Use LaTeX to prepare technical reports, research documents, presentations, and professional resumes",
+        "featured": false 
     }
-  ]
-}
+]

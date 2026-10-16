@@ -1,0 +1,22 @@
+======================================================================
+TECHNICAL DOSSIER: GNU Make
+======================================================================
+ID:                make
+Domain / Category: Compilers and Build Tolls
+Proficiency:       70% [██████████████░░░░░░]
+Status:            Proficient / Working Knowledge
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+I use GNU Make to build and automate compilation of scientific software
+
+PORTFOLIO USAGE:
+Used in 1 of 9 projects (11.1%)
+  - HPCCFS: Build a production-like HPC cluster from scratch using open-source technologies
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (Compilers and Build Tolls):
+  - CMake (80%)

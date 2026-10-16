@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Jenkins
+CATEGORY:          DevOps
+======================================================================
+
+Proficiency Level: 60%
+Rating Meter:      [████████████░░░░░░░░] (60 / 100)
+Mastery Status:    Proficient / Working Knowledge
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Have experience creating and maintaining CI/CD pipelines using Jenkins

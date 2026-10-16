@@ -1,0 +1,26 @@
+======================================================================
+TECHNICAL DOSSIER: JAVA
+======================================================================
+ID:                java
+Domain / Category: Programming
+Proficiency:       60% [████████████░░░░░░░░]
+Status:            Proficient / Working Knowledge
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Intermediate Level Understanding of Java
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - Independent technical practice & systems customization
+
+RELATED SKILLS (Programming):
+  - C / C++ (90%)
+  - Python (75%)
+  - Data Structure and Algorithms (70%)
+  - Fortran (75%)
+  - Perl (60%)
+  - Batch Scripting (70%)

@@ -1,0 +1,27 @@
+======================================================================
+PROJECT: HPCCFS
+======================================================================
+Tagline: Build a production-like HPC cluster from scratch using open-source technologies
+Status:  Featured Project
+
+DESCRIPTION:
+Designed and documented a complete HPC cluster from the ground up, implementing centralized authentication, shared storage, workload scheduling, accounting, QoS, fairshare scheduling, software management with Environment Modules, and distributed MPI execution. The project serves as a comprehensive educational guide that closely follows real-world HPC center practices.
+
+STACK:
+  * Rocky Linux
+  * Slurm
+  * OpenMPI
+  * LDAP
+  * NFS
+  * Environment Modules
+  * Spack
+  * Munge
+  * MariaDB
+  * SlurmDBD
+  * Bash
+  * C
+  * MPI
+
+LINKS:
+  Repository: https://github.com/CISSSCO/HPCCFS
+  Live Demo:  https://cisssco.github.io/HPCCFS/

@@ -1,0 +1,21 @@
+======================================================================
+TECHNICAL DOSSIER: OpenACC
+======================================================================
+ID:                openacc
+Domain / Category: GPU Computing
+Proficiency:       65% [█████████████░░░░░░░]
+Status:            Proficient / Working Knowledge
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Experience with OpenACC for Pragma based GPU programming
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (GPU Computing):
+  - CUDA (70%)

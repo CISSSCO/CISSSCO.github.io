@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Org Mode
+CATEGORY:          Literate Programming
+======================================================================
+
+Proficiency Level: 95%
+Rating Meter:      [███████████████████░] (95 / 100)
+Mastery Status:    Expert / Core Competency
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Extensively use Org Mode for literate programming, technical documentation, project management, note-taking, presentations, and personal knowledge management

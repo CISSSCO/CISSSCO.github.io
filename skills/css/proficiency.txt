@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: CSS
+CATEGORY:          Web Technology
+======================================================================
+
+Proficiency Level: 80%
+Rating Meter:      [████████████████░░░░] (80 / 100)
+Mastery Status:    Advanced / Production-ready
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Style Webpages and my ORG Documents

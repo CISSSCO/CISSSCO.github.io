@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Software Deployment
+CATEGORY:          Systems
+======================================================================
+
+Proficiency Level: 90%
+Rating Meter:      [██████████████████░░] (90 / 100)
+Mastery Status:    Expert / Core Competency
+Featured Skill:    Yes (Highlight Competency)
+
+PRACTICAL CONTEXT:
+I deploy and maintain scientific software on Linux and HPC environments

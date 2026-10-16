@@ -1,0 +1,26 @@
+======================================================================
+TECHNICAL DOSSIER: Software Deployment
+======================================================================
+ID:                softwaredeployment
+Domain / Category: Systems
+Proficiency:       90% [██████████████████░░]
+Status:            Expert / Core Competency
+Featured:          Yes
+
+DESCRIPTION & CONTEXT:
+I deploy and maintain scientific software on Linux and HPC environments
+
+PORTFOLIO USAGE:
+Used in 1 of 9 projects (11.1%)
+  - HPCCFS: Build a production-like HPC cluster from scratch using open-source technologies
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (Systems):
+  - Shell Scripting (90%)
+  - Linux (95%)
+  - System Administration (85%)
+  - Application Porting (90%)
+  - Technical Documentation (95%)

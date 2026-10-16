@@ -1,0 +1,25 @@
+======================================================================
+TECHNICAL DOSSIER: Grafana
+======================================================================
+ID:                grafana
+Domain / Category: DevOps
+Proficiency:       55% [███████████░░░░░░░░░]
+Status:            Familiar / Foundational
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Created dashboards for monitoring infrastructure and application performance
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - Independent technical practice & systems customization
+
+RELATED SKILLS (DevOps):
+  - Git (90%)
+  - Ansible (60%)
+  - Jenkins (60%)
+  - Kubernetes (60%)
+  - Prometheus (55%)

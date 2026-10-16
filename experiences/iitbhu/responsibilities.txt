@@ -1,0 +1,9 @@
+======================================================================
+RESPONSIBILITIES & HIGHLIGHTS: HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi
+======================================================================
+
+* Currently deputed to IIT (BHU), managing HPC application workflows on the PARAM Shivay supercomputing cluster.
+* Responsible for system administration tasks including user management, job monitoring, workload scheduling, and identifying unauthorized or inefficient applications.
+* Provide customized software environments for researchers running simulations, DFT calculations, and AI/ML/DL workloads.
+* Collaborate closely with researchers to optimize performance, troubleshoot execution issues, and ensure reliable operation of scientific workloads.
+* Actively contribute to open-source software and customize Linux environments for improved performance and usability.

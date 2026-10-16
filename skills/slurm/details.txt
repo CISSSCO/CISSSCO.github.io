@@ -1,0 +1,24 @@
+======================================================================
+TECHNICAL DOSSIER: Slurm
+======================================================================
+ID:                slurm
+Domain / Category: HPC Tools
+Proficiency:       75% [███████████████░░░░░]
+Status:            Advanced / Production-ready
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Job scheduling and workload management on clusters
+
+PORTFOLIO USAGE:
+Used in 1 of 9 projects (11.1%)
+  - HPCCFS: Build a production-like HPC cluster from scratch using open-source technologies
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (HPC Tools):
+  - Spack (90%)
+  - Conda (90%)
+  - JupyterHub (90%)

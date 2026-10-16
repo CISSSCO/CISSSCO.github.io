@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Digital Sculpting
+CATEGORY:          3D/Design
+======================================================================
+
+Proficiency Level: 80%
+Rating Meter:      [████████████████░░░░] (80 / 100)
+Mastery Status:    Advanced / Production-ready
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+I do digital sculpting as hobby in my free time using tools like blender and zbrush

@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: Application Porting
+CATEGORY:          Systems
+======================================================================
+
+Proficiency Level: 90%
+Rating Meter:      [██████████████████░░] (90 / 100)
+Mastery Status:    Expert / Core Competency
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+I have experience porting scientific applications across Linux and HPC platforms

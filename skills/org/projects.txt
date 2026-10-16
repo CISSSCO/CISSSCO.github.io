@@ -1,0 +1,16 @@
+======================================================================
+PROJECT UTILIZATION: Org Mode
+======================================================================
+
+Portfolio Utilization: 2 of 9 projects (22.2%)
+
+Projects Utilizing Org Mode:
+  * OrgSlide (orgslide)
+    - Tagline: Transform Emacs Org-mode and Markdown files into beautiful, interactive web presentations
+    - Stack:   Org-mode, Markdown, HTML5, CSS3, JavaScript, HTML5 FileReader API
+    - Repo:    https://github.com/CISSSCO/OrgSlide
+
+  * Dotfiles (dotfiles)
+    - Tagline: Reproducible Linux shell and development environment configuration
+    - Stack:   Bash Scripting, Vimscript, Python, Lisp, YAML
+    - Repo:    https://github.com/CISSSCO/dotfiles

@@ -1,0 +1,33 @@
+======================================================================
+TECHNICAL DOSSIER: Git
+======================================================================
+ID:                git
+Domain / Category: DevOps
+Proficiency:       90% [██████████████████░░]
+Status:            Expert / Core Competency
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+I use Git for version control and collaborative software development
+
+PORTFOLIO USAGE:
+Used in 9 of 9 projects (100.0%)
+  - OrgSlide: Transform Emacs Org-mode and Markdown files into beautiful, interactive web presentations
+  - HPCCFS: Build a production-like HPC cluster from scratch using open-source technologies
+  - Playlisto: Turn Google Drive into your personal music streaming server
+  - CerrFix: Rule-based error analysis and fix suggestion tool for Linux systems
+  - GitPush: Minimal CLI helper to automate common git workflows
+  - Dotfiles: Reproducible Linux shell and development environment configuration
+  - My VimRC: Customized Vim configuration for personal use and efficient editing
+  - CISSSCO.github.io: Terminal style Personal portfolio
+  - PopularWebsiteThemes: Custom themes for popular websites like 10fastfingers
+
+ORGANIZATIONAL ROLES:
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (DevOps):
+  - Ansible (60%)
+  - Jenkins (60%)
+  - Kubernetes (60%)
+  - Prometheus (55%)
+  - Grafana (55%)

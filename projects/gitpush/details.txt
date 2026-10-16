@@ -1,0 +1,15 @@
+======================================================================
+PROJECT: GitPush
+======================================================================
+Tagline: Minimal CLI helper to automate common git workflows
+Status:  Active Project
+
+DESCRIPTION:
+A simple tool for git to automate some of the commonly used tasks.
+
+STACK:
+  * Bash Scripting
+
+LINKS:
+  Repository: https://github.com/CISSSCO/gitpush
+  Live Demo:  N/A

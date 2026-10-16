@@ -1,0 +1,19 @@
+======================================================================
+TECH STACK: HPCCFS
+======================================================================
+
+* Rocky Linux
+* Slurm
+* OpenMPI
+* LDAP
+* NFS
+* Environment Modules
+* Spack
+* Munge
+* MariaDB
+* SlurmDBD
+* Bash
+* C
+* MPI
+
+Count: 13 technologies

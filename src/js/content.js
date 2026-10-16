@@ -1,99 +1,124 @@
 window.CONTENT = {
   help: `
 <div class="terminal-section">
-  <div class="term-title" style="margin-bottom: 0.5rem;">PORTFOLIO COMMANDS:</div>
-  <table class="term-table">
-    <thead>
-      <tr>
-        <th style="width: 160px;">COMMAND</th>
-        <th>DESCRIPTION</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td><span class="term-key">about</span></td><td>Display identity, background & system overview</td></tr>
-      <tr><td><span class="term-key">projects [filter]</span></td><td>List portfolio projects with optional search filter</td></tr>
-      <tr><td><span class="term-key">skills [filter]</span></td><td>Display technical proficiencies & skill bars</td></tr>
-      <tr><td><span class="term-key">experience [filter]</span></td><td>View professional engineering roles & responsibilities</td></tr>
-      <tr><td><span class="term-key">philosophy</span></td><td>Engineering mindset, Linux & open source values</td></tr>
-      <tr><td><span class="term-key">uses</span></td><td>Hardware, Linux window managers & toolchains</td></tr>
-      <tr><td><span class="term-key">man &lt;cmd&gt;</span></td><td>Read manual pages for commands/topics</td></tr>
-    </tbody>
-  </table>
+  <div class="term-title" style="margin-bottom: 0.4rem;">PRIMARY COMMANDS:</div>
+  <div class="term-table-responsive">
+    <table class="term-table">
+      <tbody>
+        <tr><td style="width: 170px;"><span class="term-key">about</span></td><td>Identity, roles, links & author overview (or <span class="term-cyan">neofetch</span>)</td></tr>
+        <tr><td><span class="term-key">projects [filter]</span></td><td>List portfolio projects (e.g. <span class="term-cyan">projects cerrfix</span>, <span class="term-cyan">projects shell</span>)</td></tr>
+        <tr><td><span class="term-key">skills [filter]</span></td><td>Display technical competencies & ratings (e.g. <span class="term-cyan">skills c++</span>)</td></tr>
+        <tr><td><span class="term-key">experience [filter]</span></td><td>View professional engineering roles at IIT (BHU) and C-DAC</td></tr>
+        <tr><td><span class="term-key">ranger [dir]</span></td><td>Open interactive terminal file manager (alias <span class="term-cyan">r</span>)</td></tr>
+        <tr><td><span class="term-key">cd [dir]</span></td><td>Navigate virtual filesystem (<span class="term-cyan">cd projects</span>, <span class="term-cyan">cd skills</span>, <span class="term-cyan">cd experiences</span>)</td></tr>
+        <tr><td><span class="term-key">ls [-l] [dir]</span></td><td>List directory contents in responsive wrapped grid or long format</td></tr>
+        <tr><td><span class="term-key">cat &lt;file&gt;</span></td><td>Output contents of a virtual file (e.g. <span class="term-cyan">cat skills/allskills.txt</span>)</td></tr>
+        <tr><td><span class="term-key">clear</span></td><td>Clear terminal screen (or press <span class="term-cyan">Ctrl+L</span> or shortcut <span class="term-cyan">c</span>)</td></tr>
+        <tr><td><span class="term-key">man &lt;cmd&gt;</span></td><td>Detailed manual with synopsis, options & examples (or <span class="term-cyan">man</span> for all)</td></tr>
+      </tbody>
+    </table>
+  </div>
 
-  <div class="term-title" style="margin-top: 1rem; margin-bottom: 0.5rem;">SHELL UTILITIES:</div>
-  <table class="term-table">
-    <thead>
-      <tr>
-        <th style="width: 160px;">COMMAND</th>
-        <th>DESCRIPTION</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td><span class="term-key">ls [-l]</span></td><td>List simulated filesystem entries</td></tr>
-      <tr><td><span class="term-key">cat &lt;file&gt;</span></td><td>Output contents of a virtual file</td></tr>
-      <tr><td><span class="term-key">tree</span></td><td>Show directory hierarchy</td></tr>
-      <tr><td><span class="term-key">whoami</span></td><td>Print current user identity</td></tr>
-      <tr><td><span class="term-key">uname [-a]</span></td><td>Print system & kernel information</td></tr>
-      <tr><td><span class="term-key">pwd</span></td><td>Print working directory</td></tr>
-      <tr><td><span class="term-key">date</span></td><td>Display current date and time</td></tr>
-      <tr><td><span class="term-key">theme [name]</span></td><td>Switch color theme (matrix, dracula, nord, gruvbox, amber, default)</td></tr>
-      <tr><td><span class="term-key">crt</span></td><td>Toggle retro CRT scanline effect</td></tr>
-      <tr><td><span class="term-key">history</span></td><td>Show command history</td></tr>
-      <tr><td><span class="term-key">clear</span></td><td>Clear terminal screen (or Ctrl+L)</td></tr>
-      <tr><td><span class="term-key">exit / quit</span></td><td>Terminate terminal session</td></tr>
-    </tbody>
-  </table>
-  <div class="term-dim" style="margin-top: 0.65rem;">[Tip] Use &lt;Tab&gt; for autocompletion, &lt;Up/Down&gt; for command history, &lt;Ctrl+L&gt; to clear.</div>
+  <div class="term-title" style="margin-top: 0.8rem; margin-bottom: 0.4rem;">ALL AVAILABLE COMMANDS:</div>
+  <div class="term-ls-grid" style="margin-bottom: 0.6rem;">
+    <div class="term-ls-item"><span class="term-cyan">about</span></div>
+    <div class="term-ls-item"><span class="term-cyan">alias</span></div>
+    <div class="term-ls-item"><span class="term-cyan">banner</span></div>
+    <div class="term-ls-item"><span class="term-cyan">cat</span></div>
+    <div class="term-ls-item"><span class="term-cyan">cd</span></div>
+    <div class="term-ls-item"><span class="term-cyan">clear</span></div>
+    <div class="term-ls-item"><span class="term-cyan">crt</span></div>
+    <div class="term-ls-item"><span class="term-cyan">date</span></div>
+    <div class="term-ls-item"><span class="term-cyan">exit</span></div>
+    <div class="term-ls-item"><span class="term-cyan">experience</span></div>
+    <div class="term-ls-item"><span class="term-cyan">experiences</span></div>
+    <div class="term-ls-item"><span class="term-cyan">help</span></div>
+    <div class="term-ls-item"><span class="term-cyan">history</span></div>
+    <div class="term-ls-item"><span class="term-cyan">ls</span></div>
+    <div class="term-ls-item"><span class="term-cyan">man</span></div>
+    <div class="term-ls-item"><span class="term-cyan">neofetch</span></div>
+    <div class="term-ls-item"><span class="term-cyan">philosophy</span></div>
+    <div class="term-ls-item"><span class="term-cyan">projects</span></div>
+    <div class="term-ls-item"><span class="term-cyan">pwd</span></div>
+    <div class="term-ls-item"><span class="term-cyan">quit</span></div>
+    <div class="term-ls-item"><span class="term-cyan">ranger</span></div>
+    <div class="term-ls-item"><span class="term-cyan">skills</span></div>
+    <div class="term-ls-item"><span class="term-cyan">sudo</span></div>
+    <div class="term-ls-item"><span class="term-cyan">theme</span></div>
+    <div class="term-ls-item"><span class="term-cyan">tree</span></div>
+    <div class="term-ls-item"><span class="term-cyan">uname</span></div>
+    <div class="term-ls-item"><span class="term-cyan">uses</span></div>
+    <div class="term-ls-item"><span class="term-cyan">whoami</span></div>
+  </div>
+
+  <div class="term-title" style="margin-top: 0.6rem; margin-bottom: 0.3rem;">SHORTCUT ALIASES:</div>
+  <div class="term-dim" style="line-height: 1.6;">
+    <span class="term-yellow">c</span> &rarr; clear &nbsp;|&nbsp;
+    <span class="term-yellow">q</span> &rarr; exit &nbsp;|&nbsp;
+    <span class="term-yellow">ll</span> &rarr; ls -l &nbsp;|&nbsp;
+    <span class="term-yellow">la / l</span> &rarr; ls &nbsp;|&nbsp;
+    <span class="term-yellow">r</span> &rarr; ranger &nbsp;|&nbsp;
+    <span class="term-yellow">h</span> &rarr; help &nbsp;|&nbsp;
+    <span class="term-yellow">cls</span> &rarr; clear &nbsp;|&nbsp;
+    <span class="term-yellow">neofetch / fetch</span> &rarr; about &nbsp;|&nbsp;
+    <span class="term-yellow">p / proj</span> &rarr; projects &nbsp;|&nbsp;
+    <span class="term-yellow">s / skill</span> &rarr; skills &nbsp;|&nbsp;
+    <span class="term-yellow">e / exp</span> &rarr; experiences &nbsp;|&nbsp;
+    <span class="term-yellow">vfs</span> &rarr; tree
+  </div>
+
+  <div class="term-dim" style="margin-top: 0.75rem; border-top: 1px dashed var(--border); padding-top: 0.5rem;">
+    [Tip] Type '<span class="term-cyan">man &lt;command&gt;</span>' (e.g. '<span class="term-green">man projects</span>', '<span class="term-green">man ranger</span>') or '<span class="term-cyan">man</span>' for full in-depth manual pages.<br>
+    [Tip] Type '<span class="term-cyan">alias</span>' to see full table of shortcuts. Use &lt;Tab&gt; for autocompletion.
+  </div>
 </div>
   `,
 
-  banner: `      ██████╗ ██╗ ███████╗ ███████╗ ███████╗  ██████╗  ██████╗
-     ██╔════╝ ██║ ██╔════╝ ██╔════╝ ██╔════╝ ██╔════╝ ██╔═══██╗
-     ██║      ██║ ███████╗ ███████╗ ███████╗ ██║      ██║   ██║
-     ██║      ██║ ╚════██║ ╚════██║ ╚════██║ ██║      ██║   ██║
-     ╚██████╗ ██║ ███████║ ███████║ ███████║ ╚██████╗ ╚██████╔╝
-      ╚═════╝ ╚═╝ ╚══════╝ ╚══════╝ ╚══════╝  ╚═════╝  ╚═════╝`,
+  banner: `   ____ ___ ____ ____ ____ ____ ___  
+  / ___|_ _/ ___/ ___/ ___/ ___/ _ \\ 
+ | |    | |\\___ \\___ \\___ \\ |  | | | |
+ | |___ | | ___) |__) |__) | |__| |_| |
+  \\____|___|____/____/____/\\____\\___/ `,
 
   aboutBody: `
 
     <span class="term-title term-bold">cisco@cisssco</span>
-    <span class="term-dim">---------------------------------------------------------</span>
-    <span class="term-key">User:</span>        <span class="term-value">Cisco Ramon (Abhishek Raj)</span>
-    <span class="term-key">Role:</span>        <span class="term-value">Parallel Programmer, Trainer, Linux Enthusiast</span>
-    <span class="term-key">Affiliation:</span> <span class="term-value">IIT (BHU) Varanasi · C-DAC (NSM)</span>
-    <span class="term-key">Focus:</span>       <span class="term-value">CLI tooling, HPC, Performance-aware software, System Customization</span>
-    <span class="term-key">OS:</span>          <span class="term-value">Linux (daily driver)</span>
-    <span class="term-key">Languages:</span>   <span class="term-value">C, C++, Python, Shell Scripting</span>
-    <span class="term-key">WM:</span>          <span class="term-value">bspwm, dwm, qtile</span>
-    <span class="term-key">Editor:</span>      <span class="term-value">Vim, Emacs (Org-mode)</span>
+    <span class="term-dim">--------------------------------------------------</span>
+    <span class="term-key">Name:</span>        <span class="term-value">Cisco Ramon (Abhishek Raj)</span>
+    <span class="term-key">Position:</span>    <span class="term-value">Project Engineer @ C-DAC (National Supercomputing Mission)</span>
+    <span class="term-key">Ex:</span>          <span class="term-value">HPC Application Engineer @ IIT (BHU) Varanasi</span>
     <span class="term-key">GitHub:</span>      <a class="term-link" href="https://github.com/CISSSCO" target="_blank">github.com/CISSSCO</a>
     <span class="term-key">LinkedIn:</span>    <a class="term-link" href="https://www.linkedin.com/in/abhi581b" target="_blank">linkedin.com/in/abhi581b</a>
-    <span class="term-key">Website:</span>     <a class="term-link" href="https://ciscoramon.pages.dev/" target="_blank">ciscoramon.pages.dev</a>
+    <span class="term-key">Website:</span>     <a class="term-link" href="https://ciscoramon.pages.dev" target="_blank">ciscoramon.pages.dev</a>
+    <span class="term-key">Portfolio:</span>   <a class="term-link" href="https://cisssco.github.io" target="_blank">cisssco.github.io</a>
+
+    <span class="neofetch-palette">
+      <span class="palette-swatch" style="background-color:#2e3440;"></span><span class="palette-swatch" style="background-color:#bf616a;"></span><span class="palette-swatch" style="background-color:#a3be8c;"></span><span class="palette-swatch" style="background-color:#ebcb8b;"></span><span class="palette-swatch" style="background-color:#81a1c1;"></span><span class="palette-swatch" style="background-color:#b48ead;"></span><span class="palette-swatch" style="background-color:#88c0d0;"></span><span class="palette-swatch" style="background-color:#eceff4;"></span>
+    </span>
 
     <span class="term-dim">"I build simple tools that solve real problems and remain understandable over time."</span>`,
 
   about: `
 <pre class="neofetch">
-<span class="ascii-banner">      ██████╗ ██╗ ███████╗ ███████╗ ███████╗  ██████╗  ██████╗
-     ██╔════╝ ██║ ██╔════╝ ██╔════╝ ██╔════╝ ██╔════╝ ██╔═══██╗
-     ██║      ██║ ███████╗ ███████╗ ███████╗ ██║      ██║   ██║
-     ██║      ██║ ╚════██║ ╚════██║ ╚════██║ ██║      ██║   ██║
-     ╚██████╗ ██║ ███████║ ███████║ ███████║ ╚██████╗ ╚██████╔╝
-      ╚═════╝ ╚═╝ ╚══════╝ ╚══════╝ ╚══════╝  ╚═════╝  ╚═════╝</span>
+<span class="ascii-banner">   ____ ___ ____ ____ ____ ____ ___  
+  / ___|_ _/ ___/ ___/ ___/ ___/ _ \\ 
+ | |    | |\\___ \\___ \\___ \\ |  | | | |
+ | |___ | | ___) |__) |__) | |__| |_| |
+  \\____|___|____/____/____/\\____\\___/ </span>
 
     <span class="term-title term-bold">cisco@cisssco</span>
-    <span class="term-dim">---------------------------------------------------------</span>
-    <span class="term-key">User:</span>        <span class="term-value">Cisco Ramon (Abhishek Raj)</span>
-    <span class="term-key">Role:</span>        <span class="term-value">Parallel Programmer, Trainer, Linux Enthusiast</span>
-    <span class="term-key">Affiliation:</span> <span class="term-value">IIT (BHU) Varanasi · C-DAC (NSM)</span>
-    <span class="term-key">Focus:</span>       <span class="term-value">CLI tooling, HPC, Performance-aware software, System Customization</span>
-    <span class="term-key">OS:</span>          <span class="term-value">Linux (daily driver)</span>
-    <span class="term-key">Languages:</span>   <span class="term-value">C, C++, Python, Shell Scripting</span>
-    <span class="term-key">WM:</span>          <span class="term-value">bspwm, dwm, qtile</span>
-    <span class="term-key">Editor:</span>      <span class="term-value">Vim, Emacs (Org-mode)</span>
+    <span class="term-dim">--------------------------------------------------</span>
+    <span class="term-key">Name:</span>        <span class="term-value">Cisco Ramon (Abhishek Raj)</span>
+    <span class="term-key">Position:</span>    <span class="term-value">Project Engineer @ C-DAC (National Supercomputing Mission)</span>
+    <span class="term-key">Ex:</span>          <span class="term-value">HPC Application Engineer @ IIT (BHU) Varanasi</span>
     <span class="term-key">GitHub:</span>      <a class="term-link" href="https://github.com/CISSSCO" target="_blank">github.com/CISSSCO</a>
     <span class="term-key">LinkedIn:</span>    <a class="term-link" href="https://www.linkedin.com/in/abhi581b" target="_blank">linkedin.com/in/abhi581b</a>
-    <span class="term-key">Website:</span>     <a class="term-link" href="https://ciscoramon.pages.dev/" target="_blank">ciscoramon.pages.dev</a>
+    <span class="term-key">Website:</span>     <a class="term-link" href="https://ciscoramon.pages.dev" target="_blank">ciscoramon.pages.dev</a>
+    <span class="term-key">Portfolio:</span>   <a class="term-link" href="https://cisssco.github.io" target="_blank">cisssco.github.io</a>
+
+    <span class="neofetch-palette">
+      <span class="palette-swatch" style="background-color:#2e3440;"></span><span class="palette-swatch" style="background-color:#bf616a;"></span><span class="palette-swatch" style="background-color:#a3be8c;"></span><span class="palette-swatch" style="background-color:#ebcb8b;"></span><span class="palette-swatch" style="background-color:#81a1c1;"></span><span class="palette-swatch" style="background-color:#b48ead;"></span><span class="palette-swatch" style="background-color:#88c0d0;"></span><span class="palette-swatch" style="background-color:#eceff4;"></span>
+    </span>
 
     <span class="term-dim">"I build simple tools that solve real problems and remain understandable over time."</span>
 </pre>
@@ -138,30 +163,32 @@ window.CONTENT = {
 <div class="terminal-section">
   <div class="term-title term-bold" style="margin-bottom: 0.8rem;"># ENVIRONMENT & TOOLS</div>
 
-  <table class="term-table">
-    <tbody>
-      <tr>
-        <td style="width: 170px;"><span class="term-key">Operating System</span></td>
-        <td><span class="term-value">Linux</span> <span class="term-dim">— daily driver; customized and configured from source</span></td>
-      </tr>
-      <tr>
-        <td><span class="term-key">Window Managers</span></td>
-        <td><span class="term-value">bspwm, dwm, qtile</span> <span class="term-dim">— lightweight tiling environments tuned for aesthetics and efficiency</span></td>
-      </tr>
-      <tr>
-        <td><span class="term-key">Languages</span></td>
-        <td><span class="term-value">C / C++</span> <span class="term-dim">(systems, HPC, performance)</span>, <span class="term-value">Bash, Python</span> <span class="term-dim">(automation & tooling)</span></td>
-      </tr>
-      <tr>
-        <td><span class="term-key">Editors</span></td>
-        <td><a class="term-link" href="https://www.vim.org/" target="_blank">Vim</a>, <a class="term-link" href="https://www.gnu.org/software/emacs/" target="_blank">Emacs</a> <span class="term-dim">— heavily customized configurations tailored to workflow</span></td>
-      </tr>
-      <tr>
-        <td><span class="term-key">Documentation</span></td>
-        <td><a class="term-link" href="https://orgmode.org/" target="_blank">Org mode</a> <span class="term-dim">— structured notes, literate programming & reproducible research</span></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="term-table-responsive">
+    <table class="term-table">
+      <tbody>
+        <tr>
+          <td style="width: 170px;"><span class="term-key">Operating System</span></td>
+          <td><span class="term-value">Linux</span> <span class="term-dim">— daily driver; customized and configured from source</span></td>
+        </tr>
+        <tr>
+          <td><span class="term-key">Window Managers</span></td>
+          <td><span class="term-value">bspwm, dwm, qtile</span> <span class="term-dim">— lightweight tiling environments tuned for aesthetics and efficiency</span></td>
+        </tr>
+        <tr>
+          <td><span class="term-key">Languages</span></td>
+          <td><span class="term-value">C / C++</span> <span class="term-dim">(systems, HPC, performance)</span>, <span class="term-value">Bash, Python</span> <span class="term-dim">(automation & tooling)</span></td>
+        </tr>
+        <tr>
+          <td><span class="term-key">Editors</span></td>
+          <td><a class="term-link" href="https://www.vim.org/" target="_blank">Vim</a>, <a class="term-link" href="https://www.gnu.org/software/emacs/" target="_blank">Emacs</a> <span class="term-dim">— heavily customized configurations tailored to workflow</span></td>
+        </tr>
+        <tr>
+          <td><span class="term-key">Documentation</span></td>
+          <td><a class="term-link" href="https://orgmode.org/" target="_blank">Org mode</a> <span class="term-dim">— structured notes, literate programming & reproducible research</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
   `
 };

@@ -1,0 +1,26 @@
+======================================================================
+TECHNICAL DOSSIER: JavaScript
+======================================================================
+ID:                javascript
+Domain / Category: Web Technology
+Proficiency:       65% [█████████████░░░░░░░]
+Status:            Proficient / Working Knowledge
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Used JavaScript in my Portfolios and my projects
+
+PORTFOLIO USAGE:
+Used in 3 of 9 projects (33.3%)
+  - OrgSlide: Transform Emacs Org-mode and Markdown files into beautiful, interactive web presentations
+  - Playlisto: Turn Google Drive into your personal music streaming server
+  - CISSSCO.github.io: Terminal style Personal portfolio
+
+ORGANIZATIONAL ROLES:
+  - Independent technical practice & systems customization
+
+RELATED SKILLS (Web Technology):
+  - HTML (90%)
+  - CSS (80%)
+  - ReactJS (50%)
+  - ThreeJS (50%)

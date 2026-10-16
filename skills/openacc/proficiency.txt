@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: OpenACC
+CATEGORY:          GPU Computing
+======================================================================
+
+Proficiency Level: 65%
+Rating Meter:      [█████████████░░░░░░░] (65 / 100)
+Mastery Status:    Proficient / Working Knowledge
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+Experience with OpenACC for Pragma based GPU programming

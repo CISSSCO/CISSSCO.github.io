@@ -1,0 +1,21 @@
+======================================================================
+PROJECT UTILIZATION: JavaScript
+======================================================================
+
+Portfolio Utilization: 3 of 9 projects (33.3%)
+
+Projects Utilizing JavaScript:
+  * OrgSlide (orgslide)
+    - Tagline: Transform Emacs Org-mode and Markdown files into beautiful, interactive web presentations
+    - Stack:   Org-mode, Markdown, HTML5, CSS3, JavaScript, HTML5 FileReader API
+    - Repo:    https://github.com/CISSSCO/OrgSlide
+
+  * Playlisto (playlisto)
+    - Tagline: Turn Google Drive into your personal music streaming server
+    - Stack:   Python, FastAPI, React, TypeScript, Google Drive API, HTTP Streaming, Kodi Add-on
+    - Repo:    https://github.com/CISSSCO/Playlisto
+
+  * CISSSCO.github.io (cisssco)
+    - Tagline: Terminal style Personal portfolio
+    - Stack:   JavaScript, HTML, CSS
+    - Repo:    https://github.com/CISSSCO/CISSSCO.github.io

@@ -1,0 +1,12 @@
+======================================================================
+SKILL PROFICIENCY: CUDA
+CATEGORY:          GPU Computing
+======================================================================
+
+Proficiency Level: 70%
+Rating Meter:      [██████████████░░░░░░] (70 / 100)
+Mastery Status:    Proficient / Working Knowledge
+Featured Skill:    No
+
+PRACTICAL CONTEXT:
+GPU acceleration for scientific and compute workloads

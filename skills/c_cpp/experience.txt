@@ -1,0 +1,12 @@
+======================================================================
+PROFESSIONAL EXPERIENCE & ROLES: C / C++
+======================================================================
+
+Applied in 2 Professional Positions:
+  * HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi
+    - Period:   Feb 2025 — Aug 2026 (1.5 year)
+    - Context:  Working as an HPC Application Engineer at IIT (BHU), deputed by C-DAC, supporting large-scale scientific and computational research workloads.
+
+  * Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India
+    - Period:   Apr 2024 — Present (2.5+ years)
+    - Context:  Working as a Project Engineer at C-DAC, contributing to national-level HPC research, development, and training initiatives under the National Supercomputing Mission (NSM).

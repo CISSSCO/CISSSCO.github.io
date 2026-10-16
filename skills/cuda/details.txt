@@ -1,0 +1,22 @@
+======================================================================
+TECHNICAL DOSSIER: CUDA
+======================================================================
+ID:                cuda
+Domain / Category: GPU Computing
+Proficiency:       70% [██████████████░░░░░░]
+Status:            Proficient / Working Knowledge
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+GPU acceleration for scientific and compute workloads
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (GPU Computing):
+  - OpenACC (65%)

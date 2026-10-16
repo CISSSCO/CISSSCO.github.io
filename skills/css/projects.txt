@@ -1,0 +1,21 @@
+======================================================================
+PROJECT UTILIZATION: CSS
+======================================================================
+
+Portfolio Utilization: 3 of 9 projects (33.3%)
+
+Projects Utilizing CSS:
+  * OrgSlide (orgslide)
+    - Tagline: Transform Emacs Org-mode and Markdown files into beautiful, interactive web presentations
+    - Stack:   Org-mode, Markdown, HTML5, CSS3, JavaScript, HTML5 FileReader API
+    - Repo:    https://github.com/CISSSCO/OrgSlide
+
+  * CISSSCO.github.io (cisssco)
+    - Tagline: Terminal style Personal portfolio
+    - Stack:   JavaScript, HTML, CSS
+    - Repo:    https://github.com/CISSSCO/CISSSCO.github.io
+
+  * PopularWebsiteThemes (popularwebsitethemes)
+    - Tagline: Custom themes for popular websites like 10fastfingers
+    - Stack:   CSS, HTML
+    - Repo:    https://github.com/CISSSCO/PopularWebsiteThemes

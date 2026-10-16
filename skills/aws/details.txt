@@ -1,0 +1,21 @@
+======================================================================
+TECHNICAL DOSSIER: Amazon Web Services
+======================================================================
+ID:                aws
+Domain / Category: Cloud
+Proficiency:       50% [██████████░░░░░░░░░░]
+Status:            Familiar / Foundational
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+Basic understanding of AWS cloud services and cloud infrastructure concepts
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - Independent technical practice & systems customization
+
+RELATED SKILLS (Cloud):
+  - None listed

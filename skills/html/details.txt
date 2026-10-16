@@ -1,0 +1,26 @@
+======================================================================
+TECHNICAL DOSSIER: HTML
+======================================================================
+ID:                html
+Domain / Category: Web Technology
+Proficiency:       90% [██████████████████░░]
+Status:            Expert / Core Competency
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+I use HTML to write my documents and also to develop my Portfolios
+
+PORTFOLIO USAGE:
+Used in 3 of 9 projects (33.3%)
+  - OrgSlide: Transform Emacs Org-mode and Markdown files into beautiful, interactive web presentations
+  - CISSSCO.github.io: Terminal style Personal portfolio
+  - PopularWebsiteThemes: Custom themes for popular websites like 10fastfingers
+
+ORGANIZATIONAL ROLES:
+  - Independent technical practice & systems customization
+
+RELATED SKILLS (Web Technology):
+  - CSS (80%)
+  - JavaScript (65%)
+  - ReactJS (50%)
+  - ThreeJS (50%)

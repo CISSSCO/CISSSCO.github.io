@@ -1,0 +1,24 @@
+======================================================================
+TECHNICAL DOSSIER: Distributed Computing
+======================================================================
+ID:                distributedcomputing
+Domain / Category: Parallel Computing
+Proficiency:       75% [███████████████░░░░░]
+Status:            Advanced / Production-ready
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+My daily work involve working on distributed computing environment like PARAM Series of Supercomputers
+
+PORTFOLIO USAGE:
+Used in 1 of 9 projects (11.1%)
+  - HPCCFS: Build a production-like HPC cluster from scratch using open-source technologies
+
+ORGANIZATIONAL ROLES:
+  - HPC Application Engineer @ Indian Institute of Technology (Banaras Hindu University), Varanasi (Feb 2025 — Aug 2026)
+  - Project Engineer @ Centre for Development of Advanced Computing (C-DAC), India (Apr 2024 — Present)
+
+RELATED SKILLS (Parallel Computing):
+  - MPI (85%)
+  - OpenMP (85%)
+  - Pthread (70%)

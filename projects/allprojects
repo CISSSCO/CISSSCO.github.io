@@ -1,0 +1,71 @@
+================================================================================
+ALL PERSONAL PROJECTS — Cisco Ramon (CISSSCO)
+================================================================================
+
+Total Projects: 9 open-source systems & development projects
+
+1. OrgSlide
+   Directory:   ~/projects/orgslide/
+   Excerpt:     Transform Emacs Org-mode and Markdown files into beautiful, interactive web presentations
+   Stack:       Org-mode, Markdown, HTML5, CSS3, JavaScript, HTML5 FileReader API
+   Repository:  https://github.com/CISSSCO/OrgSlide
+   Live URL:    https://cisssco.github.io/OrgSlide/
+
+2. HPCCFS
+   Directory:   ~/projects/hpccfs/
+   Excerpt:     Build a production-like HPC cluster from scratch using open-source technologies
+   Stack:       Rocky Linux, Slurm, OpenMPI, LDAP, NFS, Environment Modules, Spack, Munge, MariaDB, SlurmDBD, Bash, C, MPI
+   Repository:  https://github.com/CISSSCO/HPCCFS
+   Live URL:    https://cisssco.github.io/HPCCFS/
+
+3. Playlisto
+   Directory:   ~/projects/playlisto/
+   Excerpt:     Turn Google Drive into your personal music streaming server
+   Stack:       Python, FastAPI, React, TypeScript, Google Drive API, HTTP Streaming, Kodi Add-on
+   Repository:  https://github.com/CISSSCO/Playlisto
+
+4. CerrFix
+   Directory:   ~/projects/cerrfix/
+   Excerpt:     Rule-based error analysis and fix suggestion tool for Linux systems
+   Stack:       Python, Bash Scripting, YAML
+   Repository:  https://github.com/CISSSCO/cerrfix
+   Live URL:    https://cisssco.github.io/cerrfix
+
+5. GitPush
+   Directory:   ~/projects/gitpush/
+   Excerpt:     Minimal CLI helper to automate common git workflows
+   Stack:       Bash Scripting
+   Repository:  https://github.com/CISSSCO/gitpush
+
+6. Dotfiles
+   Directory:   ~/projects/dotfiles/
+   Excerpt:     Reproducible Linux shell and development environment configuration
+   Stack:       Bash Scripting, Vimscript, Python, Lisp, YAML
+   Repository:  https://github.com/CISSSCO/dotfiles
+
+7. My VimRC
+   Directory:   ~/projects/myvimrc/
+   Excerpt:     Customized Vim configuration for personal use and efficient editing
+   Stack:       Vimscript, Bash Scripting
+   Repository:  https://github.com/CISSSCO/myvimrc_config
+
+8. CISSSCO.github.io
+   Directory:   ~/projects/cisssco/
+   Excerpt:     Terminal style Personal portfolio
+   Stack:       JavaScript, HTML, CSS
+   Repository:  https://github.com/CISSSCO/CISSSCO.github.io
+   Live URL:    https://cisssco.github.io
+
+9. PopularWebsiteThemes
+   Directory:   ~/projects/popularwebsitethemes/
+   Excerpt:     Custom themes for popular websites like 10fastfingers
+   Stack:       CSS, HTML
+   Repository:  https://github.com/CISSSCO/PopularWebsiteThemes
+   Live URL:    https://userstyles.org/user-profile/1051695
+
+================================================================================
+Explore individual projects in the terminal:
+  $ projects <keyword>   (e.g. projects cerrfix, projects hpccfs)
+  $ cd projects/<id>     (e.g. cd projects/orgslide)
+  $ cat details.txt      $ cat stack.txt     $ cat links.txt
+================================================================================

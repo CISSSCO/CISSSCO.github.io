@@ -1,0 +1,21 @@
+======================================================================
+TECHNICAL DOSSIER: Docker
+======================================================================
+ID:                docker
+Domain / Category: Containers
+Proficiency:       75% [███████████████░░░░░]
+Status:            Advanced / Production-ready
+Featured:          No
+
+DESCRIPTION & CONTEXT:
+I use Docker to build and manage containerized development and scientific computing environments
+
+PORTFOLIO USAGE:
+Used in 0 of 9 projects (0.0%)
+  - Primary focus in supercomputing and systems engineering
+
+ORGANIZATIONAL ROLES:
+  - Independent technical practice & systems customization
+
+RELATED SKILLS (Containers):
+  - Apptainer (70%)

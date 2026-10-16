@@ -1,0 +1,19 @@
+======================================================================
+PROJECT: Dotfiles
+======================================================================
+Tagline: Reproducible Linux shell and development environment configuration
+Status:  Active Project
+
+DESCRIPTION:
+Personal configurations for Linux shell and development environment, managed with GNU Stow for easy reproducibility across different systems.
+
+STACK:
+  * Bash Scripting
+  * Vimscript
+  * Python
+  * Lisp
+  * YAML
+
+LINKS:
+  Repository: https://github.com/CISSSCO/dotfiles
+  Live Demo:  N/A
