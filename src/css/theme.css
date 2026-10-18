@@ -19,6 +19,12 @@
   --white: #f0f6fc;
   --selection-bg: rgba(88, 166, 255, 0.35);
   --selection-fg: #ffffff;
+  --banner-c1: #ffffff;
+  --banner-c2: #55ffff;
+  --banner-c3: #00b4d8;
+  --banner-c4: #79c0ff;
+  --banner-c5: #1f6feb;
+  --banner-c6: #061a3d;
 }
 
 [data-theme="matrix"] {
@@ -39,6 +45,12 @@
   --white: #e0ffe8;
   --selection-bg: rgba(0, 255, 102, 0.35);
   --selection-fg: #000000;
+  --banner-c1: #e0ffe8;
+  --banner-c2: #55ffaa;
+  --banner-c3: #00dd77;
+  --banner-c4: #00ff66;
+  --banner-c5: #00aa44;
+  --banner-c6: #003311;
 }
 
 [data-theme="dracula"] {
@@ -59,6 +71,12 @@
   --white: #ffffff;
   --selection-bg: rgba(189, 147, 249, 0.35);
   --selection-fg: #ffffff;
+  --banner-c1: #ffffff;
+  --banner-c2: #8be9fd;
+  --banner-c3: #bd93f9;
+  --banner-c4: #ff79c6;
+  --banner-c5: #6272a4;
+  --banner-c6: #21222c;
 }
 
 [data-theme="gruvbox"] {
@@ -79,6 +97,12 @@
   --white: #fbf1c7;
   --selection-bg: rgba(254, 128, 25, 0.35);
   --selection-fg: #ffffff;
+  --banner-c1: #fbf1c7;
+  --banner-c2: #fabd2f;
+  --banner-c3: #fe8019;
+  --banner-c4: #fabd2f;
+  --banner-c5: #d65d0e;
+  --banner-c6: #32302f;
 }
 
 [data-theme="nord"] {
@@ -99,6 +123,12 @@
   --white: #eceff4;
   --selection-bg: rgba(136, 192, 208, 0.35);
   --selection-fg: #ffffff;
+  --banner-c1: #eceff4;
+  --banner-c2: #88c0d0;
+  --banner-c3: #81a1c1;
+  --banner-c4: #88c0d0;
+  --banner-c5: #5e81ac;
+  --banner-c6: #242933;
 }
 
 [data-theme="amber"] {
@@ -119,6 +149,12 @@
   --white: #fff3cc;
   --selection-bg: rgba(255, 176, 0, 0.35);
   --selection-fg: #000000;
+  --banner-c1: #fff3cc;
+  --banner-c2: #ffe066;
+  --banner-c3: #ffcc00;
+  --banner-c4: #ffb000;
+  --banner-c5: #b36b00;
+  --banner-c6: #2b1700;
 }
 
 /* ================= Terminal ANSI & Semantic Colors ================= */
@@ -422,10 +458,55 @@ pre {
 }
 
 .ascii-banner {
-  color: var(--accent);
-  display: inline;
+  display: block;
   font-weight: 700;
-  text-shadow: 0 0 12px var(--accent-soft);
+  line-height: 1.12;
+  letter-spacing: 0;
+  white-space: pre;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 600px) {
+  .ascii-banner {
+    font-size: 0.72rem;
+  }
+}
+
+@media (max-width: 520px) {
+  pre, .neofetch {
+    font-size: 0.58rem;
+    line-height: 1.2;
+  }
+  .ascii-banner {
+    font-size: 0.60rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .ascii-banner {
+    font-size: 0.50rem;
+  }
+}
+
+@media (max-width: 400px) {
+  pre, .neofetch {
+    font-size: 0.48rem;
+    line-height: 1.15;
+  }
+  .ascii-banner {
+    font-size: 0.44rem;
+  }
+}
+
+@media (max-width: 340px) {
+  pre, .neofetch {
+    font-size: 0.42rem;
+    line-height: 1.1;
+  }
+  .ascii-banner {
+    font-size: 0.38rem;
+  }
 }
 
 .term-cursor {
@@ -468,6 +549,24 @@ pre {
   height: 10px;
   border-radius: 2px;
 }
+
+.swatch-black { background-color: var(--bg-bar); }
+.swatch-red { background-color: var(--red); }
+.swatch-green { background-color: var(--green); }
+.swatch-yellow { background-color: var(--yellow); }
+.swatch-blue { background-color: var(--blue); }
+.swatch-magenta { background-color: var(--magenta); }
+.swatch-cyan { background-color: var(--cyan); }
+.swatch-white { background-color: var(--white); }
+
+/* ================= ASCII Banner Palette Classes ================= */
+.b-c1 { color: var(--banner-c1); }
+.b-c1-bg3 { color: var(--banner-c1); background-color: var(--banner-c3); }
+.b-c2-bg3 { color: var(--banner-c2); background-color: var(--banner-c3); }
+.b-c3 { color: var(--banner-c3); }
+.b-c4-bg5 { color: var(--banner-c4); background-color: var(--banner-c5); }
+.b-c6-bg5 { color: var(--banner-c6); background-color: var(--banner-c5); }
+.b-c5 { color: var(--banner-c5); }
 
 @keyframes term-blink {
   0%, 100% { opacity: 1; }

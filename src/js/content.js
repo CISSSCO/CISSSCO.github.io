@@ -74,11 +74,23 @@ window.CONTENT = {
 </div>
   `,
 
-  banner: `   ____ ___ ____ ____ ____ ____ ___  
-  / ___|_ _/ ___/ ___/ ___/ ___/ _ \\ 
- | |    | |\\___ \\___ \\___ \\ |  | | | |
- | |___ | | ___) |__) |__) | |__| |_| |
-  \\____|___|____/____/____/\\____\\___/ `,
+  bannerHTML: [
+    '<span class="b-c1">▄▄▄▄▄▄</span> <span class="b-c1">▄▄▄▄</span> <span class="b-c1">▄▄▄▄▄▄</span> <span class="b-c1">▄▄▄▄▄▄</span> <span class="b-c1">▄▄▄▄▄▄</span> <span class="b-c1">▄▄▄▄▄▄</span> <span class="b-c1">▄▄▄▄▄▄</span>',
+    '<span class="b-c1-bg3">██</span><span class="b-c1">▀▀▀▀</span>  <span class="b-c1-bg3">█</span><span class="b-c2-bg3">█</span>  <span class="b-c1-bg3">█</span><span class="b-c2-bg3">█</span><span class="b-c1">▀▀</span><span class="b-c2-bg3">█▀</span> <span class="b-c1-bg3">█</span><span class="b-c2-bg3">█</span><span class="b-c1">▀▀</span><span class="b-c2-bg3">█▀</span> <span class="b-c1-bg3">█</span><span class="b-c2-bg3">█</span><span class="b-c1">▀▀</span><span class="b-c2-bg3">█▀</span> <span class="b-c1-bg3">██</span><span class="b-c1">▀▀▀▀</span> <span class="b-c1-bg3">█</span><span class="b-c2-bg3">█</span><span class="b-c1">▀▀</span><span class="b-c2-bg3">█▀</span>',
+    '<span class="b-c1-bg3">█▀</span>      <span class="b-c1-bg3">▌ </span>  <span class="b-c1-bg3">▌ </span>     <span class="b-c1-bg3">▌ </span>     <span class="b-c1-bg3">▌ </span>     <span class="b-c1-bg3">█▀</span>     <span class="b-c1-bg3">▌ </span>  <span class="b-c1-bg3"> </span><span class="b-c4-bg5">█</span>',
+    '<span class="b-c2-bg3">▀</span><span class="b-c1-bg3"> </span>      <span class="b-c1-bg3"> </span><span class="b-c4-bg5">▀</span>  <span class="b-c3">▀▀▀▀</span><span class="b-c4-bg5">█▀</span> <span class="b-c3">▀▀▀▀</span><span class="b-c4-bg5">█▀</span> <span class="b-c3">▀▀▀▀</span><span class="b-c4-bg5">█▀</span> <span class="b-c2-bg3">▀</span><span class="b-c1-bg3"> </span>     <span class="b-c1-bg3"> </span><span class="b-c4-bg5">▀</span>  <span class="b-c4-bg5">█▀</span>',
+    '<span class="b-c1-bg3"> </span><span class="b-c4-bg5">█</span>      <span class="b-c4-bg5">▀</span><span class="b-c6-bg5">░</span>  <span class="b-c4-bg5">▀</span><span class="b-c6-bg5">░</span>  <span class="b-c4-bg5">  </span> <span class="b-c4-bg5">▀</span><span class="b-c6-bg5">░</span>  <span class="b-c4-bg5">  </span> <span class="b-c4-bg5">▀</span><span class="b-c6-bg5">░</span>  <span class="b-c4-bg5">  </span> <span class="b-c1-bg3"> </span><span class="b-c4-bg5">█</span>     <span class="b-c4-bg5">▀</span><span class="b-c6-bg5">░</span>  <span class="b-c4-bg5">  </span>',
+    '<span class="b-c4-bg5">▀</span><span class="b-c6-bg5">░░░</span><span class="b-c4-bg5">  </span> <span class="b-c5">▄</span><span class="b-c6-bg5">▒░</span><span class="b-c5">▄</span> <span class="b-c6-bg5">▒░</span><span class="b-c5">██</span><span class="b-c4-bg5">  </span> <span class="b-c6-bg5">▒░</span><span class="b-c5">██</span><span class="b-c4-bg5">  </span> <span class="b-c6-bg5">▒░</span><span class="b-c5">██</span><span class="b-c4-bg5">  </span> <span class="b-c4-bg5">▀</span><span class="b-c6-bg5">░░░</span><span class="b-c4-bg5">  </span> <span class="b-c6-bg5">▒░░░</span><span class="b-c4-bg5">  </span>'
+  ].join("\n"),
+
+  banner: [
+    "▄▄▄▄▄▄ ▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄▄",
+    "██▀▀▀▀  ██  ██▀▀█▀ ██▀▀█▀ ██▀▀█▀ ██▀▀▀▀ ██▀▀█▀",
+    "█▀      ▌   ▌      ▌      ▌      █▀     ▌    █",
+    "▀        ▀  ▀▀▀▀█▀ ▀▀▀▀█▀ ▀▀▀▀█▀ ▀       ▀  █▀",
+    " █      ▀░  ▀░     ▀░     ▀░      █     ▀░    ",
+    "▀░░░   ▄▒░▄ ▒░██   ▒░██   ▒░██   ▀░░░   ▒░░░  "
+  ].join("\n"),
 
   aboutBody: `
 
@@ -93,18 +105,19 @@ window.CONTENT = {
     <span class="term-key">Portfolio:</span>   <a class="term-link" href="https://cisssco.github.io" target="_blank">cisssco.github.io</a>
 
     <span class="neofetch-palette">
-      <span class="palette-swatch" style="background-color:#2e3440;"></span><span class="palette-swatch" style="background-color:#bf616a;"></span><span class="palette-swatch" style="background-color:#a3be8c;"></span><span class="palette-swatch" style="background-color:#ebcb8b;"></span><span class="palette-swatch" style="background-color:#81a1c1;"></span><span class="palette-swatch" style="background-color:#b48ead;"></span><span class="palette-swatch" style="background-color:#88c0d0;"></span><span class="palette-swatch" style="background-color:#eceff4;"></span>
+      <span class="palette-swatch swatch-black"></span><span class="palette-swatch swatch-red"></span><span class="palette-swatch swatch-green"></span><span class="palette-swatch swatch-yellow"></span><span class="palette-swatch swatch-blue"></span><span class="palette-swatch swatch-magenta"></span><span class="palette-swatch swatch-cyan"></span><span class="palette-swatch swatch-white"></span>
     </span>
 
     <span class="term-dim">"I build simple tools that solve real problems and remain understandable over time."</span>`,
 
   about: `
 <pre class="neofetch">
-<span class="ascii-banner">   ____ ___ ____ ____ ____ ____ ___  
-  / ___|_ _/ ___/ ___/ ___/ ___/ _ \\ 
- | |    | |\\___ \\___ \\___ \\ |  | | | |
- | |___ | | ___) |__) |__) | |__| |_| |
-  \\____|___|____/____/____/\\____\\___/ </span>
+<span class="ascii-banner"><span class="b-c1">▄▄▄▄▄▄</span> <span class="b-c1">▄▄▄▄</span> <span class="b-c1">▄▄▄▄▄▄</span> <span class="b-c1">▄▄▄▄▄▄</span> <span class="b-c1">▄▄▄▄▄▄</span> <span class="b-c1">▄▄▄▄▄▄</span> <span class="b-c1">▄▄▄▄▄▄</span>
+<span class="b-c1-bg3">██</span><span class="b-c1">▀▀▀▀</span>  <span class="b-c1-bg3">█</span><span class="b-c2-bg3">█</span>  <span class="b-c1-bg3">█</span><span class="b-c2-bg3">█</span><span class="b-c1">▀▀</span><span class="b-c2-bg3">█▀</span> <span class="b-c1-bg3">█</span><span class="b-c2-bg3">█</span><span class="b-c1">▀▀</span><span class="b-c2-bg3">█▀</span> <span class="b-c1-bg3">█</span><span class="b-c2-bg3">█</span><span class="b-c1">▀▀</span><span class="b-c2-bg3">█▀</span> <span class="b-c1-bg3">██</span><span class="b-c1">▀▀▀▀</span> <span class="b-c1-bg3">█</span><span class="b-c2-bg3">█</span><span class="b-c1">▀▀</span><span class="b-c2-bg3">█▀</span>
+<span class="b-c1-bg3">█▀</span>      <span class="b-c1-bg3">▌ </span>  <span class="b-c1-bg3">▌ </span>     <span class="b-c1-bg3">▌ </span>     <span class="b-c1-bg3">▌ </span>     <span class="b-c1-bg3">█▀</span>     <span class="b-c1-bg3">▌ </span>  <span class="b-c1-bg3"> </span><span class="b-c4-bg5">█</span>
+<span class="b-c2-bg3">▀</span><span class="b-c1-bg3"> </span>      <span class="b-c1-bg3"> </span><span class="b-c4-bg5">▀</span>  <span class="b-c3">▀▀▀▀</span><span class="b-c4-bg5">█▀</span> <span class="b-c3">▀▀▀▀</span><span class="b-c4-bg5">█▀</span> <span class="b-c3">▀▀▀▀</span><span class="b-c4-bg5">█▀</span> <span class="b-c2-bg3">▀</span><span class="b-c1-bg3"> </span>     <span class="b-c1-bg3"> </span><span class="b-c4-bg5">▀</span>  <span class="b-c4-bg5">█▀</span>
+<span class="b-c1-bg3"> </span><span class="b-c4-bg5">█</span>      <span class="b-c4-bg5">▀</span><span class="b-c6-bg5">░</span>  <span class="b-c4-bg5">▀</span><span class="b-c6-bg5">░</span>  <span class="b-c4-bg5">  </span> <span class="b-c4-bg5">▀</span><span class="b-c6-bg5">░</span>  <span class="b-c4-bg5">  </span> <span class="b-c4-bg5">▀</span><span class="b-c6-bg5">░</span>  <span class="b-c4-bg5">  </span> <span class="b-c1-bg3"> </span><span class="b-c4-bg5">█</span>     <span class="b-c4-bg5">▀</span><span class="b-c6-bg5">░</span>  <span class="b-c4-bg5">  </span>
+<span class="b-c4-bg5">▀</span><span class="b-c6-bg5">░░░</span><span class="b-c4-bg5">  </span> <span class="b-c5">▄</span><span class="b-c6-bg5">▒░</span><span class="b-c5">▄</span> <span class="b-c6-bg5">▒░</span><span class="b-c5">██</span><span class="b-c4-bg5">  </span> <span class="b-c6-bg5">▒░</span><span class="b-c5">██</span><span class="b-c4-bg5">  </span> <span class="b-c6-bg5">▒░</span><span class="b-c5">██</span><span class="b-c4-bg5">  </span> <span class="b-c4-bg5">▀</span><span class="b-c6-bg5">░░░</span><span class="b-c4-bg5">  </span> <span class="b-c6-bg5">▒░░░</span><span class="b-c4-bg5">  </span></span>
 
     <span class="term-title term-bold">cisco@cisssco</span>
     <span class="term-dim">--------------------------------------------------</span>
@@ -117,7 +130,7 @@ window.CONTENT = {
     <span class="term-key">Portfolio:</span>   <a class="term-link" href="https://cisssco.github.io" target="_blank">cisssco.github.io</a>
 
     <span class="neofetch-palette">
-      <span class="palette-swatch" style="background-color:#2e3440;"></span><span class="palette-swatch" style="background-color:#bf616a;"></span><span class="palette-swatch" style="background-color:#a3be8c;"></span><span class="palette-swatch" style="background-color:#ebcb8b;"></span><span class="palette-swatch" style="background-color:#81a1c1;"></span><span class="palette-swatch" style="background-color:#b48ead;"></span><span class="palette-swatch" style="background-color:#88c0d0;"></span><span class="palette-swatch" style="background-color:#eceff4;"></span>
+      <span class="palette-swatch swatch-black"></span><span class="palette-swatch swatch-red"></span><span class="palette-swatch swatch-green"></span><span class="palette-swatch swatch-yellow"></span><span class="palette-swatch swatch-blue"></span><span class="palette-swatch swatch-magenta"></span><span class="palette-swatch swatch-cyan"></span><span class="palette-swatch swatch-white"></span>
     </span>
 
     <span class="term-dim">"I build simple tools that solve real problems and remain understandable over time."</span>

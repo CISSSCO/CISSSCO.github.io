@@ -174,10 +174,11 @@
       activeAnimationSkip();
     }
 
+    const bannerHTML = window.CONTENT && window.CONTENT.bannerHTML ? window.CONTENT.bannerHTML : "";
     const rawBanner = window.CONTENT && window.CONTENT.banner ? window.CONTENT.banner : "";
     const bodyHTML = window.CONTENT && window.CONTENT.aboutBody ? window.CONTENT.aboutBody : "";
 
-    if (!rawBanner) {
+    if (!bannerHTML && !rawBanner) {
       if (window.CONTENT && window.CONTENT.about) {
         printHTML(window.CONTENT.about);
       }
@@ -209,8 +210,9 @@
 
     let timer = null;
     let isDone = false;
-    let charIndex = 0;
-    const bannerLength = rawBanner.length;
+    let lineIndex = 0;
+    const lines = (bannerHTML || rawBanner).split("\n");
+    const totalLines = lines.length;
 
     function cleanup() {
       if (timer) clearTimeout(timer);
@@ -228,7 +230,11 @@
       isDone = true;
       cleanup();
 
-      bannerSpan.textContent = rawBanner;
+      if (bannerHTML) {
+        bannerSpan.innerHTML = bannerHTML;
+      } else {
+        bannerSpan.textContent = rawBanner;
+      }
       if (cursorSpan.parentNode) {
         cursorSpan.parentNode.removeChild(cursorSpan);
       }
@@ -255,7 +261,7 @@
     function step() {
       if (isDone) return;
 
-      if (charIndex >= bannerLength) {
+      if (lineIndex >= totalLines) {
         timer = setTimeout(() => {
           if (isDone) return;
           if (cursorSpan.parentNode) {
@@ -270,20 +276,16 @@
         return;
       }
 
-      const currentChar = rawBanner[charIndex];
-      let stepSize = 3;
-      let delay = 9;
-
-      if (currentChar === "\n") {
-        stepSize = 1;
-        delay = 24;
+      lineIndex++;
+      const currentContent = lines.slice(0, lineIndex).join("\n");
+      if (bannerHTML) {
+        bannerSpan.innerHTML = currentContent;
+      } else {
+        bannerSpan.textContent = currentContent;
       }
-
-      charIndex = Math.min(charIndex + stepSize, bannerLength);
-      bannerSpan.textContent = rawBanner.slice(0, charIndex);
       scrollToBottom();
 
-      timer = setTimeout(step, delay);
+      timer = setTimeout(step, 60);
     }
 
     step();
